@@ -86,6 +86,9 @@ const WelcomePage = () => {
                   </div>
                 </div>
               </section>
+              <section>
+                dd
+              </section>
             </form>
 
         </div>
