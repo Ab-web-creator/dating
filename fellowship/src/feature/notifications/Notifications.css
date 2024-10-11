@@ -1,0 +1,74 @@
+.notifications .dev_notes_div {
+  padding: 20px;
+}
+
+
+.notifications {
+  position: relative;
+}
+
+.notifications .airoport {
+  min-width: 400px;
+}
+
+.all_notifs_flexed {
+  min-width: 100%;
+  /* padding-left: 10px; */
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+}
+
+/* .recent_notif:nth-child(even) {
+  background-color: rgb(247, 247, 247);
+} */
+
+.recent_notif {
+  padding: 20px;
+  /* padding-right: 5px; */
+  /* border-radius: 5px; */
+  border: 0.5px solid rgb(241, 241, 241);
+  display: flex;
+  gap: 20px;
+}
+
+
+.recent_notif:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+.smb_followed_or_liked {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.smb_followed_or_liked img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.smb_followed_or_liked span {
+  font-weight: 900;
+}
+
+.smb_replied {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.smb_replied .green {
+  color: rgb(75, 187, 75);
+  font-weight: 900;
+}
+
+.smb_replied .bold {
+  /* color: rgb(75, 187, 75); */
+  font-weight: 900;
+}
+
+.gray {
+  color: rgb(185, 185, 185);
+}

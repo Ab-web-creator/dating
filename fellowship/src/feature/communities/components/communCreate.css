@@ -1,0 +1,403 @@
+.commun_create_contain {
+  position: fixed;
+  top: 0px;
+  margin-top: 0px;
+  padding: 20px;
+  right: 0px;
+  width: 100%;
+  /* width: 1200px; */
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.809);
+  border: none;
+  z-index: 5;
+  display: flex;
+  animation: blossom 0.3s ease-in-out forwards;
+}
+
+.commun_create {
+  position: relative;
+  padding: 15px;
+  padding-right: 25px;
+  margin: auto;
+  /* min-width: 800px;
+  width: 800px; */
+  background-color: white;
+  border-radius: 12px;
+
+  height: 90%;
+  max-height: 570px;
+  overflow-y: scroll;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.commun_create .close_invitation:hover {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+.commun_create .two_column_contain {
+  margin: auto;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+
+  display: flex;
+  gap: 40px;
+}
+
+.commun_create aside {
+  /* margin: auto; */
+  height: 100%;
+  padding-top: 20px;
+  width: 30%;
+  width: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.commun_create aside .heading {
+  margin: auto;
+  width: 260px;
+}
+
+.commun_create aside .heading h4 {
+  text-align: center;
+  font-weight: 450;
+  color: rgb(127, 127, 127);
+}
+
+.commun_create .chat_group_info {
+  min-height: 160px;
+  height: 320px;
+  padding-top: 10px;
+
+}
+
+.commun_create aside .group_name {
+  font-size: 14px;
+}
+
+.commun_create .upper_part h4 {
+  font-size: 14px;
+}
+
+.commun_create .lower_part {
+  bottom: 50px;
+}
+
+.commun_create .rasm_container {
+  position: relative;
+  min-width: 40px;
+  width: 160px;
+}
+
+.commun_create .rasm_container:hover {
+  /* width: 100px; */
+  /* background-color: transparent !important; */
+  box-shadow: none;
+  border-radius: 50%;
+  /* border-bottom: 1px solid rgb(0, 255, 89); */
+}
+
+.commun_create .chat_annot_contain {
+  margin: auto;
+  width: 228px;
+  /* filter: hue-rotate(55deg); */
+}
+
+.commun_create .annotatie {
+  position: absolute;
+  top: -150px;
+  left: -30px;
+  min-width: 220px;
+  min-height: 160px;
+}
+
+.commun_create .annotatie p {
+  font-size: 12px;
+}
+
+
+.commun_create .common_interest {
+  color: rgb(0, 171, 6);
+  font-size: 14px;
+}
+
+.commun_create .curr_contain {
+  /* margin: auto; */
+  margin-bottom: 0px;
+}
+
+/* CSS in CommunCreate.css */
+.commun_create .blackText {
+  color: black !important;
+}
+
+.commun_create .redText {
+  color: red !important;
+}
+
+.commun_create .blueText {
+  color: blue !important;
+}
+
+.commun_create .greenText {
+  color: green !important;
+}
+
+.commun_create .purpleText {
+  color: rgb(96, 0, 128) !important;
+}
+
+.commun_create .goldText {
+  color: rgb(154, 130, 0) !important;
+}
+
+.commun_create .pinkText {
+  color: rgb(154, 0, 151) !important;
+}
+
+/* Define styles for other color options as well */
+
+
+.commun_create>div>main {
+  flex-grow: 1;
+  padding: 20px;
+  padding-bottom: 10px;
+  border: 1px solid rgb(207, 207, 207);
+
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  /* gap: 20px; */
+}
+
+.commun_create .two_column_contain .first_child {
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: green;
+  font-size: 22px;
+  text-align: center;
+  font-family: "Oswald-Regular";
+  text-transform: uppercase;
+}
+
+.commun_create .first_child span {
+  text-align: center;
+  font-family: "Oswald-Regular";
+  font-size: 22px;
+
+  margin-bottom: 20px;
+  text-transform: uppercase;
+
+  margin-bottom: 40px;
+  color: #778000;
+}
+
+
+.commun_create form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.commun_create form label {
+  margin-right: 10px;
+}
+
+.commun_create .mandatory {
+  display: inline-block;
+  margin-top: -10px;
+  color: red;
+
+}
+
+.commun_create input {
+  margin: 10px 0px;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(207, 207, 207);
+  padding: 0px 15px;
+  font-size: 16px;
+}
+
+.commun_create select {
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(210, 210, 210);
+  color: #bdbdbd;
+  font-size: 16px;
+
+}
+
+.commun_create input::placeholder {
+  color: rgb(201, 201, 201);
+  text-align: left;
+}
+
+.commun_create .container_of_two {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.commun_create .container_of_two select {
+  margin-top: 10px;
+  width: 100%;
+  padding-left: 7px;
+}
+
+
+.commun_create .container_of_two p {
+  margin-top: 10px;
+}
+
+
+
+ 
+
+
+.commun_create form .submit_btn {
+  /* margin-top: 20px; */
+  margin-left: auto;
+  margin-right: 0px;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #0094a7;
+  cursor: pointer;
+}
+
+.commun_create form .submit_btn:hover {
+  background-color: #00535e;
+}
+
+.commun_create footer>div {
+  width: 100%;
+  display: flex;
+}
+
+.commun_create .good_message {
+  margin: auto;
+  margin-left: 0px;
+  color: rgb(8, 229, 0);
+  text-align: left;
+}
+
+.commun_create .error-message {
+  color: red;
+  text-align: center;
+}
+
+.commun_create .search_result_container {
+  border-radius: 7px;
+  border: 1px solid red;
+  background-color: white;
+  padding: 10px;
+}
+
+.commun_create .search_results {
+  width: 100%;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.commun_create .search_results button {
+  min-width: 50px;
+  background-color: #bdbdbd;
+  color: gray;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 731px) {
+  .commun_create .container_of_two {
+    flex-direction: column;
+  }
+ 
+  .commun_create_contain {
+    padding: 12px;
+  }
+
+  .commun_create {
+    padding: 15px;
+    height: 100%;
+    height: fit-content;
+    max-height: fit-content;
+    overflow-y: scroll;
+  }
+
+  .commun_create .two_column_contain {
+    flex-direction: column;
+  }
+
+  .commun_create>div>main {
+    padding-bottom: 20px;
+  }
+
+  .commun_create aside {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .commun_create {
+    margin-top: 0px;
+    overflow-y: scroll;
+  }
+}
+
+
+/* @media only screen and (max-width: 631px) {
+  .commun_create {
+    position: relative;
+    padding: 10px 15px;
+    padding-right: 15px;
+
+    margin: auto;
+    min-width: 500px;
+    width: 500px;
+    max-width: 500px;
+    height: 97%;
+
+    background-color: white;
+    border-radius: 12px;
+  }
+
+  .commun_create .two_column_contain {
+    margin: 10px auto;
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+    overflow: scroll;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .commun_create aside .heading {
+    min-width: 100%;
+    width: 350px;
+  }
+} */
+
+/* @media only screen and (max-width: 680px) {
+  .commun_create_contain {
+    position: fixed;
+    left: 0px;
+    width: 100% !important;
+    background-color: rgba(0, 0, 0, 0.891) !important;
+  }
+} */

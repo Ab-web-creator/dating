@@ -1,0 +1,338 @@
+.post_create_container {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.809);
+  z-index: 9;
+  display: flex;
+
+  animation: blossom 0.3s ease-in-out forwards;
+}
+
+/* buttons to close: we need them all  */
+
+.post_create .close_post_create {
+  top: 10px;
+  right: 10px;
+  color: #484848;
+  background-color: white;
+ 
+  min-width: 30px;
+  width: 30px;
+  height: 30px;
+  
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.post_create .close_post_create:hover {
+  color: #d62727;
+}
+
+.post_create .close_post_success_container {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 60px;
+  height: 60px;
+}
+
+.post_create .close_post_success_container>button {
+  background-color: transparent;
+  color: rgb(180, 180, 180);
+}
+
+
+/* muhim qismi  */
+
+
+
+.post_create {
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+  width: 650px;
+
+  border-radius: 12px;
+  height: 430px;
+  /* z-index: 1; */
+  /* background-color: white; */
+}
+
+.post_create::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  border-radius: 12px;
+  height: 430px;
+  background-color: rgb(255, 255, 255);
+  width: calc(100% - 0px);
+  color: rgba(0, 128, 0, 0.155);
+  height: calc(100% - 0px);
+  opacity: 1;
+  z-index: -2;
+}
+
+.post_create::after {
+  content: 'Create New Post, add an image, use emojis';
+  position: absolute;
+  font-family: 'Oswald-Regular';
+  font-size: 78px;
+  top: 50px;
+  text-align: center;
+  width: calc(100% - 0px);
+  color: rgba(0, 128, 0, 0.155);
+  height: calc(100% - 50px);
+  opacity: 0.2;
+  z-index: -1;
+}
+
+
+.post_create .success-popup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(9, 184, 0);
+
+  z-index: 1;
+  display: flex;
+}
+
+.post_create .success-popup .with_post_create {
+  margin: auto;
+  color: white;
+  font-size: 22px;
+  width: 90%;
+  background-color: rgb(9, 184, 0);
+}
+
+.post_create .success-popup h3 {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.post_create .success-popup h4,
+.post_create .success-popup h5 {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.post_create header {
+  margin-bottom: 20px !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post_create .flex_it {
+  width: fit-content;
+  font-size: 16px;
+  display: flex;
+  gap: 0px;
+}
+
+.post_create .subcontainer {
+  padding: 0 15px;
+  padding-top: 20px;
+  overflow: hidden;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.post_create .my_nick_and_searchName {
+  margin-top: 3px;
+  margin-left: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post_create .my_searchName {
+  /* margin-left: 10px; */
+  color: green;
+}
+
+.post_create .create_post_add_images {
+  margin: auto;
+  margin-left: 30px;
+  margin-top: -5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post_create .create_post_add_images p,
+.post_create .create_post_add_images span {
+  color: rgb(75, 122, 75);
+  font-family: 'Oswald-Regular';
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.post_create .create_post_add_images span {
+  /* color: rgb(175, 143, 0); */
+}
+
+.post_create main {
+  flex-grow: 3;
+  overflow: scroll;
+  /* border: 1px solid rgb(243, 243, 243); */
+  border-radius: 7px;
+  background-color: rgba(127, 255, 212, 0.122);
+}
+
+.post_create textarea {
+  width: 100%;
+  /* border: 0.5px solid rgb(224, 224, 224); */
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  padding: 10px;
+  outline: none;
+  min-height: 100px;
+  background-color: transparent;
+}
+
+.post_create textarea::placeholder {
+  padding: 30px 0px;
+  font-size: 18px;
+  font-weight: 200;
+  color: #aaaaaa;
+}
+
+
+.post_create .image_preview {
+  position: relative;
+}
+
+.post_create .image_preview img {
+  width: 100%;
+}
+
+.post_create .remove_image {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  min-width: 45px !important;
+  height: 45px !important;
+  font-size: 26px;
+  font-weight: 100;
+  padding: 0px 0px;
+  padding-bottom: 5px;
+  border: none;
+  background-color: rgb(113, 113, 113);
+}
+
+.post_create .remove_image:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.post_create .dif_flex {
+  /* border-top: 0.5px solid rgb(213, 213, 213); */
+
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.post_create .network_icons {
+  position: relative;
+  display: flex;
+}
+
+.post_create .network_icons button {
+  margin: auto;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 0px !important;
+  margin-right: 5px !important;
+  min-width: 35px;
+  width: 35px;
+  height: 35px !important;
+
+  display: flex;
+}
+
+.post_create .network_icons button:hover {
+  background-color: rgb(234, 234, 234);
+  box-shadow: none;
+}
+
+.post_create .network_icons button img {
+  margin: auto;
+  background-color: transparent;
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.post_create .network_icons button img:hover {
+  background-color: transparent;
+}
+
+.post_create .add_media input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 35px !important;
+  min-height: 35px !important;
+  height: 45px;
+}
+
+
+.post_create .posting-btn {
+  margin: 10px auto;
+  margin-right: 0px;
+  border-radius: 20px !important;
+  background-color: rgb(0, 213, 0);
+  padding: 6px;
+  font-size: 16px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.post_create .posting-btn:hover {
+  background-color: rgb(0, 156, 0);
+}
+
+.post_create .emoji-popup-content {
+  margin-bottom: 70px;
+}
+
+
+@media only screen and (max-width: 650px) {
+  .post_create {
+    margin: auto;
+    margin-top: 0px;
+    width: 100%;
+    height: 80%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .post_create .create_post_add_images {
+    position: absolute;
+    display: none;
+    /* top: 70px;
+    left: 50%;
+    margin-left: 0px;
+    width: calc(100% - 0px);
+    transform: translateX(-50%); */
+  }
+
+  /* .post_create .create_post_add_images p,
+  .post_create .create_post_add_images span {
+    color: rgb(43, 151, 0);
+    font-family: 'Oswald-Regular';
+    font-size: 20px;
+    text-transform: uppercase;
+
+    text-align: center;
+  } */
+}

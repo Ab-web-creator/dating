@@ -1,0 +1,102 @@
+.backside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  width: 100%;
+  width: calc(100% - 20px);
+  height: calc(100vh - 90px);
+  background: linear-gradient(to bottom right, magenta, cyan);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lazy_post {
+  position: relative;
+  min-width: 100%;
+  border: 1px solid rgb(235, 235, 235);
+  background-color: rgba(255, 255, 255, 0.77);
+  padding: 15px;
+  padding-bottom: 0px;
+  margin-bottom: -1px;
+  padding-bottom: 3px;
+  color: rgb(215, 215, 215);
+  transition: all 0.3s ease-in-out;
+
+  display: flex;
+  gap: 10px;
+
+  animation: bringdown 6s ease infinite;
+}
+
+
+@keyframes bringdown {
+  0% {
+    margin-top: -20px;
+    opacity: 0.1;
+  }
+
+  40% {
+    margin-top: 0px;
+    opacity: 1;
+  }
+
+  100% {
+    margin-top: 0px;
+    opacity: 0.1;
+  }
+}
+
+.lazy_post .oval-container {
+  position: relative;
+  margin: auto;
+  margin-top: 0px;
+  background-color: white;
+  border: 1px solid rgb(230, 230, 230);
+  min-width: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
+.lazy_post .oval-container p {
+  padding-top: 1px;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0.1;
+}
+
+.lazy_post .credentials {
+  display: flex;
+  gap: 10px;
+}
+
+.lazy_post .post_content {
+  width: 100%;
+}
+
+
+.lazy_post .network_icons {
+  opacity: 0.3;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.lazy_post .network_icons button {
+  min-width: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+}
+
+.lazy_post .network_icons img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

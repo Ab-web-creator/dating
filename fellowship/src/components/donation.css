@@ -1,0 +1,483 @@
+.donation_container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.73);
+  z-index: 2;
+
+  display: flex;
+  animation: blossom 0.3s ease-in-out forwards;
+}
+
+@keyframes blossom {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* .close_donation {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 4px;
+  background-color: #c43cff24;
+  border: 1px solid #8ac1fc;
+  background-color: #ffffff;
+  color: #0080ff;
+  border-radius: 50%;
+}
+
+.close_donation:hover {
+  color: white;
+  background-color: rgb(0, 94, 255);
+  border: 1px solidrgb(0, 94, 255);
+} */
+
+
+.donation {
+  position: relative;
+  margin: auto;
+  background-color: white;
+  border-radius: 17px;
+
+
+  width: 100%;
+  height: 100%;
+  max-width: 700px;
+  /* height: calc(100% - 0px); */
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 20px;
+}
+
+.donation .scrolling_part {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.donation .scrolling_part::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.donation .top_heading {
+  padding: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(205, 205, 205);
+}
+
+.donation .upper_part {
+  padding: 10px 40px;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 20px;
+}
+
+.donation h1 {
+  font-family: 'Times-Regular';
+  font-weight: 500;
+}
+
+
+.donation .main_text {
+  /* font-family: 'Times-Regular'; */
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.donation .onetime_recurring {
+  display: flex;
+}
+
+
+.donation .onetime_recurring button {
+  width: 100%;
+  max-width: 330px;
+  height: 45px;
+  color: rgb(0, 94, 255);
+  border: 1px solid rgb(129, 129, 129);
+  background-color: white;
+  font-size: 16px;
+}
+
+.donation .onetime_recurring .selectedPayment {
+  background-color: rgb(0, 94, 255);
+  color: white;
+  border-color: rgb(0, 94, 255) !important;
+}
+
+.donation .money_container .selected_Amount {
+  background-color: rgb(0, 94, 255);
+  color: white;
+  border-color: rgb(0, 94, 255) !important;
+}
+
+.donation .onetime_recurring .one_time {
+  border-radius: 7px 0 0 7px;
+  border-right-color: transparent;
+}
+
+.donation .onetime_recurring .recurring {
+  border-radius: 0 7px 7px 0;
+  border-left-color: transparent;
+}
+
+.donation .how_often_pay {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.donation .for_recurring > div {
+  width: fit-content;
+}
+.donation .for_recurring select {
+  width: fit-content;
+  max-width: 310px;
+  height: 40px;
+  border-radius: 7px;
+  padding-left: 10px;
+  color: rgb(47, 47, 47);
+  font-weight: 300;
+  outline: none;
+}
+
+.donation .monthly_amount p,
+.donation .agree_privacy p,
+.donation .yearly_amount p {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+
+.donation .for_one_time p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.donation .money_sub_container,
+.donation .money_container {
+  margin: 0px 0px;
+  display: flex;
+  gap: 5px;
+}
+
+.which_currency_container {
+  width: fit-content;
+  height: 45px;
+}
+.donation #which_currency {
+  width: fit-content;
+  min-width: 70px;
+  height: 43px;
+  outline: none;
+}
+
+.donation .money_container button {
+  width: 100%;
+  min-width: 90px;
+  height: 45px;
+  color: rgb(0, 94, 255);
+  border-radius: 5px;
+  border: 1px solid rgb(129, 129, 129);
+  background-color: white;
+  font-size: 16px;
+}
+
+.donation .money_container select {
+  height: 45px;
+  width: 100%;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.donation .dedicate_donation {
+  margin-top: 20px;
+  display: flex;
+  gap: 5px;
+}
+
+.donation hr {
+  border: 1px solid #e5e5e5a3;
+  margin: 10px 0;
+}
+
+
+
+.donation .lower_part {
+  padding: 40px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 20px;
+}
+
+.donation .lower_part h2 {
+  font-weight: 400;
+}
+
+.donation .names {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.donation .email_container,
+.donation .phoneNumber_container,
+.donation .names>div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.donation .lower_part label {
+  width: fit-content;
+}
+
+.donation .dedicating_for input,
+.donation .lower_part input {
+  width: 100%;
+  height: 35px;
+  padding: 7px 15px;
+  border-radius: 5px;
+  border: 1px solid rgb(181, 181, 181);
+}
+
+.donation .hide_my_name,
+.donation .whopaysFees_container {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+}
+
+.donation .whopaysFees_container input,
+.donation .hide_my_name input {
+  padding: 2px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.donation .whopaysFees {
+  width: 50%;
+}
+
+.donation .whopaysFees_container label {
+  font-size: 14px;
+}
+
+.donation .hide_my_name p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.donation .blue {
+  color: rgb(0, 157, 255);
+  ;
+}
+
+.p_element_under_email {
+  margin-top: -10px;
+}
+
+.mandatory {
+  color: red;
+}
+
+.donation .last_part {
+  display: flex;
+  gap: 20px;
+}
+
+.donation .last_part .left_side {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.donation .last_part .final_amount {
+  font-size: 24px;
+  font-weight: 400;
+  color: #0d92ff;
+}
+
+.donation .last_part .final_amount span {
+  font-size: 14px;
+  font-weight: 400;
+  color: gray;
+}
+
+.put_payment button {
+  background-color: rgb(0, 132, 255);
+  margin: 5px 0px;
+  width: 100%;
+  font-size: 14px;
+  padding: 7px;
+  height: 40px;
+}
+
+.donation .paypal_button {
+  width: 100%;
+  height: fit-content;
+  background-color: rgb(255, 213, 0);
+  display: flex;
+  align-items: center;
+}
+
+.donation .paypal_button img {
+  position: relative;
+  text-align: center;
+  width: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.donation .radio_btns {
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.donation .radio_btns label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.donation .radio_btns input {
+  width: 25px;
+  /* Adjust width as needed */
+  height: 25px;
+  /* Adjust height as needed */
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.donation .dotted_border_bottom {
+  margin-bottom: 20px;
+  height: 20px;
+  border-bottom: 1px dotted rgb(197, 197, 197);
+}
+
+.donation .your_message_to_recipient {
+  margin: 20px 0px;
+
+}
+
+.donation .your_message_to_recipient p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.donation .your_message_to_recipient textarea {
+  width: 100%;
+  border: 1px solid rgb(181, 181, 181);
+  padding: 7px 15px;
+  border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .donation .names {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .donation .money_container {
+    flex-direction: column;
+  }
+
+  .donation .money_container button {
+    width: 100%;
+    min-width: 40px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .donation .dedicate_donation {
+    gap: 10px;
+  }
+
+  .donation .how_often_pay {
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .donation .for_recurring select {
+    max-width: 100%;
+  }
+
+  .donation #which_currency {
+    width: 100%;
+  }
+
+
+  .donation .last_part {
+    flex-direction: column;
+  }
+
+  .donation .last_part .left_side {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .donation .whopaysFees_container label {
+    font-size: 16px;
+  }
+
+  .put_payment p {
+    margin: 20px 0px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .donation .upper_part {
+    padding: 10px 20px;
+    padding-top: 0px;
+  }
+
+  .donation .lower_part {
+    padding: 20px;
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+
+  .donation_container {
+    padding: 5px;
+  }
+
+  .donation {
+    margin-top: 0px;
+    height: 450px;
+  }
+
+  .donation .radio_btns {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

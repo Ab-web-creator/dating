@@ -1,0 +1,42 @@
+.languageSwitcherContainer {
+  margin-top: 1px;
+  width: calc(100% - 20px);
+  width: fit-content;
+  padding: 3px;
+  /* background-color: rgb(150, 140, 0); */
+}
+
+.languageSwitcher {
+  background-color: transparent;
+  
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+
+
+.languageSwitcher .dropdownMenu {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.languageSwitcher img {
+  min-width: 25px;
+  width: 25px;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+.languageSwitcher {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  flex-direction: column;
+}
+
+.languageSwitcher .dropdownMenu {
+  flex-direction: column;
+}
+}

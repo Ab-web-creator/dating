@@ -1,0 +1,204 @@
+.cursored {
+  cursor: pointer !important;
+  background-color: rgb(246, 255, 245);
+}
+
+.my_relationships .list_container {
+  margin-left: 20px;
+
+  background-color: rgb(238, 248, 255);
+  border-radius: 7px;
+  padding-bottom: 0px;
+  width: 46%;
+  min-height: 60px;
+}
+
+.my_relationships .list_container:hover {
+  background-color: rgb(222, 242, 255);
+  transition: all 0.4s ease-in-out;
+}
+
+.my_relationships .the_list_of_relations {
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+.gave_padding_btm {
+  padding: 20px;
+
+}
+
+.gave_padding_btm h4 {
+  padding: 20px;
+  color: rgb(0, 67, 105);
+  font-weight: 400;
+}
+
+.my_relationships .flex_it_now {
+  padding: 12px 17px;
+  cursor: pointer;
+  background-color: rgb(211, 233, 255);
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 5px;
+  z-index: 1000;
+}
+
+.my_relationships .flex_it_now:nth-child(odd):hover,
+.my_relationships .flex_it_now:hover {
+  background-color: rgb(167, 211, 255);
+  transition: all 0.4s ease-in-out;
+}
+
+.my_relationships .flex_it_now:nth-child(odd) {
+  background-color: rgb(188, 215, 229);
+}
+
+.my_relationships .flex_it_now:last-child {
+  border-radius: 0 0 7px 7px;
+}
+
+.my_relationships .flex_it_now>div {
+  margin: auto 0px;
+  overflow: hidden;
+}
+
+.my_relationships .flex_it_left {
+  display: flex;
+  gap: 5px;
+}
+
+.my_relationships .which_relations span {
+
+  font-weight: 300;
+}
+
+.my_relationships .relation_work {
+  font-weight: 300;
+  font-size: 0.75rem;
+}
+
+.my_relationships .occupation_specified {
+  color: rgb(35, 128, 222);
+  font-size: 0.75rem;
+}
+
+.my_relationships .relation_nick {
+  font-weight: 500 !important;
+  font-size: 0.75rem;
+  margin-right: 10px;
+}
+
+.my_relationships .persons_age {
+  color: rgb(161, 153, 168);
+  font-size: 0.75rem;
+}
+
+
+.my_relationships .selected-relation {
+  background-color: rgb(201, 231, 203);
+}
+
+.my_relationships .selected-relation .relation_nick {
+  color: rgb(3, 158, 50);
+  /* z-index: 10; */
+}
+
+
+.my_relationships .with_border {
+  border: 1px solid gray;
+  padding: 15px;
+}
+
+.my_relationships .sorry_no_posts {
+  color: gray;
+  font-size: 20px;
+}
+
+
+
+
+.my_relationships .second_topbar {
+  position: fixed;
+  top: -47px;
+  width: 571px;
+  background-color: rgb(255, 255, 255);
+
+  font-size: 14px;
+  font-weight: 450;
+  color: rgb(170, 170, 170);
+  border: 1px solid rgb(237, 237, 237);
+  border-top: none;
+  border-left: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.my_relationships .revealed {
+  top: 47px;
+}
+
+.my_relationships .second_topbar>div.active {
+  color: #242424;
+  transition: all 0.4s ease-in-out;
+  font-weight: 500;
+}
+
+.my_relationships .second_topbar>div {
+  display: inline-block;
+  position: relative;
+  /* border: 1px solid rgb(237, 237, 237); */
+  padding: 13.5px 10px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.my_relationships .second_topbar>div.active::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32%;
+  padding: 0px 10px;
+  border-radius: 20px;
+  height: 4px;
+  background-color: green;
+  /* z-index: -1; */
+}
+
+.my_relationships .second_topbar>div:hover {
+  background-color: #e8e8e8;
+  transition: all 0.4s ease-in-out;
+}
+
+
+.my_relationships .second_topbar>div:hover>* {
+  color: rgb(0, 0, 0);
+  transition: all 0.4s ease-in-out;
+}
+
+
+.my_relationships .separate_into_two_columns {
+  margin-top: 51px;
+  height: calc(100vh - 54px);
+  max-height: calc(100vh - 54px);
+}
+
+@media only screen and (max-width: 970px) {
+  .my_relationships .second_topbar {
+    width: 570px;
+    border-right: none;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .my_relationships .second_topbar {
+    width: 428px;
+  }
+}

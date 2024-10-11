@@ -1,0 +1,542 @@
+.profile_edit_container {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  /* width: 1200px; */
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  z-index: 10;
+  display: flex;
+}
+
+.profile_edit_container .screen_to_click {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100vh;
+  /* background-color: rgba(127, 255, 212, 0.457); */
+}
+
+.profile_edit {
+  position: relative;
+  padding-top: 0px;
+  margin: auto;
+  margin-top: 50px;
+  width: 650px;
+  background-color: white;
+  border-radius: 12px;
+  height: 600px;
+  min-height: 400px;
+  overflow: scroll;
+  /* z-index: 1; */
+}
+
+.profile_edit .two_inputs_together {
+  display: flex;
+  gap: 10px;
+}
+
+.profile_edit .submit-btn {
+  top: 15px;
+  right: 20px;
+  height: 36px;
+  margin-right: 20px;
+  padding: 3px 15px;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.profile_edit .submit-btn:hover {
+  background-color: rgb(245, 234, 255);
+  color: rgb(58, 0, 113);
+}
+
+
+.profile_edit .profile_head {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 60px;
+  background-color: #fcdc2a;
+  background-color: rgb(0, 110, 255);
+
+  display: flex;
+  justify-content: space-between;
+
+  z-index: 3;
+}
+
+.profile_edit .profile_head .first_container {
+  margin: auto;
+  margin-left: 10px;
+  width: fit-content;
+  display: flex;
+  gap: 10px;
+}
+
+/* belongs to post_yaratish jsx  */
+.first_containerB {
+  margin-left: 23px !important;
+}
+
+.profile_details_inner {
+  margin: auto;
+  /* margin-left: 10px; */
+  padding-top: 4px;
+  width: 120px;
+  overflow: hidden;
+}
+
+.profile_details_inner h6 {
+  color: white;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  white-space: nowrap;
+}
+
+.profile_edit .submit-btn-container {
+  margin: auto;
+  margin-right: 0px;
+}
+
+.profile_head .close_profile_edit {
+  background-color: transparent;
+  min-width: 35px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile_edit form {
+  margin: 20px;
+  margin-bottom: 0px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile_edit form>div {
+  position: relative;
+  background-color: white;
+  padding: 5px;
+  width: 100%;
+}
+
+.profile_edit form .two_inputs_together>div {
+  position: relative;
+  background-color: white;
+  padding: 0px;
+  width: 100%;
+}
+
+.profile_edit form .two_inputs_together label {
+  padding: 5px;
+}
+
+.profile_edit label {
+  position: absolute;
+  font-size: 16px !important;
+  width: 100%;
+  top: 10px;
+  left: 7px;
+  padding: 10px;
+  color: #363636 !important;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.profile_edit input {
+  border: 1px solid rgb(171, 171, 171);
+  border-radius: 6px;
+  width: 100%;
+  font-size: 16px;
+  padding: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.profile_edit input:focus {
+  border: 1px solid rgb(171, 171, 171);
+  background-color: transparent !important;
+}
+
+
+.profile_edit input::placeholder {
+  color: transparent;
+}
+
+.profile_edit input:focus::placeholder {
+  color: rgb(209, 209, 209);
+}
+
+#date_of_birth {
+  color: transparent;
+}
+
+#date_of_birth:focus {
+  color: rgb(122, 0, 124);
+}
+
+#date_of_birth[value]:not([value=""]) {
+  color: rgb(0, 0, 0) !important;
+}
+
+.profile_edit #my_biography {
+  height: auto;
+  min-height: 120px;
+  margin-bottom: 20px;
+
+  width: 100%;
+  padding: 10px;
+  padding-top: 25px;
+  border: 1px solid rgb(171, 171, 171);
+  border-radius: 6px;
+  resize: vertical;
+  font-size: 16px;
+}
+
+.profile_edit #my_biography::placeholder {
+  color: rgb(209, 209, 209);
+  font-size: 16px;
+  padding-top: 15px;
+}
+
+.profile_edit #my_biography:not(:placeholder-shown)+label {
+  top: 2px !important;
+  font-size: 10px !important;
+  color: rgb(5, 157, 244) !important;
+}
+
+.profile_edit input[value]:not([value=""])~label {
+  top: 2px !important;
+  font-size: 10px !important;
+  color: rgb(5, 157, 244) !important;
+}
+
+.profile_edit input:focus~label,
+.profile_edit textarea:focus~label {
+  color: rgb(5, 157, 244) !important;
+  top: 2px !important;
+  font-size: 10px !important;
+}
+
+.profile_edit .flex_with_hundrProcent {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.profile_edit .flex_with_hundrProcent label {
+  position: relative;
+  width: fit-content;
+  white-space: nowrap;
+  margin-top: -20px;
+  padding-left: 0px;
+}
+
+.profile_edit .flex_with_hundrProcent select {
+  position: relative;
+  width: 100%;
+  min-height: 30px !important;
+  border-radius: 7px;
+  border: 1px solid rgb(181, 181, 181);
+  padding-left: 10px;
+}
+
+#userIsm_in_profile_add {
+  color: green;
+}
+
+/* Last part  */
+.profile_edit_container .congrats_contain {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+
+.profile_edit_container .congrats {
+  position: relative;
+  margin: auto;
+
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+
+  background-color: #200533eb;
+ 
+  color: rgb(255, 255, 255);
+  z-index: 1;
+
+  display: flex;
+}
+
+.profile_edit_container .congr_sub {
+  margin: auto;
+  padding: 10px;
+}
+
+.profile_edit_container .congrats h4 {
+  text-align: center;
+  letter-spacing: 1.7px;
+  /* color: rgb(167, 255, 167); */
+  font-size: 28px;
+  margin-bottom: 10px;
+
+}
+
+.profile_edit_container .congrats p {
+  text-align: center;
+  font-size: 22px;
+}
+
+.profile_edit_container .close_congrats {
+  position: absolute;
+  min-width: 40px;
+  height: 40px;
+  top: 10px;
+  right: 15px;
+  font-size: 18px;
+  color: white;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.profile_edit_container .close_congrats:hover {
+  background-color: transparent;
+  box-shadow: none;
+  font-size: 30px;
+}
+
+.positionRelative .errors {
+  position: absolute;
+  bottom: -30px;
+  right: 20px;
+  /* transform: translate(-50%); */
+  background-color: rgb(231, 0, 0);
+  padding: 10px;
+  width: fit-content;
+  /* height: 400px; */
+  z-index: 1;
+}
+
+.positionRelative .errors p {
+  text-align: center;
+  background-color: rgb(255, 212, 212);
+  padding: 10px;
+  color: rgb(1, 125, 5);
+  font-size: 18px;
+}
+
+.my_bgImage {
+  position: relative;
+  margin-bottom: 90px;
+  /* min-height: 100px; */
+  height: 200px;
+  width: 100%;
+  background-color: rgb(81, 107, 116);
+  background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+
+.my_bgImage img {
+  width: 100%;
+  height: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.my_bgImage input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  color: red;
+  border-radius: 0px;
+  border: none !important;
+  z-index: 1;
+}
+
+.positionRelative {
+  position: relative;
+  min-height: 100px;
+  /* background-color: #fcdc2a; */
+}
+
+.profile_edit .round_image_container,
+.my_profile_page .round_image_container {
+  position: absolute;
+  bottom: 0px;
+  transform: translateY(50%);
+  left: 15px;
+  border: 3px solid rgb(230, 230, 230);
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  background-image: url(../../images/refresh.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+
+.profile_edit .round_image_container {
+  left: 20px;
+}
+
+.round_image_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.round_image_container input {
+  position: absolute;
+  top: -75px;
+  transform: translateY(50%);
+  left: 0px;
+  border: none;
+  width: 140px;
+  height: 140px;
+  /* background-color: #fcdc2a; */
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+
+@media only screen and (max-width: 680px) {
+
+  .profile_edit {
+    width: 517px;
+    width: 80%;
+  }
+
+  .my_bgImage {
+    height: 150px;
+  }
+
+  .round_image_container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile_edit .two_inputs_together {
+    flex-direction: column;
+  }
+
+  .profile_edit .flex_with_hundrProcent {
+    flex-direction: column;
+  }
+
+  .profile_edit form {
+    gap: 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .profile_edit_container {
+    padding: 10px;
+    width: 100%;
+
+  }
+
+  .profile_edit_container .congrats_contain {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .profile_edit_container .congrats {
+    border-radius: 0px;
+  }
+
+  .profile_edit {
+    margin-top: 0px;
+    width: 100%;
+    /* height: 70%; */
+  }
+
+  .profile_edit_container .congrats h4 {
+    font-size: 20px;
+  }
+
+  .profile_edit_container .congrats p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .profile_edit .submit-btn {
+  
+    padding: 3px 20px;
+    min-width: 70px;
+  }
+
+  .profile_details_inner {
+    width: 100px !important;
+  }
+
+  .profile_details_inner h6 {
+    font-size: 14px !important;
+  }
+
+
+}
+
+@media only screen and (max-width: 450px) {
+
+
+  .profile_details_inner {
+    display: none;
+  }
+
+  .profile_head .close_profile_edit {
+    background-color: rgb(162, 195, 255);
+    background-color: transparent;
+    color: white;
+  }
+
+  .profile_head .close_profile_edit:hover {
+    background-color: rgb(237, 243, 255);
+    color: #004696;
+  }
+
+  .profile_edit form {
+    margin: 10px;
+  }
+
+  .profile_edit .profile_head {
+    flex-direction: row-reverse;
+  }
+
+  .profile_edit .submit-btn-container {
+    margin-left: 20px;
+    margin-right: auto;
+  }
+
+  .profile_edit .profile_head .first_container {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 370px) {
+  .my_bgImage {
+    height: 120px;
+  }
+}

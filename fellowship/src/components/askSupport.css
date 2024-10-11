@@ -1,0 +1,302 @@
+/* in another location the same btn  */
+.interaction_btns .ask_support_container {
+  z-index: 1;
+}
+
+.interaction_btns .asking_support {
+  margin-top: 3px;
+}
+
+
+
+.interaction_btns .ask_support_bg {
+  position: fixed;
+  /* margin: auto; */
+  /* margin-left: 240px; */
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.779);
+  padding: 20px;
+
+  display: flex;
+}
+
+.interaction_btns .close_ask_support {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  min-width: 35px;
+  height: 35px;
+  /* border: 1px solid gray; */
+  border-radius: 50%;
+  background-color: rgb(252, 243, 255);
+  color: rgb(160, 160, 160);
+  cursor: pointer;
+}
+
+
+.interaction_btns .ask_support_subcontainer {
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+  width: 500px;
+
+  height: 70%;
+  overflow: scroll;
+  background-color: rgb(160, 110, 248);
+  /* border: 1px solid red; */
+  border-radius: 12px;
+  padding: 20px;
+}
+
+
+/* normal part starts now :) */
+
+.ask_support_bg {
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  /* background-color: rgba(255, 255, 255, 0.331); */
+  z-index: 10;
+  display: flex;
+}
+
+
+.ask_support_subcontainer {
+  position: relative;
+  margin: auto;
+  margin-top: 0px;
+  width: 500px;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgb(160, 110, 248);
+  /* border: 1px solid red; */
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.close_ask_support {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  min-width: 35px;
+  height: 35px;
+  /* border: 1px solid gray; */
+  border-radius: 50%;
+  background-color: rgb(252, 243, 255);
+  color: rgb(160, 160, 160);
+}
+
+.close_ask_support:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(227, 144, 255);
+}
+
+.ask_support {
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 12px;
+  height: 100%;
+
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.ask_support h2 {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: "Silom";
+  font-weight: 300;
+  color: rgb(254, 254, 254);
+}
+
+.ask_support .item {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  /* text-align: center; */
+
+  padding: 5px 10px;
+  background-color: white;
+  border-radius: 5px;
+  color: rgb(86, 0, 167);
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.ask_support .item p {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(86, 0, 167);
+}
+
+.ask_support .item span {
+  font-weight: 600;
+  font-size: 16px;
+  color: rgb(86, 0, 167);
+}
+
+.ask_support select {
+  width: 150px;
+  color: rgb(86, 0, 167);
+  border: 1px solid rgb(229, 200, 255);
+  border-radius: 5px;
+  padding: 0px 10px;
+}
+
+.ask_support .or {
+  color: rgb(86, 0, 167);
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.ask_support textarea {
+  width: 100%;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.ask_support textarea::placeholder {
+
+  font-size: 18px;
+  padding-top: 20px;
+  color: rgb(189, 166, 211);
+}
+
+
+.ask_support .send_btn {
+  margin-bottom: 20px;
+  min-width: 120px;
+  width: 120px;
+  height: 40px;
+
+  border-radius: 7px;
+  background-color: rgb(114, 2, 220);
+}
+
+.ask_support .send_btn:hover {
+  background-color: rgb(65, 0, 125);
+}
+
+
+.ask_support .error,
+.ask_support .goodNews {
+  padding: 10px;
+  background-color: rgb(46, 146, 0);
+  border-radius: 7px;
+  width: 100%;
+  display: flex;
+}
+
+.ask_support .error {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(255, 3, 3);
+}
+
+.ask_support .error>div,
+.ask_support .goodNews>div {
+  margin: auto;
+}
+
+.ask_support .error p,
+.ask_support .goodNews p {
+  color: white;
+  font-weight: 300;
+}
+
+.ask_support .error p {
+  font-size: 12px;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+
+
+
+@media only screen and (max-width: 680px) {
+
+
+  .ask_support h2 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: "Silom";
+    font-weight: 300;
+    font-size: 20px;
+    color: rgb(254, 254, 254);
+  }
+
+  .ask_support .item {
+    flex-direction: column;
+  }
+
+  .ask_support select {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .interaction_btns .ask_support_subcontainer {
+    width: 100%;
+    margin-top: 10px;
+    height: calc(100% - 80px);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+
+
+  .ask_support_bg {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .ask_support_subcontainer {
+    margin: auto;
+    margin-top: 50px;
+    height: calc(100% - 120px);
+  }
+
+  .close_ask_support {
+    top: 5px;
+    left: 5px;
+
+  }
+
+  .ask_support_subcontainer {
+    padding: 10px;
+  }
+
+  .ask_support {
+    padding: 10px;
+  }
+
+  .ask_support h2 {
+    font-size: 14px;
+  }
+
+  .ask_support .item p,
+  .ask_support .item span {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .ask_support .item span {
+    color: brown;
+  }
+}

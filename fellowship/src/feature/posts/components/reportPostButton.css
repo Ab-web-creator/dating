@@ -1,0 +1,218 @@
+.rep_btn_container .flag_this_post {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  border-radius: 50%;
+  color: black;
+  background-color: transparent;
+  font-size: 14px;
+  box-shadow: none;
+  min-width: 30px;
+  width: 30px;
+  height: 30px;
+  padding: 9px;
+
+  cursor: pointer;
+}
+
+.rep_btn_container .flag_this_post img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+
+.rep_btn_container .flag_this_post:hover {
+  background-color: rgb(255, 211, 211);
+}
+
+.rep_btn_container .flag_this_post:hover img {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+
+
+
+.close_report_post {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  min-width: 35px;
+  height: 35px;
+  /* border: 1px solid gray; */
+  border-radius: 50%;
+  background-color: rgb(252, 243, 255);
+  color: rgb(160, 160, 160);
+}
+
+.close_report_post:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(227, 144, 255);
+}
+
+.report_post_container {
+  position: fixed;
+  /* top: 50px; */
+  left: 0px;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+
+
+  background-color: rgba(0, 0, 0, 0.774);
+  z-index: 10;
+  display: flex;
+}
+
+.report_post {
+  position: relative;
+  margin: auto;
+  margin-top: 10px;
+  /* border: 1px solid rgb(238, 238, 238); */
+  border-radius: 12px;
+  min-height: 50%;
+  /* height: fit-content; */
+  max-height: 80%;
+  padding: 20px;
+  width: 510px;
+  background-color: rgb(160, 110, 248);
+  overflow-y: scroll;
+}
+
+.report_post h2 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Silom";
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(254, 254, 254);
+}
+
+.report_post h2 span {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(254, 254, 254);
+}
+
+.report_post .item {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  /* text-align: center; */
+
+  padding: 5px 10px;
+  background-color: white;
+  border-radius: 5px;
+  color: rgb(86, 0, 167);
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.report_post .item>* {
+  margin: auto;
+}
+
+.report_post .item p {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(86, 0, 167);
+}
+
+.report_post .item span {
+  font-weight: 600;
+  font-size: 16px;
+  color: rgb(86, 0, 167);
+}
+
+.report_post .item button {
+  background-color: blueviolet;
+}
+
+.report_post .item .cancel {
+  color: red;
+  background-color: rgb(255, 170, 0);
+}
+
+.report_post textarea {
+  width: 100%;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.report_post textarea::placeholder {
+
+  font-size: 18px;
+  padding-top: 20px;
+  color: rgb(173, 157, 187);
+}
+
+
+.report_post .send_btn {
+  min-width: 120px;
+  width: 120px;
+  height: 40px;
+  border-radius: 7px;
+  background-color: rgb(114, 2, 220);
+}
+
+.report_post .send_btn:hover {
+  background-color: rgb(65, 0, 125);
+}
+
+
+.report_post .error,
+.report_post .goodNews {
+  padding: 10px;
+  background-color: rgb(46, 146, 0);
+  border-radius: 7px;
+  width: 100%;
+  display: flex;
+}
+
+.report_post .error {
+  margin: auto;
+  padding: 10px;
+  background-color: rgb(255, 3, 3);
+}
+
+.report_post .error>div,
+.report_post .goodNews>div {
+  margin: auto;
+}
+
+.report_post .error p,
+.report_post .goodNews p {
+  color: white;
+  font-weight: 300;
+}
+
+.report_post .error p {
+  font-size: 12px;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+
+
+
+@media only screen and (max-width: 680px) {
+
+  .report_post h2 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: "Silom";
+    font-weight: 300;
+    color: rgb(254, 254, 254);
+  }
+
+
+
+}

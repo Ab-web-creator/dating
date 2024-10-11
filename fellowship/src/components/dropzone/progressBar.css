@@ -1,0 +1,36 @@
+.progress-bar-container {
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+  height: 50px;
+  width: 100%;
+  z-index: 10;
+}
+
+.progress-bar-subcontainer {
+  margin: 0px 20px;
+}
+
+.progress-bar-subcontainer h4 {
+  font-weight: 500;
+  color: rgb(128, 128, 0);
+}
+
+.progress-bar-subcontainer p {
+  font-weight: 300;
+  margin-bottom: 10px;
+  color: green;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #e3e3e3;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-indicator {
+  height: 100%;
+  background-color: rgb(165, 157, 0);
+  transition: width 0.5s ease;
+}

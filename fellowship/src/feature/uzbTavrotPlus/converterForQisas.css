@@ -1,0 +1,81 @@
+.qisas_converter {
+  width: 100%;
+}
+
+.qisas_converter .separate_into_two_columns {
+  width: 100%;
+  display: flex;
+  flex-direction: column !important;
+}
+
+.qisas_converter header {
+  /* background-color: red; */
+  width: 100%;
+  height: 46px;
+  max-height: 46px;
+  padding: 10px;
+  border-bottom: 1px solid rgb(235, 235, 235);
+
+  display: flex;
+}
+
+.qisas_converter header h2 span,
+.qisas_converter header h2 {
+  /* padding-top: 0px; */
+  font-size: 18px;
+  color: green;
+  font-family: 'Oswald-Regular', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.qisas_converter header h2 span {
+  color: rgb(141, 148, 0);
+}
+
+.qisas_converter header>div {
+  margin: auto;
+}
+
+.qisas_converter .sep_part1 {
+  margin-top: 20px;
+}
+
+
+.container_for_textarea {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.qisas_converter textarea {
+  width: 100%;
+  padding: 20px;
+}
+
+.qisas_converter textarea::placeholder {
+  padding: 20px;
+}
+
+.qisas_converter .convert_btn {
+  margin: auto;
+  margin-right: 0px;
+  min-width: 80px;
+  width: 80px;
+  background-color: blueviolet;
+}
+
+.qisas_converter main {
+  margin: 20px 0px;
+  width: 100%;
+}
+
+.qisas_converter .output_result {
+  margin: 20px 0px;
+  padding: 20px;
+  height: 300px;
+  overflow: scroll;
+  border: 1px solid rebeccapurple;
+}

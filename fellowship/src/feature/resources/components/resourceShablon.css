@@ -1,0 +1,141 @@
+.resources .for_thumbnails {
+  margin: auto;
+  margin-top: 20px;
+  border: 1px solid rgb(234, 234, 234);
+  padding: 20px;
+  width: calc(100% - 40px);
+  min-height: fit-content;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookThumb_container {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bookThumb_container .thumb {
+  position: relative;
+  margin: auto;
+
+  width: 168px;
+  height: 244px;
+
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgba(215, 215, 215, 0.731);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bookThumb_container .thumb img {
+  width: 100%;
+  height: 100%;
+}
+
+.bookThumb_container article {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 0%;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.bookThumb_container .thumb:hover article {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 120, 32);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.7s ease-in-out;
+
+  background-color: rgb(111, 107, 0);
+  height: 100%;
+  overflow: scroll;
+}
+
+.bookThumb_container .thumb .descr-contain {
+  border: 1px solid rgba(2, 133, 2, 0);
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
+}
+
+.bookThumb_container .thumb:hover .descr-contain {
+  border: 1px solid rgb(129, 255, 129);
+  transition: all 0.5s ease-in-out;
+  transition-delay: 0.5s;
+}
+
+
+
+.bookThumb_container .thumb .descr-contain p {
+  margin-top: 33px;
+  font-size: 10px;
+  opacity: 0;
+  /* transition: all 0.4s ease-in-out;
+  transition-delay: 0.4s; */
+}
+
+.bookThumb_container .thumb:hover .descr-contain p {
+  margin-top: 0px;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.7s;
+}
+
+.bookThumb_container .thumb:hover .descr-contain p {
+  color: black;
+  opacity: 1;
+  transition: all 0.8s ease-in-out;
+  transition-delay: 0.4s;
+}
+
+.bookThumb_container article .descr-contain {
+  margin: 8px;
+  border: 1px solid rgb(218, 255, 218);
+  padding: 5px;
+  height: calc(100% - 16px);
+
+  display: flex;
+}
+
+.bookThumb_container article .descr {
+  margin: auto;
+  height: 100%;
+
+  overflow-y: scroll;
+}
+
+.bookThumb_container article .descr p {
+  color: white !important;
+}
+
+
+@media only screen and (max-width: 970px) {
+  .bookThumb_container .thumb {
+    width: 130px;
+    height: 180px;
+  }
+}
+
+@media only screen and (max-width: 433px) {
+  .resources .for_thumbnails {
+    margin: auto;
+    margin-top: 20px;
+    border: none;
+    padding: 0px;
+    width: calc(100% - 40px) !important;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)) !important;
+    gap: 40px;
+  }
+
+  .bookThumb_container .thumb {
+    width: 100px;
+    height: 140px;
+  }
+}

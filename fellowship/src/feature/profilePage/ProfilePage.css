@@ -1,0 +1,240 @@
+.my_profile_page .back_arrow {
+  margin: auto;
+  margin-top: 4px;
+  border-radius: 50%;
+  padding: 1px 3px;
+  background-color: #ebf5ff;
+  cursor: pointer;
+}
+
+.my_profile_page .back_arrow:hover {
+  background-color: #abd3fd;
+}
+
+.my_profile_page .round_image_container {
+  z-index: 0;
+}
+
+.profile_details_outer {
+  position: absolute;
+  bottom: -55px;
+  right: 15px;
+  background-color: rgb(240, 240, 240);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.profile_details_outer:hover {
+  background-color: #efefef;
+  transition: all 0.4s ease-in-out;
+}
+
+.profile_details_outer:hover h4 {
+  color: rgb(0, 142, 33);
+  transition: all 0.4s ease-in-out;
+}
+
+.profile_details_outer h4 {
+  color: rgb(45, 45, 45);
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
+
+
+.my_profile_page .my_identiteit {
+  border-bottom: none;
+  padding: 0px 15px;
+  max-height: fit-content;
+  margin-bottom: 10px;
+  /* animation: increaseOpacity 6s ease forwards; */
+}
+
+.my_profile_page .biography_div {
+
+  margin-top: 20px;
+
+  height: fit-content;
+  display: flex;
+
+}
+
+.my_profile_page .allposts_from_backend {
+  height: 100%;
+}
+
+.my_profile_page .posts_sorted {
+  font-size: 14px;
+  font-weight: 450;
+  background-color: rgb(255, 255, 255);
+  color: rgb(191, 191, 191);
+  /* background-color: #fdfaab; */
+  /* border: 1px solid rgb(237, 237, 237); */
+  /* border-top: none; */
+  z-index: 10000;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.my_profile_page .posts_sorted>div {
+  display: inline-block;
+  position: relative;
+  /* border: 1px solid rgb(237, 237, 237); */
+
+  padding: 15px 10px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.my_profile_page .posts_sorted>div:hover {
+  background-color: #e8e8e8;
+  transition: all 0.4s ease-in-out;
+}
+
+.my_profile_page .posts_sorted>div.active {
+  color: #242424;
+  transition: all 0.4s ease-in-out;
+  font-weight: 500;
+}
+
+.my_profile_page .posts_sorted>div:hover>* {
+  color: rgb(0, 0, 0);
+  transition: all 0.4s ease-in-out;
+}
+
+.my_profile_page .posts_sorted>div.active::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18%;
+  /* Adjust this value to control the distance between the text and the underline */
+  padding: 0px 10px;
+  border-radius: 20px;
+  height: 4px;
+  /* Set the thickness of the underline */
+  background-color: green;
+
+}
+
+.my_profile_page .search_name {
+  color: green;
+}
+
+.interaction_btns {
+  overflow: hidden;
+  display: flex;
+  gap: 7px;
+}
+
+.interaction_btns:hover {
+  background-color: white;
+}
+
+.interaction_btns button {
+  min-width: 35px;
+  /* width: 60px !important; */
+  background-color: transparent;
+  /* background-color: rgb(243, 192, 255); */
+  border-radius: 20px;
+}
+
+.other_user_connections {
+  background-color: rgb(237, 237, 237);
+  border-radius: 7px;
+  display: flex;
+  gap: 1px;
+}
+
+.other_user_connections:hover {
+  background-color: white;
+}
+
+.my_profile_page .send_email {
+  margin: 0px;
+  padding-left: 10px;
+  font-size: 12px;
+  background-color: transparent;
+  color: rgb(146, 146, 146);
+  border-radius: 10px;
+
+}
+.my_profile_page .send_email:hover {
+  box-shadow: none;
+  background-color: rgb(237, 237, 237);
+  color: rgb(98, 98, 98);
+  font-weight: 500;
+}
+
+.interaction_btns button:hover {
+  box-shadow: none;
+  background-color: rgb(237, 237, 237);
+}
+
+.interaction_btns img {
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+}
+
+.interaction_btns .new_message img {
+  margin-top: 4px;
+  width: 25px;
+  height: 25px;
+}
+
+
+/* this is just a button  */
+/* 
+.close_post_success_container {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.close_post_success_container>button {
+  background-color: transparent;
+  color: rgb(245, 0, 0);
+}
+
+
+
+.my_profile_page .success-popup {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+
+  z-index: 4;
+  display: flex;
+}
+
+.my_profile_page .success-popup>div {
+  margin: auto;
+  background-color: red;
+  color: white;
+  font-size: 22px;
+  width: 50%;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.my_profile_page .success-popup h3 {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.my_profile_page .success-popup h4,
+.my_profile_page .success-popup h5 {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.my_profile_page .success-popup h5 {
+  margin-bottom: 0px;
+} */

@@ -1,0 +1,584 @@
+.actual-posts {
+  position: relative;
+  margin-top: -1px;
+  padding: 15px;
+  padding-bottom: 40px;
+  min-width: 100%;
+  border: 1px solid rgb(235, 235, 235);
+  border-left: none;
+  border-right: none;
+  background-color: rgb(255, 255, 255);
+
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* .single_post {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+} */
+
+
+.actual-posts .bold {
+  font-size: 14px;
+  font-weight: 450;
+  color: black;
+}
+
+.actual-posts span {
+  font-size: 14px;
+  color: gray;
+}
+
+.actual-posts .searchName {
+  color: rgb(66, 170, 50);
+}
+
+.actual-posts:hover {
+  background-color: rgb(242, 242, 242);
+}
+
+.actual-posts .inside_post {
+  width: 100%;
+}
+
+.actual-posts header {
+  display: flex;
+}
+
+.remove_nowrap {
+  white-space: wrap;
+}
+
+.time_date {
+  color: rgb(181, 181, 181);
+}
+
+.actual-posts .my_user_ism {
+  margin: auto;
+  margin-left: 0px;
+  width: 100%;
+  max-width: 100%;
+  /* padding-right: 10px; */
+  overflow: hidden;
+  font-size: 14px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.actual-posts .flag_this_post {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+
+  border-radius: 50%;
+  color: black;
+  background-color: transparent;
+
+  font-size: 14px;
+  box-shadow: none;
+  min-width: 30px;
+  width: 30px;
+  height: 30px;
+  padding: 9px;
+}
+
+.actual-posts .flag_this_post:hover {
+  background-color: rgb(255, 214, 214);
+}
+
+.actual-posts .flag_this_post img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+
+.actual-posts .flag_this_post:hover img {
+  opacity: 1;
+}
+
+.actual-posts .erase_this_post {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 50%;
+  color: black;
+  background-color: transparent;
+  box-shadow: none;
+  padding: 5px;
+  min-width: 27px;
+  width: 27px !important;
+  height: 27px !important;
+}
+
+.both_contents {
+  display: flex;
+  gap: 10px;
+}
+
+.actual-posts .erase_this_post img {
+  min-width: 15px !important;
+  width: 100% !important;
+  height: 100% !important;
+  opacity: 0.3;
+}
+
+.actual-posts .erase_this_post:hover {
+  background-color: rgb(255, 211, 211);
+  transition: all 0.6s ease-in-out;
+}
+
+.actual-posts .erase_this_post:hover img {
+  opacity: 1;
+  transition: all 0.6s ease-in-out;
+}
+
+.additional_class {
+  background-color: rgb(243, 243, 243);
+  border-radius: 7px;
+  min-width: 490px !important;
+  max-width: 490px !important;
+}
+
+.actual-posts:hover .additional_class {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.additional_class .profile_img_container_small {
+  margin-top: 10px;
+  margin-left: 10px;
+  min-width: 20px;
+  width: 20px;
+  height: 20px;
+  border: none;
+}
+
+.additional_class .flex_it {
+  margin-top: 12px;
+  width: fit-content;
+}
+
+.additional_class .remove_nowrap {
+  margin-bottom: 15px;
+  padding-right: 7px;
+}
+
+
+.actual-posts .flex_it {
+  margin-bottom: 5px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.actual-posts .right_part .additional_class .flex_it {
+  margin: 0px;
+}
+
+
+
+.actual-posts .flex_it>div {
+  margin: unset;
+  margin-left: 0px;
+  width: fit-content;
+}
+
+.right_part {
+  width: 90%;
+  min-height: 0px;
+}
+
+.actual-posts .post_content {
+  padding-top: 2px;
+  padding-right: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+
+.actual-posts .attach_img {
+  margin-bottom: 0px;
+}
+
+.additional_class .attach_img {
+  margin-bottom: 5px;
+}
+
+.actual-posts .attach_img img {
+  margin-top: 7px;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+.actual-posts .original_post_removed {
+  margin: auto;
+  padding: 7px;
+  padding-top: 0px;
+  padding-left: 12px;
+  color: rgb(148, 148, 148);
+  display: flex;
+  gap: 10px;
+}
+
+.actual-posts .original_post_removed span {
+  color: black;
+}
+
+.actual-posts .original_post_removed .image_container {
+  margin-top: 4px;
+  min-width: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.actual-posts .original_post_removed .image_container img {
+  min-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.actual-posts .network_icons {
+  position: absolute;
+  bottom: 0px;
+  right: -5px;
+  max-width: 520px;
+  min-width: 520px;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 1px;
+}
+
+.actual-posts .network_icons button {
+  margin: auto;
+  min-width: 55px;
+  width: 55px;
+  height: 40px;
+  background-color: transparent;
+  color: black;
+  padding: 0px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 0px;
+}
+
+.actual-posts .network_icons .reply {
+  margin-left: 0px;
+}
+
+.actual-posts .network_icons button .img_contain {
+  margin: auto;
+  min-width: 35px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.actual-posts .network_icons .reply:hover img {
+  opacity: 1;
+}
+
+.actual-posts .network_icons .reply:hover .img_contain {
+  background-color: rgb(255, 255, 255);
+}
+
+.actual-posts .network_icons .reply:hover p {
+  color: rgb(6, 118, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+.when_reposting_without_comment {
+  margin-left: 23px;
+  color: rgb(155, 192, 220);
+  display: flex;
+  gap: 7px;
+}
+
+.when_reposting_without_comment .repost_icon {
+  min-width: 20px;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.when_reposting_without_comment .repost_icon img {
+  margin: auto;
+  min-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.actual-posts .network_icons .like_button_count:hover p {
+  color: rgb(255, 0, 0);
+}
+
+.actual-posts .network_icons .like_button_count {
+  margin: auto;
+  min-width: 55px;
+  width: 55px;
+  height: 40px;
+  background-color: transparent;
+  color: black;
+  padding: 0px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 0px;
+}
+
+.actual-posts .network_icons .like_button_count .img_contain {
+  margin: auto;
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+  padding: 2px;
+}
+
+.actual-posts .network_icons .like_button_count img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.actual-posts .network_icons button:hover {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.actual-posts .network_icons .bookmark .img_contain {
+  cursor: pointer;
+  margin-right: 0px;
+}
+
+.actual-posts .network_icons .like_button_count:hover img,
+.actual-posts .network_icons .bookmark:hover img {
+  background-color: rgb(255, 255, 255);
+  box-shadow: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.actual-posts .network_icons button img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.actual-posts .network_icons button div {
+  margin: auto;
+}
+
+.actual-posts .network_icons button p {
+  font-size: 12px;
+  color: rgb(155, 155, 155);
+}
+
+
+
+
+.last_two_btns {
+  display: flex;
+  gap: 2px;
+}
+
+
+
+@media only screen and (max-width: 680px) {
+
+  .actual-posts .network_icons {
+    max-width: 380px;
+    min-width: 380px;
+  }
+
+  /* .actual-posts header {
+    max-width: 300px;
+    overflow-x: scroll;
+  } */
+
+  .post_content {
+    max-width: 350px !important;
+    overflow-x: scroll;
+  }
+
+  .reposters_content {
+    max-width: 350px !important;
+    overflow-x: scroll;
+  }
+
+  .additional_class {
+    min-width: 350px !important;
+    width: 350px !important;
+    max-width: 350px !important;
+  }
+
+  .additional_class .right_part {
+    width: 300px;
+    min-height: 0px;
+    padding: 0px 10px;
+    width: 100%;
+  }
+
+  .right_part {
+    width: calc(100% - 50px);
+  }
+
+  .actual-posts .original_post_removed {
+    margin: auto;
+    padding: 7px;
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+
+  .single_post {
+    width: 100%;
+  }
+
+  .actual-posts .my_user_ism {
+    width: 100%;
+  }
+
+  .additional_class .profile_img_container_small {
+    display: none;
+  }
+
+  .additional_class .bold {
+    color: red;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+  .actual-posts .flag_this_post {
+    top: 3px;
+    right: 3px;
+  }
+
+  .actual-posts {
+    position: relative;
+    padding-right: 0px;
+    padding-left: 7px;
+  }
+
+  .reposters_content {
+    margin-top: 3px;
+    margin-left: 0px;
+    /* padding-right: 7px !important; */
+    width: calc(100% + 0px) !important;
+    max-width: calc(100% + 0px) !important;
+  }
+
+  .actual-posts .my_user_ism {
+    display: flex;
+    gap: 2px;
+  }
+
+  .actual-posts .network_icons {
+    left: 50px;
+    max-width: calc(100% - 50px);
+    min-width: calc(100% - 50px);
+  }
+
+  .actual-posts .network_icons button {
+    min-width: 35px;
+    width: 35px;
+    height: 40px;
+  }
+
+  .actual-posts .network_icons button .img_contain {
+
+    min-width: 25px;
+    width: 25px;
+    height: 25px;
+    padding: 1px;
+  }
+
+  .actual-posts .network_icons .like_button_count .img_contain {
+    min-width: 25px;
+    width: 25px;
+    height: 25px;
+    padding: 1px;
+  }
+
+  .actual-posts .network_icons .like_button_count img,
+  .actual-posts .network_icons button img {
+    padding: 3px;
+  }
+
+  .actual-posts .network_icons .shared .img_contain {
+    margin-left: 0px;
+  }
+
+  .like-count {
+    position: absolute;
+    top: 5px !important;
+    right: -7px !important;
+  }
+
+  .additional_class .right_part,
+  .my_user_ism,
+  .additional_class {
+    min-width: 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+
+
+  .both_contents {
+    gap: 7px;
+  }
+
+  .additional_class,
+  .actual-posts .attach_img img {
+    margin-left: 0px !important;
+    min-width: calc(100% - 20px + 10px) !important;
+    width: calc(100% - 20px + 10px) !important;
+    max-width: calc(100% - 20px + 10px) !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .additional_class .right_part {
+    padding-right: 0px;
+  }
+}

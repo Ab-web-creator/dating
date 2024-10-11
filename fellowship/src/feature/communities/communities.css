@@ -1,0 +1,17 @@
+.communities .sep_part1 {
+  padding-right: 20px;
+}
+
+.communities .airoport {
+  min-width: 980px;
+  width: 100% !important;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1250px) {
+  .communities .airoport {
+    min-width: 1012px;
+  }
+}

@@ -1,0 +1,589 @@
+ 
+.create_event_div > p {
+  font-size: 12px;
+}
+
+.event_open_button {
+  min-width: 20px;
+  height: 31px;
+  padding: 4px 15px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 7px;
+  border: 1px solid rgb(133, 178, 133);
+  color: green;
+  background-color: rgb(242, 255, 239);
+}
+
+.event_open_button:hover {
+  border: 1px solid rgb(0, 134, 0) ;
+  background-color: rgb(0, 134, 0) !important;
+  color: rgb(255, 255, 255);
+}
+
+.event_create_container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.73);
+  z-index: 2;
+
+  display: flex;
+  animation: blossom 0.3s ease-in-out forwards;
+}
+
+@keyframes blossom {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.close_event_create {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  min-width: 30px;
+  min-height: 30px;
+  padding: 4px;
+  background-color: #c43cff24;
+  border: 1px solid #eedbff;
+  background-color: #f7eeff;
+  color: #51009c;
+  border-radius: 50%;
+}
+
+.event_create .for_error {
+  height: 20px;
+  margin-bottom: 10px;
+  /* background-color: #894dc1; */
+}
+
+.close_event_create:hover {
+  color: white;
+  background-color: #c43cff;
+}
+
+.event_create {
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px;
+  padding-right: 35px;
+  height: 530px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px;
+}
+
+.event_create .two_column_contain::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+
+.event_create .two_column_contain {
+  margin: auto;
+  /* margin-top: 5px; */
+  /* padding: 10px; */
+  width: 100%;
+  height: 450px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  gap: 0px;
+}
+
+
+
+.event_create .webinar_form {
+  /* background-color: aqua; */
+  border: 1px solid rgb(238, 204, 255);
+  border-right-color: transparent;
+  border-right: none;
+  padding: 15px;
+  border-radius: 12px 0 0 12px;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+
+.event_create h2 {
+  text-align: center;
+  font-family: "Oswald-SemiBold";
+  font-size: 22px;
+  color: rgb(177, 177, 177);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.event_create h2 span {
+  text-align: center;
+  font-family: "Oswald-Regular";
+  font-size: 22px;
+
+  margin-bottom: 20px;
+  text-transform: uppercase;
+
+  margin-bottom: 40px;
+  color: #a0ab00;
+}
+
+.event_create .webinar_form label {
+  margin-right: 10px;
+}
+
+.event_create .mandatory {
+  display: inline-block;
+  margin-top: -10px;
+  color: red;
+
+}
+
+.event_create .webinar_form input {
+  margin: 10px 0px;
+  width: 100%;
+
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(137, 137, 137);
+  padding: 0px 15px;
+  font-size: 16px;
+  /* color: rgb(108, 108, 108); */
+}
+
+.event_create select {
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(137, 137, 137);
+  color: #bdbdbd;
+  font-size: 16px;
+
+}
+
+.event_create .webinar_form input::placeholder {
+  color: rgb(108, 108, 108);
+  text-align: left;
+}
+
+.event_create .enter_the_date {
+  display: none;
+}
+
+.event_create input[type='date'] {
+  color: rgb(0, 87, 22);
+}
+
+.event_create .container_of_two {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.event_create .container_of_two>div {
+  margin-left: 0px;
+  max-width: 200px;
+  min-width: 200px;
+  /* background-color: red !important; */
+}
+
+
+.event_create .container_of_two select {
+  width: 100%;
+  padding-left: 7px;
+}
+
+
+.event_create .container_of_two p {
+  margin-bottom: 10px;
+}
+
+.event_create .webinar_form .submit_btn {
+  /* margin-top: 10px; */
+  margin-left: 0px;
+  margin-right: auto;
+
+  width: 140px;
+  height: 40px;
+  border-radius: 7px;
+  border: 1px solid #894dc1;
+  background-color: #f7eeff;
+  color: #51009c;
+  cursor: pointer;
+}
+
+.event_create .webinar_form .submit_btn:hover {
+  background-color: #894dc1;
+  color: white;
+}
+
+.event_create .error-message {
+  color: red;
+  /* text-align: center; */
+}
+
+.event_create aside {
+  margin: auto;
+  margin-top: 0px;
+  margin-right: 0px;
+  padding: 20px;
+  /* background-color: rgb(254, 206, 247); */
+  border: 1px solid rgb(238, 204, 255);
+  border-radius: 0 12px 12px 0;
+  border-left-color: transparent;
+  border-left: none;
+
+  flex-grow: 0;
+  width: 320px;
+  /* width: fit-content; */
+  min-height: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.event_create .warning {
+  color: rgb(159, 0, 167);
+  font-size: 14px;
+}
+
+.event_create .warning span {
+  color: red;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.event_create aside .heading h4 {
+  /* text-align: center; */
+  font-weight: 550;
+  color: rgb(58, 58, 58);
+}
+
+.event_create .appearance {
+  position: relative;
+  margin: auto;
+  width: 260px;
+  width: 100%;
+  min-height: 280px;
+  /* max-height: 280px; */
+  border-radius: 7px;
+  background-color: rgb(216, 219, 255);
+}
+
+
+.event_create .appearance header {
+  padding: 10px;
+  border-radius: 7px 7px 0 0;
+
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(182, 178, 255);
+}
+
+
+
+.event_create .event_info {
+  min-height: 160px;
+  /* height: 350px; */
+  padding-top: 10px;
+}
+
+.event_create .event_info>* {
+  padding: 10px;
+
+}
+
+.event_create .event_info h4 {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.event_create .annotatie {
+  min-width: 220px;
+  min-height: 110px;
+}
+
+.event_create .annotatie p {
+  font-size: 14px;
+}
+
+
+
+/* Define styles for other color options as well */
+
+.event_create .blackText {
+  color: black !important;
+}
+
+.event_create .redText {
+  color: red !important;
+}
+
+.event_create .blueText {
+  color: blue !important;
+}
+
+.event_create .greenText {
+  color: green !important;
+}
+
+.event_create .purpleText {
+  color: rgb(96, 0, 128) !important;
+}
+
+.event_create .goldText {
+  color: rgb(154, 130, 0) !important;
+}
+
+.event_create .pinkText {
+  color: rgb(154, 0, 151) !important;
+}
+
+
+
+
+
+/* btns  */
+
+.event_create .more_info_btn {
+  margin: 10px;
+  background-color: rgb(137, 44, 245);
+}
+
+.event_create .more_info_btn:hover {
+  background-color: rgb(90, 6, 187);
+}
+
+.event_create .report_div,
+.event_create .share_div {
+  position: relative;
+  padding: 10px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event_create .report_div:hover,
+.event_create .share_div:hover {
+  background-color: #e3e3e3;
+}
+
+.event_create .report_div img,
+.event_create .share_div img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.event_create .report_div {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.event_create .share_div {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+
+.event_create .pick_color label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 888px) {
+
+  .event_create {
+    min-width: 570px;
+    width: 570px;
+    max-width: 570px;
+  }
+
+  .event_create .two_column_contain {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .event_create .topbar {
+    justify-content: left;
+  }
+
+  .event_create .webinar_form {
+    border: none;
+    margin-bottom: 30px;
+  }
+
+  .event_create h2 {
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #00901d;
+    font-family: "Oswald-Regular";
+  }
+
+  .event_create h2 span {
+    text-align: center;
+    font-family: "Oswald-Regular";
+    font-size: 22px;
+
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+    margin-bottom: 40px;
+    color: #a0ab00;
+  }
+
+  .event_create aside {
+    width: 100%;
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 614px) {
+  .event_create {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .event_create aside {
+    padding: 0;
+    /* border: none; */
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .event_create {
+    margin-top: 0px;
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .event_create {
+    padding-bottom: 30px;
+    height: 430px;
+  }
+
+
+  .event_create .container_of_two {
+    margin: 30px 0px;
+    flex-direction: column;
+    justify-content: unset;
+    gap: 0px;
+  }
+
+  .event_create .event_date_container {
+    display: flex;
+    gap: 15px;
+  }
+
+  .event_create .even_date {
+    display: none;
+  }
+
+  .event_create .enter_the_date {
+    width: fit-content;
+    white-space: nowrap;
+  }
+
+  .event_create .date_of_event_div {
+    width: calc(100% - 30px);
+  }
+
+  .event_create #date_of_event {
+    margin-top: 0px;
+    min-width: 100%;
+    width: 100%;
+  }
+
+  #date_of_event::-webkit-datetime-edit-text {
+    color: rgb(89, 0, 0);
+    /* Adjust color as needed */
+  }
+
+  .event_create .enter_the_date {
+    display: block;
+    margin-bottom: 0px !important;
+    font-size: 16px;
+  }
+
+  .event_create h2 {
+    margin-bottom: 0px;
+  }
+
+  .event_create .container_of_two>div {
+    margin-left: 0px;
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .event_create .topic_describing {
+    margin-bottom: 0px;
+  }
+
+  .event_create .event_describing {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .event_date_container {
+    flex-direction: column;
+  }
+
+}
+
+/* @media only screen and (max-width: 560px) {
+
+  .event_create .container_of_two {
+    gap: 0px;
+  }
+
+  .event_create .container_of_two>div {
+    margin-left: 0px;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .event_create .webinar_form .submit_btn {
+    margin-top: 25px;
+  }
+
+  .event_create .date_of_event {
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .event_create {
+    min-width: 100%;
+    padding: 15px;
+  }
+} */

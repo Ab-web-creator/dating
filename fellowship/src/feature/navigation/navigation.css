@@ -1,0 +1,467 @@
+ .side_navigation {
+   position: relative;
+   min-width: 240px;
+   width: 240px;
+   max-width: 240px;
+   padding-left: 30px;
+   border-left: 1px solid rgb(230, 230, 230);
+ }
+
+ .side_navigation .handleSideMenu {
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   width: 120px;
+   height: 50px;
+   /* background-color: red; */
+   display: none;
+ }
+
+ .side_navigation .application_logo {
+   position: fixed;
+   margin-left: -30px;
+   padding-left: 27px;
+   /* left: 0px; */
+   min-height: 47px;
+   height: 47px;
+   max-height: 47px;
+   width: 240px;
+
+   /* border-bottom: 1px solid rgb(238, 238, 238); */
+   border-radius: 0px !important;
+   /* background-color: rgb(113, 83, 83); */
+   display: flex;
+   align-items: center;
+   gap: 15px;
+ }
+
+ .application_logo img {
+   margin-top: 2px !important;
+   width: 33px;
+   height: 25px;
+   object-fit: cover;
+ }
+
+ .application_logo p,
+ .application_logo p span {
+   color: rgb(0, 129, 28);
+   font-family: 'Oswald-Regular', sans-serif;
+   font-weight: 500;
+   font-size: 18px;
+   white-space: nowrap;
+ }
+
+ .application_logo p span {
+   color: rgb(141, 148, 0);
+ }
+
+ .side_navigation .subnav {
+   position: fixed;
+   top: 60px;
+   font-size: 16px;
+   color: black;
+   height: calc(100vh - 60px);
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 20px;
+ }
+
+ .side_navigation .nav-icons>* {
+   margin-left: -20px;
+   padding: 12px 20px;
+   padding-right: 26px;
+   width: fit-content;
+   border-radius: 22px;
+   transition: all 0.4s ease-in-out;
+ }
+
+ .side_navigation .nav-icons a {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+ }
+
+ .side_navigation .nav-icons a.active {
+   font-weight: 900;
+ }
+
+ .side_navigation .nav-icons p {
+   font-size: 18px;
+ }
+
+ .side_navigation .nav-icons>*:hover {
+   background-color: rgb(242, 242, 242);
+ }
+
+ .side_navigation .nav-icons img {
+ 
+   width: 20px;
+   height: 20px;
+ }
+
+ .side_navigation .my_user_ism {
+   position: relative;
+   margin-bottom: 15px;
+   margin-left: -20px;
+   padding: 17px;
+   border-radius: 30px;
+   cursor: pointer;
+   transition: all 0.4s ease-in-out;
+
+   display: flex;
+   flex-direction: column;
+   gap: 14px;
+ }
+
+ .side_navigation .my_user_ism:hover {
+   background-color: rgb(242, 242, 242);
+ }
+
+ .side_navigation .my_user_ism:hover .popup_logout {
+   background-color: rgb(217, 217, 217);
+ }
+
+ .side_navigation .popup_logout img {
+   display: none;
+   min-width: 30px;
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+ }
+
+ .side_navigation .my_user_name_id {
+   margin: auto;
+   margin-left: 0px;
+ }
+
+ .side_navigation .my_user_name_id .ism_familiya {
+   color: rgb(54, 54, 54);
+   font-weight: 500;
+   padding: 2px 0px;
+   line-height: 12px;
+   font-size: 14px;
+ }
+
+ .side_navigation .my_user_name_id p {
+   color: rgb(41, 146, 25);
+   line-height: 12px;
+   font-size: 12px;
+ }
+
+ .side_navigation .popup_logout {
+   position: relative;
+   width: fit-content;
+   width: 100%;
+   padding: 3px;
+   padding-top: 15px;
+   border-radius: 20px;
+   cursor: text;
+   font-weight: 500;
+   background-color: rgb(247, 247, 247);
+   text-align: center;
+ }
+
+ .side_navigation .popup_logout:hover {
+   transition: all 0.5s ease-in-out;
+   background-color: rgb(217, 217, 217);
+   /* color: rgb(0, 85, 188); */
+ }
+
+ .side_navigation .popup_logout button {
+  
+   margin: 10px 0px;
+   min-width: 60px;
+   width: 60px;
+   height: 30px;
+   font-size: 10px;
+   font-weight: 600;
+   border: 1px solid gray;
+   border-radius: 10px;
+   background-color: transparent;
+   color: gray;
+
+ }
+
+ .side_navigation .popup_logout button:hover {
+   background-color: rgb(255, 255, 255);
+   border: none;
+   color: rgb(0, 158, 5);
+ }
+
+ .side_navigation .flex_horizontally {
+   display: flex;
+   gap: 7px;
+ }
+
+
+
+ @media only screen and (max-width: 1250px) {
+
+   .side_navigation .application_logo {
+     /* position: fixed; */
+     margin: auto;
+     margin-left: -15px;
+     padding-left: 12px;
+     width: 55px;
+     /* min-height: 48px;
+     height: 48px;
+     max-height: 48px; */
+     /* border-bottom: 1px solid rgb(238, 238, 238); */
+     border-radius: 0px !important;
+     /* background-color: rgb(113, 83, 83); */
+
+     display: flex;
+     gap: 15px;
+   }
+
+   .application_logo img {
+     margin-top: 2px !important;
+     width: 33px;
+     height: 25px;
+     object-fit: cover;
+   }
+
+   .side_navigation {
+     /* min-width: 48px; */
+     min-width: 55px;
+     width: 55px;
+     max-width: 55px;
+     padding: 15px;
+     padding-top: 0px;
+     border-left: 1px solid rgb(241, 241, 241);
+   }
+
+
+   .application_logo {
+     gap: 0px;
+   }
+
+   .nav-icons,
+   .my_user_name_id p,
+   .application_logo p,
+   .application_logo span {
+     white-space: nowrap;
+     font-size: 0.000001px !important;
+   }
+
+   .side_navigation .my_user_ism {
+     margin-left: -12px;
+     padding: 5px;
+     width: 50px;
+   }
+
+
+   .side_navigation .my_user_name_id {
+     display: none;
+   }
+
+   .side_navigation .nav-icons {
+     margin-left: 10px;
+   }
+
+   .side_navigation .nav-icons>* {
+     padding: 10px;
+     width: 45px;
+   }
+
+   .side_navigation .nav-icons img {
+    margin-left: 3px;
+  }
+
+  
+   .side_navigation .nav-icons p {
+     display: none;
+   }
+
+   .side_navigation .my_user_ism:hover .popup_logout {
+     background-color: rgb(244, 255, 192);
+   }
+
+   .side_navigation .popup_logout {
+     padding: 0px;
+     height: 40px;
+     display: flex;
+   }
+
+   .side_navigation .popup_logout #logoutID {
+     display: none;
+   }
+
+   .side_navigation .popup_logout img {
+     display: block;
+     margin: auto;
+     min-width: 30px;
+     width: 30px;
+     height: 30px;
+
+   }
+
+   .side_navigation .popup_logout button {
+     display: none;
+     position: relative;
+     top: 0px;
+     right: 0px;
+     padding: 0px;
+   }
+ }
+
+ @media only screen and (max-width: 500px) {
+
+   .side_navigation .handleSideMenu {
+     display: block;
+     background-color: rgba(255, 255, 255, 0);
+   }
+
+   .side_navigation {
+     position: absolute;
+     left: -900px;
+     background-color: rgb(250, 250, 250);
+
+     /* min-width: fit-content !important;
+     width: fit-content !important;
+     max-width: fit-content !important; */
+
+     min-width: 100%;
+     width: 100%;
+     max-width: 100%;
+     height: 100%;
+     z-index: 3;
+
+     animation-duration: 0.6s;
+     animation-timing-function: ease-in-out;
+   }
+
+   .expanded_side_menu {
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     background-color: rgb(255, 255, 255);
+
+     min-width: 100%;
+     width: 100%;
+     max-width: 100%;
+
+     height: 110%;
+     z-index: 100;
+
+   }
+
+   @keyframes slideIn {
+     from {
+       left: -900px;
+     }
+
+     to {
+       left: 0;
+     }
+   }
+
+   @keyframes slideOut {
+     from {
+       left: 0;
+     }
+
+     to {
+       left: -900px;
+     }
+   }
+
+   .side_navigation {
+     animation-name: slideOut;
+   }
+
+   .side_navigation.expanded_side_menu {
+
+     /* background: linear-gradient(114.95deg, rgba(235, 0, 255, 0.5) 0%, rgba(0, 71, 255, 0) 34.35%), linear-gradient(180deg, #004B5B 0%, #FFA7A7 100%), linear-gradient(244.35deg, #FFB26A 0%, #3676B1 50.58%, #00A3FF 100%), linear-gradient(244.35deg, #FFFFFF 0%, #004A74 49.48%, #FF0000 100%), linear-gradient(307.27deg, #1DAC92 0.37%, #2800C6 100%), radial-gradient(100% 140% at 100% 0%, #EAFF6B 0%, #006C7A 57.29%, #2200AA 100%);
+     background-blend-mode: hard-light, overlay, overlay, overlay, difference, difference, normal; */
+
+     animation-name: slideIn;
+   }
+
+   .side_navigation .nav-icons>*:hover {
+    background-color:white;
+  }
+
+   .side_navigation .subnav {
+     position: relative !important;
+     top: 0;
+     background-color: rgb(242, 242, 242);
+     min-width: calc(100% + 40px);
+     margin-top: -30px;
+     margin-left: -20px;
+     padding-top: 90px;
+     padding-left: 30px;
+     height: calc(100% + 40px);
+     justify-content: unset;
+     gap: 10px;
+   }
+
+   .nav-icons,
+   .application_logo p,
+   .application_logo span {
+     white-space: nowrap;
+     font-size: 18px !important;
+
+   }
+
+   /* .nav-icons a {
+     color: white;
+   } */
+
+   .side_navigation .my_user_name_id .ism_familiya {
+     font-size: 14px !important;
+   }
+
+   .side_navigation .my_user_name_id p {
+     font-size: 12px !important;
+   }
+
+   .side_navigation .my_user_ism {
+     margin-left: -12px;
+     padding: 10px 12px;
+     padding-right: 12px;
+     width: 210px;
+     flex-direction: row-reverse;
+     gap: 10px;
+   }
+
+   .side_navigation .my_user_ism:hover {
+    background-color: rgb(255, 255, 255);
+  }
+
+   .side_navigation .my_user_ism .flex_horizontally {
+     margin: auto;
+     margin-left: 0px;
+   }
+
+   .side_navigation .nav-icons p,
+   .side_navigation .my_user_name_id {
+     display: block;
+   }
+
+   .side_navigation .my_user_name_id {
+     margin-left: 7px;
+   }
+
+   .side_navigation .popup_logout {
+     width: fit-content;
+     padding: 5px;
+   }
+
+   .side_navigation .nav-icons>* {
+     padding: 10px;
+     width: fit-content;
+     padding: 10px 20px;
+     padding-right: 26px;
+   }
+
+   .side_navigation .application_logo {
+     position: relative !important;
+     width: 240px;
+     /* background-color: aqua; */
+     display: none;
+   }
+
+ }

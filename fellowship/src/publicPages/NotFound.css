@@ -1,0 +1,32 @@
+.notfound_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.notfound {
+  margin: auto;
+  color: gray;
+}
+
+.notfound h2,
+
+.notfound h4 {
+  text-align: center;
+  font-weight: 400;
+
+}
+
+.notfound p {
+  text-align: center;
+  font-weight: 400;
+}
+
+.notfound .thanks {
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+.notfound a {
+  color: rgb(97, 97, 220);
+}

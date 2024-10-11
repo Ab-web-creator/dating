@@ -1,0 +1,261 @@
+.topbar {
+  position: fixed;
+  top: 0px;
+  margin: auto;
+  margin-top: 0px;
+  min-height: 47px;
+  height: 47px;
+  max-height: 47px;
+  color: rgb(65, 65, 65);
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.topbar .middle_part1 {
+  margin: auto;
+  width: 571px;
+  max-width: 571px;
+  min-height: 47px;
+  height: 47px;
+  max-height: 47px;
+
+  padding: 0px 0px;
+  padding-left: 7px;
+  border-right: 1px solid rgb(238, 238, 238);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.topbar .middle_part1_subcontainer {
+  margin: auto;
+  margin-left: 0px;
+}
+
+.topbar .profile_img_container_small {
+  margin-left: 0px;
+}
+
+.topbar .middle_part2 {
+  padding-left: 40px;
+  padding-right: 20px;
+  min-width: 438px;
+  width: 438px;
+  max-width: 438px;
+  height: 46px;
+  border-right: 1px solid rgb(238, 238, 238);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.topbar .middle_part2_message {
+  min-width: 550px;
+}
+
+.topbar .middle_part1_message h1,
+.topbar .middle_part1_message h1 span,
+.topbar .middle_part1 h1,
+.topbar .middle_part1 h1 span {
+  font-size: 18px;
+  color: green;
+  font-family: 'Oswald-Regular', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.topbar .middle_part1_message h1 span,
+.topbar .middle_part1 h1 span {
+  color: rgb(141, 148, 0);
+}
+
+.topbar_btn_container {
+  margin: auto;
+  margin-right: 0px;
+  display: flex;
+  gap: 10px;
+}
+
+.topbar_btn_container .add-someone:hover {
+  background-color: rgb(77, 255, 77);
+  color: rgb(78, 72, 0);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.close_invitation {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  min-width: 30px;
+  min-height: 30px;
+  background-color: #c43cff24;
+  border-radius: 50%;
+}
+
+.close_invitation:hover {
+  background-color: #c43cff;
+}
+
+.topbar .sidebar_search {
+  margin-left: 0px;
+  width: 100%;
+}
+
+.topbar .sidebar_search form {
+  min-width: 250px;
+  width: 100%;
+}
+
+.topbar .post-btn {
+  font-size: 12px;
+  margin: auto;
+  border-radius: 7px;
+  background-color: #00c40d;
+  min-width: 70px;
+  height: 28.5px;
+  color: white;
+  margin-left: 15px;
+  margin-right: 0px;
+  padding: 2px 0px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  /* z-index: 1; */
+}
+
+@media only screen and (max-width: 1250px) {
+  .topbar .middle_part2 {
+    min-width: 440px;
+    width: 440px;
+    max-width: 440px;
+    border-right: none;
+    padding-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .topbar {
+    margin-top: 0px;
+  }
+
+  .topbar .middle_part1 {
+    margin-left: 0px;
+  }
+
+  .topbar .middle_part2 {
+    min-width: 300px;
+    width: 300px;
+    max-width: 300px;
+    border-right: none;
+    padding-left: 20px;
+  }
+
+  .topbar .sidebar_search {
+    margin-left: 0px;
+  }
+
+  .topbar .sidebar_search form {
+    min-width: 130px;
+  }
+
+  /* not topbar  */
+  .separate_into_two_columns {
+    min-width: fit-content;
+    width: fit-content;
+    max-width: 870px;
+  }
+
+  .right_column_contain {
+    max-width: 300px;
+    padding-left: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 970px) {
+  .topbar {
+    margin-top: 0px;
+    min-width: 570px;
+    width: 570px;
+    max-width: 570px;
+    border-right: none;
+  }
+
+  .topbar .middle_part1 {
+    border-right: none;
+  }
+
+
+  .topbar .middle_part2 {
+    min-width: fit-content;
+    width: fit-content;
+    max-width: fit-content;
+    padding-left: 0px;
+    padding-right: 10px;
+
+    display: none;
+  }
+
+  /* .topbar .sidebar_search {
+    display: none;
+  } */
+
+  .separate_into_two_columns aside {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .temp-notes-popup.open {
+    width: 434px;
+  }
+
+  .topbar {
+    margin-top: 0px;
+    min-width: 428px;
+    width: 428px;
+    max-width: 428px;
+  }
+
+  .topbar .middle_part1 {
+    min-width: fit-content;
+    width: 100%;
+    max-width: 100%;
+    border-right: none;
+    padding-right: 5px;
+  }
+
+  .separate_into_two_columns {
+    min-width: fit-content;
+    width: fit-content;
+    max-width: 500px;
+  }
+
+  .network_icons_topbar {
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .topbar {
+    min-width: 360px;
+    width: 360px;
+    max-width: 360px;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .topbar .middle_part1 {
+    padding-left: 3px;
+  }
+ 
+  .separate_into_two_columns {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+}

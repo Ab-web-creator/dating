@@ -1,0 +1,36 @@
+.like-count .red {
+  color: red;
+  transition: color 0.3s ease;
+}
+
+.like_button_count {
+  transition: background-color 0.3s ease;
+}
+
+.img_contain img {
+  opacity: 0.3;
+  transition: opacity 0.5s ease;
+}
+
+.repost_button:hover .img_contain img,
+.like_button_count:hover .img_contain img,
+.bookmark:hover .img_contain img {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.repost_button:hover div p {
+  color: blue;
+}
+
+.like-count {
+  position: absolute;
+  top: 13px;
+  right: -10px;
+  animation: fadeInUp 0.5s ease-out;
+  /* add animation for the like count */
+}
+
+.relative {
+  position: relative;
+}

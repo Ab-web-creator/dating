@@ -1,0 +1,217 @@
+.repost .close_repost {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 35px;
+  height: 35px;
+
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 100;
+  background-color: rgb(251, 247, 255);
+  cursor: pointer;
+
+  display: flex;
+}
+
+.repost .close_repost:hover {
+  background-color: rgb(252, 212, 253) !important;
+  transition: all 0.4s ease-in-out;
+}
+
+.repost .close_repost>div {
+  margin: auto;
+  padding-bottom: 3px;
+}
+
+/* main part  */
+.repost_container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.899);
+  background-color: rgba(0, 0, 0, 0.774);
+  height: 100vh;
+  padding: 10px;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.repost {
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 12px;
+  padding: 15px 20px;
+  /* padding-top: 30px; */
+  padding-bottom: 10px;
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  width: fit-content;
+  max-width: 640px;
+  min-height: 70px;
+  height: fit-content;
+  max-height: 500px;
+  overflow-y: hidden;
+}
+
+.repost .scrolling_part {
+  max-height: 370px;
+  overflow-y: scroll;
+  /* overflow-x: hidden; */
+  display: flex;
+  flex-direction: column;
+}
+
+.repost .my_comment {
+  display: flex;
+  gap: 10px;
+}
+
+/* .repost .textarea_div {
+  height: fit-content;
+  max-height: 100px;
+  overflow: hidden;
+} */
+
+
+.repost .my_comment textarea {
+  margin-top: 10px;
+  /* background-color: aliceblue; */
+  border: none;
+  width: 100% !important;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgb(95, 2, 135);
+  resize: none;
+  max-height: 150px;
+}
+
+.repost .my_comment textarea:focus {
+  border: none;
+  outline: none;
+}
+
+.repost .my_comment textarea::placeholder {
+  font-size: 18px;
+}
+
+
+.repost .post_copy {
+  margin-top: 10px;
+  margin-left: 50px;
+  border: 1px solid gray;
+  border-radius: 7px;
+  padding: 10px;
+  /* min-height: 200px; */
+  /*   max-height: 400px; */
+  overflow: scroll;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.repost article {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.repost .very_small_img_container {
+  min-width: 20px;
+  width: 20px;
+  height: 20px;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  border-radius: 50%;
+  /* border: 2px solid red; */
+  overflow: hidden;
+}
+
+.repost .very_small_img_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.poster_credentials {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 7px; */
+}
+
+.poster_credentials .bold {
+  margin-right: 5px;
+}
+
+
+.repost .searchN {
+  font-size: 14px;
+  color: rgb(0, 129, 6);
+  margin-right: 5px;
+}
+
+.repost .datum {
+  color: rgb(175, 175, 175);
+}
+
+.repost .content_div {
+  margin-top: 0px;
+  /* margin-left: 20px; */
+  padding-top: 2px;
+  padding-right: 10px;
+  min-height: 20px;
+  overflow: hidden;
+  color: rgb(64, 64, 64);
+}
+
+.repost .postImage {
+  margin-bottom: -5px;
+  /* border-radius: 0 0 10px 10px; */
+  /* overflow: hidden; */
+  width: 100%;
+  height: fit-content;
+}
+
+.repost .postImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 0 7px 7px;
+}
+
+.repost footer {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid rgb(239, 239, 239);
+  display: flex;
+}
+
+.repost .post_repost {
+  margin: auto;
+  /* margin-top: 5px; */
+  margin-right: 0px;
+  width: fit-content;
+  padding: 7px 10px;
+  color: white;
+  border-radius: 20px;
+  background-color: rgb(160, 160, 160);
+  /* height: 40px; */
+}
+
+.repost .post_repost:hover {
+  background-color: rgb(158, 3, 255);
+}
+
+@media only screen and (max-width: 600px) {
+  .repost {
+    margin-top: 0px;
+  }
+}

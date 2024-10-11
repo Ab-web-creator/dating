@@ -1,0 +1,132 @@
+.contact_us {
+  border-radius: 7px;
+  border: 1px solid rgb(212, 212, 212);
+  background-color: rgb(248, 248, 248);
+  height: fit-content;
+}
+
+.contact_us ul {
+  padding: 10px;
+  padding-bottom: 0px;
+}
+
+.contact_us li {
+  margin-bottom: 10px;
+}
+
+
+.contact_us:hover {
+  background-color: rgb(224, 240, 255);
+}
+
+.contact_us h3 {
+  border-radius: 7px 7px 0 0;
+  padding: 10px;
+  padding-left: 20px;
+  font-weight: 500;
+  color: rgb(137, 137, 137);
+  background-color: rgb(228, 228, 228);
+}
+
+.contact_us:hover h3 {
+  color: rgb(0, 71, 137);
+  background-color: rgb(163, 211, 255);
+  transition: all 0.4s ease-in-out;
+}
+
+.contact_us p {
+  padding: 0px;
+  color: rgb(137, 137, 137);
+  font-size: 16px;
+}
+
+.contact_us .flex_it p {
+  white-space: nowrap;
+}
+
+.contact_us input {
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 3px;
+}
+
+/* .contact_us input:not(:placeholder-shown):user-valid {
+  border-color: green;
+}
+.contact_us input:not(:placeholder-shown):user-invalid {
+  border-color: rgb(255, 1, 1);
+}
+.contact_us input:focus:invalid {
+  border-color: rgb(230, 255, 1) !important;
+} */
+
+.contact_us textarea {
+  width: 100%;
+  padding: 10px;
+  resize: none;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 3px;
+}
+
+.contact_us textarea:not(:placeholder-shown):user-valid {
+  border-color: green;
+}
+.contact_us textarea:not(:placeholder-shown):user-invalid {
+  border-color: rgb(255, 1, 1);
+}
+.contact_us textarea:focus:invalid {
+  border-color: rgb(230, 255, 1) !important;
+}
+
+.contact_us input::placeholder,
+.contact_us textarea::placeholder {
+  padding: 10px 2px;
+  font-size: 16px;
+  color: rgb(207, 207, 207);
+}
+
+.contact_us button {
+  margin-left: 0px;
+  padding: 5px 10px;
+  font-size: 12px;
+  min-width: 100px;
+  height: 30px;
+  border-radius: 7px;
+  background-color: rgb(130, 130, 130);
+}
+
+.contact_us:hover button {
+  background-color: rgb(0, 128, 174);
+}
+
+.contact_us button:hover {
+  background-color: rgb(0, 174, 26);
+}
+
+.flex_it {
+  margin: 10px 0px;
+  display: flex;
+  gap: 10px;
+  /* background-color: red; */
+}
+
+.flex_it>* {
+  margin: auto;
+}
+
+.flex_it>div {
+  display: flex;
+}
+
+.flex_it>div>div {
+  margin: auto;
+}
+
+.goodNews p {
+  color: rgb(0, 190, 16);
+}
+
+.error p {
+  color: red;
+}

@@ -1,0 +1,348 @@
+.html_course .one_column_only {
+  padding: 0px 20px;
+}
+
+.html_course .chapter_heading {
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  width: 100%;
+  /* height: 300px; */
+  line-height: 42px;
+  background-color: rgb(254, 255, 224);
+  background: linear-gradient(to right, rgb(221, 249, 255), rgb(235, 177, 255));
+  padding: 15px;
+  border: 0.1px solid rgb(150, 100, 204);
+  display: flex;
+  gap: 25px;
+}
+
+.html_course .chapter_heading .img_container {
+  margin-left: 0px;
+  min-width: 95px;
+  width: 95px;
+  height: 95px;
+  padding: 7px;
+  background-color: rgb(254, 246, 255);
+  border: 1px solid rgb(150, 100, 204);
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.html_course .chapter_heading .title_of_chapter p {
+  font-family: 'TimesNewRoman-regular';
+  text-transform: unset;
+  font-size: 24px;
+  color: rgb(140, 0, 175);
+}
+
+.html_course .chapter_heading .title_of_chapter .hide_VERY_sm_screen {
+  font-family: 'TimesNewRoman-regular';
+  font-size: 24px;
+  color: rgb(140, 0, 175);
+}
+
+
+
+.html_course .titles p {
+  font-size: 24px;
+  margin: 20px 0px;
+}
+
+/* CODED DIV  */
+.html_course .coded_div {
+  padding: 20px;
+  margin: 10px 0px;
+  background-color: rgb(60, 60, 60);
+
+}
+
+.html_course .coded_div p {
+  color: rgb(175, 175, 175);
+  line-height: 24px;
+  font-family: 'Menlo-Regular';
+}
+
+.html_course .coded_div .indent20px {
+  padding-left: 20px;
+  font-family: 'Menlo-Regular';
+}
+
+.html_course .coded_div .lbl {
+  color: rgb(168, 213, 255);
+  font-family: 'Menlo-Regular';
+}
+
+.html_course .coded_div .bl {
+  color: rgb(61, 161, 255);
+  font-family: 'Menlo-Regular';
+}
+
+.html_course .coded_div .or {
+  color: rgb(196, 156, 91);
+  font-family: 'Menlo-Regular';
+}
+
+.html_course .coded_div .wh {
+  color: rgb(255, 255, 255);
+  font-family: 'Menlo-Regular';
+}
+
+/* end of CODED DIV  */
+
+
+.html_course .main_text {
+  margin: 20px 0px;
+}
+
+.html_course .lessons {
+  margin: 40px 0px;
+  background: linear-gradient(to right, rgb(221, 249, 255), rgb(235, 177, 255));
+  padding: 10px;
+}
+
+.html_course .lessons p {
+  font-family: "Oswald-Semibold";
+  font-size: 30px;
+  text-align: center;
+  color: blueviolet;
+}
+
+.html_course .possible_answers {
+  margin: 10px 0px;
+}
+
+.html_course .possible_answers p {
+  font-size: 16px;
+}
+
+.html_course .answers {
+  margin: 10px 0px;
+  display: flex;
+}
+
+.html_course .flex_answers {
+  display: flex;
+  width: 100%;
+}
+
+.html_course .flex_answers>div {
+  opacity: 0.3;
+  cursor: pointer;
+  height: 80px;
+  display: flex;
+}
+
+.html_course .flex_answers>div>div {
+  margin: auto;
+}
+
+.html_course .flex_answers .selected {
+  opacity: 1 !important;
+}
+
+.html_course .flex_answers .selected>div {
+  font-size: 1.7rem !important;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.html_course .flex_answers>div:hover {
+  opacity: 1;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease-in-out;
+}
+
+.html_course .blue_bg {
+  background-color: rgb(0, 145, 255);
+  border: 4px solid rgb(0, 145, 255);
+  /* padding: 20px; */
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.html_course .red_bg {
+  background-color: rgb(255, 0, 0);
+  border: 4px solid rgb(255, 0, 0);
+  /* padding: 20px; */
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.html_course .orange_bg {
+  background-color: rgb(192, 189, 0);
+  border: 4px solid rgb(192, 189, 0);
+  /* padding: 20px; */
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.html_course .green_bg {
+  background-color: rgb(0, 130, 26);
+  border: 4px solid rgb(0, 130, 26);
+  /* padding: 20px; */
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.html_course .popup_div {
+  position: relative;
+  margin: 20px 0px;
+  height: 70px;
+
+}
+
+.close_popup {
+  position: absolute;
+  background-color: transparent;
+  top: 5px;
+  right: 5px;
+  min-width: 30px;
+  color: blueviolet;
+}
+
+.html_course .popup_div>div {
+  border: 1px solid red;
+  padding: 20px;
+  color: rgb(138, 0, 170);
+  display: flex;
+  transition: all 0.5s ease-in-out;
+}
+
+.html_course .popup_div .correct {
+  border-color: green;
+
+}
+
+.html_course .popup_div .correct p {
+  margin-bottom: 7px;
+}
+
+.html_course .decor_line2 {
+  margin: 10px 0px;
+}
+
+.html_course .onBrowser {
+  margin: 20px 0px;
+  padding: 20px;
+  padding-bottom: 60px;
+  border: 1px solid gray;
+}
+
+
+.html_course .videos_container_container {
+  width: 100%;
+}
+
+.html_course .video_container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  /* 16:9 aspect ratio */
+}
+
+.html_course .video_container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.upload_file {
+  margin: 20px 0px;
+  padding: 5px;
+  border: 1px dotted blueviolet;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.upload_file input {
+  min-width: 50px;
+  width: fit-content;
+}
+
+.upload_file button {
+  min-width: fit-content;
+  width: fit-content;
+}
+
+@media only screen and (max-width: 680px) {
+
+  .html_course .chapter_heading {
+    border: 1px solid rgb(204, 192, 100);
+  }
+
+  .html_course .chapter_heading .title_of_chapter p {
+    text-transform: unset;
+    font-size: 16px;
+  }
+
+  .html_course .chapter_heading .img_container {
+    min-width: 55px;
+    width: 55px;
+    height: 55px;
+    border: 1px solid rgba(182, 164, 0, 0.736);
+  }
+
+  .html_course .chapter_heading2 {
+    width: 100%;
+  }
+
+  .html_course .chapter_heading2 p,
+  .chapter_heading .title_of_chapter p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .html_course .answers {
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav_arrows p {
+    font-size: 10px;
+  }
+
+  .bottom_arrows_for_qisas {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 421px) {
+
+  .html_course .chapter_heading {
+    padding: 5px;
+  }
+
+  .html_course .chapter_heading .img_container {
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+
+  }
+
+
+  .chapter_heading .title_of_chapter p {
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .html_course .lessons p {
+    font-family: "Oswald-Regular";
+    font-size: 20px;
+    text-align: center;
+    color: rgb(0, 197, 36);
+  }
+}

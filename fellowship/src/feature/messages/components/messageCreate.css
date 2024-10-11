@@ -1,0 +1,230 @@
+.message_create_container {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.809);
+  cursor: text;
+
+  z-index: 10;
+  display: flex;
+  animation: blossom 0.3s ease-in-out forwards;
+}
+
+.network_icons .message_create_container {
+  z-index: 30;
+  padding: 10px;
+}
+
+.message_create {
+  position: relative;
+  padding: 0px 15px;
+  padding-top: 10px;
+  margin: auto;
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  /* background-color: red; */
+  border-radius: 12px;
+  height: fit-content;
+  overflow-y: scroll;
+
+  /* display: flex;
+  flex-direction: column;
+  gap: 10px; */
+  z-index: 1;
+}
+
+.message_create main {
+  /* flex-grow: 3; */
+  /* height: 100%; */
+  overflow-y: scroll;
+}
+
+.message_create .titul {
+  text-align: center;
+  margin: 10px auto;
+  margin-bottom: 10px auto;
+  font-size: 20px;
+  color: rgb(134, 134, 134);
+}
+
+.message_create .sub_main {
+  /* height: 100%; */
+  padding-bottom: 10px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+
+ 
+
+.message_create .sidebar_search {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.message_create .sidebar_search form {
+  min-width: 100%;
+  width: 100%;
+}
+
+.message_create .sidebar_search input {
+  /* position: absolute; */
+  left: 0px;
+  padding-left: 35px;
+}
+
+.message_create input[value]:not([value=""]) {
+  padding-left: 35px;
+}
+
+.message_create .sidebar_search input::placeholder {
+  color: rgb(157, 157, 157);
+}
+
+.message_create .sidebar_search {
+  padding: 0px 2px;
+}
+
+.message_create .search_results {
+  position: relative;
+}
+
+.message_create .search_and_result {
+  position: absolute;
+  top: 10px;
+  background-color: rgb(213, 213, 213);
+  padding: 0px;
+  border-radius: 12px;
+  width: 100%;
+  /* height: 600px; */
+  overflow-y: scroll;
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: left; */
+}
+
+.message_create .found_user {
+  padding: 7px 12px;
+  cursor: pointer;
+  display: flex;
+  gap: 3px;
+}
+
+.message_create .found_user img {
+  border-radius: 50%;
+}
+
+.message_create .found_user:nth-child(odd) {
+  background-color: rgb(243, 243, 243);
+}
+
+.message_create .found_user>div {
+  margin: auto;
+  margin-left: 0px;
+  width: 100%;
+  color: blueviolet;
+
+}
+
+.message_create .found_user span {
+  color: green;
+}
+
+.message_create .greeting_part {
+  margin: 10px;
+}
+
+.message_create textarea {
+  /* margin-top: 10px; */
+  width: 100%;
+  border: 0.5px solid gray;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 10px;
+  outline: none;
+  min-height: 100px;
+  /* resize: none; */
+}
+
+.message_create textarea:focus {
+  background-color: transparent !important;
+}
+
+.message_create textarea::placeholder {
+  padding: 30px 0px;
+  font-size: 18px;
+  color: #aaaaaa;
+}
+
+
+.message_create .dif_flex {
+  border-top: 0.5px solid rgb(213, 213, 213);
+  padding: 5px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.message_create .dif_flex>div {
+  margin: auto;
+  margin-left: 0;
+}
+
+.message_create form textarea {
+  margin: 0px;
+  margin-top: 20px;
+}
+
+.message_create .send_message_btn {
+  margin: auto;
+  margin-right: 0px;
+  border-radius: 20px;
+  background-color: rgb(175, 255, 178);
+  padding: 5px 35px;
+  min-width: 90px !important;
+  color: rgb(0, 128, 17);
+  height: 40px;
+  cursor: pointer;
+}
+
+.message_create .send_message_btn:hover {
+  background-color: rgb(0, 155, 26) !important;
+  color: white;
+  border-radius: 20px !important;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.send_message_btn:disabled {
+  cursor: not-allowed;
+  background-color: #ccc;
+  color: #666;
+}
+
+.send_message_btn:disabled:hover {
+  cursor: not-allowed;
+  background-color: #ccc !important;
+  color: #666;
+}
+
+.message_create .the_end {
+  padding-left: 10px;
+}
+
+.message_create .sender {
+  color: rgb(54, 54, 54);
+}
+
+
+@media only screen and (max-width: 500px) {
+  .message_create {
+    margin-top: 0px;
+    width: 100%;
+    /* height: 470px; */
+  }
+}

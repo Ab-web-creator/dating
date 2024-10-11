@@ -1,0 +1,369 @@
+.profile_multistep_container {
+  position: fixed;
+  background-image: url(../../../public/assets/BG_pic_DT.avif);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 0px);
+  padding: 20px 20%;
+  background-color: rgba(0, 0, 0, 0.885);
+
+  display: flex;
+}
+
+.profile_multistep_container::after {
+  position: absolute;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.701);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.profile_multistep_container .close_multistepform {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgb(255, 255, 255);
+  min-width: 30px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 1px;
+  color: rgb(156, 156, 156);
+  border-radius: 50%;
+}
+
+.profile_multistep_container .close_multistepform:hover {
+  background-color: transparent;
+  box-shadow: none;
+  color: rgb(207, 0, 0);
+}
+
+.profile_multistep {
+  position: relative;
+  margin: auto;
+  margin-top: 10px;
+  min-width: fit-content;
+  width: 600px;
+  max-width: 600px;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  padding: 40px;
+  padding-bottom: 44px;
+  color: black;
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.profile_multistep .mandatory {
+  color: red;
+}
+
+.profile_multistep main {
+  height: 100%;
+}
+
+.profile_multistep .containing_div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.profile_multistep h2 {
+  color: rgb(62, 62, 62);
+  font-size: 1.5rem;
+}
+
+.profile_multistep form .keep_it_anonymous {
+  text-align: left;
+  color: blueviolet;
+  font-size: 12px;
+  max-width: 400px;
+}
+
+.profile_multistep form {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile_multistep form label {
+  display: inline-block;
+  color: rgb(121, 121, 121);
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.profile_multistep form textarea,
+.profile_multistep form input {
+  width: 100%;
+  padding: 7px;
+  border-radius: 7px;
+  border: 1px solid rgb(207, 207, 207);
+  font-size: 16px;
+}
+
+
+.profile_multistep button {
+  position: absolute;
+  bottom: 15px;
+  right: 40px;
+  width: fit-content;
+  background-color: rgb(207, 207, 207);
+  color: rgb(0, 0, 0);
+}
+
+.profile_multistep button:hover {
+  background-color: rgb(40, 40, 40);
+  color: white;
+}
+
+.profile_multistep form input::placeholder {
+  font-size: 12px;
+  color: rgb(192, 192, 192);
+}
+
+.profile_multistep .confirm_details form {
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 7px;
+  padding: 20px;
+  margin-bottom: 0px;
+  height: 100%;
+  /* max-height: 400px; */
+  flex-grow: 3;
+  overflow-y: scroll;
+}
+
+.profile_multistep .confirm_details form>div {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.profile_multistep .confirm_details h4 {
+  font-size: 16px;
+  font-weight: 300;
+  color: gray;
+  min-width: 120px;
+  width: 120px;
+}
+
+.profile_multistep .confirm_details h5 {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(20, 20, 20);
+  /* width: 100px; */
+}
+
+.profile_multistep .two_buttons {
+  margin: auto;
+  margin-right: 0px;
+  display: flex;
+  gap: 20px;
+}
+
+.profile_multistep .family_children {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.profile_multistep .flex_with_hundrProcent {
+
+  display: flex;
+  gap: 10px;
+}
+
+.profile_multistep .confirm_flex {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.profile_multistep select {
+  border-radius: 7px;
+  border: 1px solid rgb(207, 207, 207);
+  font-size: 12px;
+}
+
+.profile_multistep .success_message {
+
+  margin-top: 20px;
+  flex-grow: 3;
+  height: 100%;
+  border: 1px solid gray;
+  border-radius: 7px;
+  padding: 20px;
+
+  display: flex;
+}
+
+.profile_multistep .success_message>div {
+  margin: auto;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.profile_multistep .success_message h4 {
+  font-weight: 300;
+}
+
+.profile_multistep .success {
+  justify-content: unset;
+}
+
+.profile_multistep .searchNameAlreadyTaken {
+  margin-left: 0px;
+}
+
+.profile_multistep .searchNameAlreadyTaken p {
+  color: red;
+  padding: 5px 0px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* .profile_multistep .bio_div {
+  max-height: 100px;
+  overflow-y: scroll;
+} */
+
+#dateOfBirth[value]:not([value=""]) {
+  color: rgb(56, 56, 56) !important;
+}
+
+#dateOfBirth {
+  color: rgb(189, 189, 189);
+  /* font-size: 12px; */
+}
+
+@media only screen and (max-width: 1020px) {
+  .profile_multistep_container {
+    position: fixed;
+    width: 100%;
+    padding: 20px 20px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .profile_multistep .flex_with_hundrProcent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .profile_multistep form textarea,
+  .profile_multistep form input {
+    width: 100%;
+    padding: 3px 7px;
+  }
+
+  .profile_multistep select {
+    height: 25px;
+    padding: 1px 7px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .profile_multistep_container {
+    padding: 10px;
+    top: 0px;
+    /* height: 490px; */
+    max-height: 100%;
+  }
+
+  .profile_multistep {
+    margin-top: 0px;
+    /* height: 100%; */
+    padding: 15px;
+    padding-top: 25px;
+  }
+
+  .profile_multistep h2 {
+    color: rgb(55, 55, 55);
+    font-size: 18px;
+  }
+
+  .profile_multistep form label {
+    /* margin-bottom: 5px; */
+  }
+
+  .profile_multistep form {
+    /* height: 240px; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow-y: scroll;
+
+    justify-content: space-between;
+    gap: 15px;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .profile_multistep .confirm_details form>div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .profile_multistep .success_message>div {
+    padding: 25px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .profile_multistep .family_children {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .profile_multistep .searchNameAlreadyTaken p {
+    color: red;
+    padding: 5px 0px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
+
+@media only screen and (max-width: 340px) {
+
+  .profile_multistep .two_buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .profile_multistep button {
+    width: 100%;
+    padding: 10px 5px;
+  }
+
+  .profile_multistep .success_message {
+    margin-top: 0px;
+  }
+
+  .profile_multistep .success_message>div {
+    padding: 5px;
+  }
+}

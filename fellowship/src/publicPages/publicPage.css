@@ -1,0 +1,469 @@
+.public_page {
+  position: relative;
+  background-image: url(../../public/assets/BG_pic_DT.avif);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  background-color: rgb(56, 56, 56);
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+
+
+.public_page .fixed_black_screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  opacity: 0.4;
+}
+
+.public_page .central_div {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 70px;
+
+  display: flex;
+}
+
+.public_page .border_container {
+  position: relative;
+  margin: auto;
+  border: 12px solid rgba(160, 136, 1, 0.711);
+  width: 800px;
+  z-index: 1;
+}
+
+.public_page .black_screen2 {
+  position: absolute;
+  background-color: black;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+}
+
+.public_page .padding_container {
+  margin: 40px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.public_page .homePage_words {
+  position: relative;
+  margin: auto;
+  margin-top: 0px;
+  margin-left: 0px;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.public_page .homepage_big_texts {
+  position: relative;
+  margin: auto;
+  margin-top: 0px;
+  margin-left: 0px;
+
+  width: 370px;
+  height: 170px;
+
+  background-image: url(../../public/assets/forLogo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.public_page .homepage_big_texts p {
+  color: white;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: 'Oswald-Light', sans-serif;
+  font-weight: 300;
+}
+
+.public_page .homepage_big_texts span {
+  color: var(--topBarFontColor);
+  font-family: inherit;
+}
+
+.public_page .firstWord_HP {
+  margin: auto;
+  margin-left: 0px;
+}
+
+.public_page .secondWord_HP {
+  margin: auto;
+  margin-right: 0px;
+}
+
+.public_page .main_MB_HP {
+  display: none;
+  position: absolute;
+  padding-left: 10px;
+  top: 300px;
+  width: 100%;
+}
+
+.public_page .main_MB_HP>div {
+  position: relative;
+  margin: auto;
+  color: white;
+  z-index: 2;
+  font-family: 'Oswald-Light', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1.12px;
+  width: 80%;
+}
+
+.public_page .no_greater_love {
+  /* margin: auto; */
+  margin-bottom: 10px;
+}
+
+
+.public_page .no_greater_love p {
+  font-size: 16px;
+  letter-spacing: 1.12px;
+  width: 400px;
+  color: white;
+
+  text-transform: uppercase;
+  font-family: 'Oswald-Light', sans-serif;
+  font-weight: 300;
+}
+
+
+
+.public_page .kitab_lamp_HP {
+  margin: auto;
+  margin-right: 0px;
+  width: 40%;
+  height: 300px;
+  background-image: url(../../public/assets/kitob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.public_page .plussign_and_ODP_container_HP {
+  position: relative;
+  width: 100%;
+  bottom: 5px;
+  z-index: 3;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.public_page .plussign_HP,
+.public_page .ODP_sign_HP {
+  border: 4px solid var(--topBarFontColor);
+  color: rgb(255, 255, 194);
+  z-index: 3;
+  font-family: 'Oswald-Light', sans-serif;
+  font-weight: 400;
+  height: 50px;
+  border-radius: 2px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  width: fit-content;
+
+  display: grid;
+  place-items: center;
+}
+
+.public_page .ODP_sign_HP {
+  min-width: fit-content;
+  margin-right: 15px;
+}
+
+.public_page .plussign_HP p,
+.public_page .ODP_sign_HP p {
+  font-family: 'El Messiri', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: var(--topBarFontColor);
+  letter-spacing: 1.2px;
+}
+
+.public_page .plussign_HP {
+  border: 2px solid rgba(191, 163, 3, 0.73);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  margin-left: 18px;
+  /* margin-top: 3px; */
+}
+
+.public_page .plussign_HP>div {
+  margin: auto;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+
+  .public_page .homePage_words,
+  .public_page .kitab_lamp_HP {
+    height: 250px;
+  }
+
+  .public_page .kitab_lamp_HP {
+    width: 35%;
+  }
+
+  .public_page .no_greater_love p,
+  .public_page .homepage_big_texts {
+    width: 300px;
+  }
+
+  .public_page .homepage_big_texts p {
+    font-size: 40px;
+  }
+
+  .public_page .secondWord_HP {
+    margin-bottom: 17px;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+
+  .public_page .padding_container {
+    margin: 20px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .public_page .homepage_big_texts p {
+    font-size: 35px;
+  }
+
+  .public_page .kitab_lamp_HP {
+    width: 40%;
+  }
+
+  .public_page .no_greater_love p,
+  .public_page .homepage_big_texts {
+    width: 250px;
+  }
+
+  .public_page .no_greater_love p {
+    font-size: 14px;
+  }
+
+  .public_page .firstWord_HP {
+    margin-top: 25px;
+  }
+
+  .public_page .secondWord_HP {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 657px) {
+
+  .public_page .homePage_words,
+  .public_page .kitab_lamp_HP {
+    height: 220px;
+  }
+
+  .public_page .homepage_big_texts p {
+    font-size: 30px;
+  }
+
+  .public_page .no_greater_love p,
+  .public_page .homepage_big_texts {
+    width: 220px;
+  }
+
+  .public_page .no_greater_love p {
+    font-size: 12px;
+  }
+
+  .public_page .secondWord_HP {
+    margin-bottom: 30px;
+  }
+}
+
+
+
+@media only screen and (max-width: 601px) {
+
+  .public_page .public_page {
+    background-image: url(../../public/assets/BG_pix_MB.jpg);
+    background-position: bottom left;
+    background-size: cover;
+  }
+
+  .public_page .central_div {
+    padding: 0px;
+  }
+
+  .public_page .border_container {
+    margin: auto 40px;
+    border: 7px solid rgba(255, 223, 44, 0.34);
+  }
+
+  .public_page .plussign_HP {
+    border: 1px solid yellow;
+    width: 30px;
+    height: 30px;
+  }
+
+  .public_page .plussign_HP p,
+  .public_page .ODP_sign_HP p {
+    color: yellow;
+    font-weight: 300;
+  }
+
+  .public_page .plussign_HP p {
+    padding-left: 2px;
+  }
+
+  .public_page .homePage_words span {
+    color: yellow;
+  }
+
+  .public_page .black_screen2 {
+    opacity: 0.3;
+  }
+}
+
+
+@media only screen and (max-width: 550px) {
+
+  .public_page .padding_container {
+    margin-top: 0px;
+  }
+
+  .public_page .kitab_lamp_HP {
+    display: none;
+  }
+
+  .public_page .homePage_words {
+    gap: 10px;
+  }
+
+  .public_page .homepage_big_texts,
+  .public_page .no_greater_love p,
+  .public_page .homePage_words {
+    margin: auto;
+    width: 94%;
+  }
+
+  .public_page .homepage_big_texts p {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .public_page .homepage_big_texts p {
+    font-size: 35px;
+  }
+
+  .public_page .secondWord_HP {
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .public_page .homepage_big_texts p {
+    font-size: 30px;
+  }
+
+  .public_page .secondWord_HP {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .public_page .firstWord_HP {
+    margin-top: 33px;
+  }
+
+  .public_page .secondWord_HP {
+    margin-bottom: 37px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+
+  .public_page .border_container {
+    margin: auto 20px;
+  }
+
+  .public_page .firstWord_HP {
+    margin-top: 30px;
+  }
+
+  .public_page .secondWord_HP {
+    margin-bottom: 35px;
+  }
+
+  .public_page .homepage_big_texts p {
+    font-size: 26px;
+  }
+
+  .public_page .no_greater_love {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+@media only screen and (max-width: 290px) {
+
+  .public_page .padding_container {
+    margin: 5px;
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 255px) {
+
+  .public_page .firstWord_HP {
+    margin-top: 35px;
+  }
+
+  .public_page .secondWord_HP {
+    margin-bottom: 40px;
+  }
+
+  .public_page .homepage_big_texts p {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 233px) {
+
+  .public_page .homepage_big_texts p {
+    font-size: 18px;
+  }
+}

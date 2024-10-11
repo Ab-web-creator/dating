@@ -1,0 +1,504 @@
+.diary_container .the_bottom_div {
+  margin-top: 70px;
+}
+
+.diary_container {
+  position: absolute;
+  top: 47px;
+  /* left: 10px; */
+  margin-left: 30px;
+  width: calc(500px - 30px);
+  height: calc(100% - 50px);
+  padding: 20px;
+  padding-bottom: 80px;
+  background-color: #fffffff7;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.my_relationships .diary {
+  position: relative;
+  margin: auto;
+  margin-top: 4px;
+  width: 500px;
+  height: 100%;
+  background-color: #f9f9fe;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  /* overflow: hidden; */
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.diary::before,
+.diary::after {
+  content: '';
+  position: absolute;
+  border-radius: 6px;
+  top: 5px;
+  left: -5px;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+.diary::after {
+  top: 10px;
+  left: -10px;
+  z-index: -2;
+}
+
+.diary .close_btn_container {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  min-width: 35px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px dotted rgb(114, 28, 135);
+  background-color: rgb(244, 238, 246);
+  border-radius: 50%;
+  padding-bottom: 2px;
+  cursor: pointer;
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.diary .close_btn_container p {
+  font-size: 16px;
+  font-weight: 200;
+  vertical-align: middle;
+  color: #8e2de2;
+}
+
+/* 
+.diary .close_diary {
+  color: rgb(107, 102, 255);
+  background-color: transparent;
+  min-width: 100%;
+  width: 100%;
+  height: 100%;
+
+  font-size: 18px;
+  font-weight: 200;
+  border-radius: 50%;
+}
+
+.diary .close_diary:hover {
+  color: #e70606;
+  box-shadow: none;
+} */
+
+.diary header {
+  width: 88.5%;
+  font-weight: 500;
+  border-radius: 5px 5px 0 0;
+  margin: 0px 50px;
+  margin-top: 20px;
+  height: 48px;
+  display: flex;
+}
+
+
+
+.diary .title {
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 10px;
+  border: 1px dotted blueviolet;
+  border-radius: 14px;
+  padding: 0px 3px;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.diary .credentials {
+  margin: auto;
+  margin-left: 0px;
+
+  display: flex;
+}
+
+.diary .title img {
+  margin: auto;
+  margin-right: 4px;
+  border-radius: 11px;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.diary .title .nick_and_searchN {
+  margin: auto;
+  cursor: pointer;
+}
+
+.diary .title .nick_and_searchN p {
+  font-size: 12px;
+  color: rgb(116, 7, 156);
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.diary .title .nick_and_searchN .searchN {
+  color: rgb(0, 126, 15);
+  font-size: 12px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.diary .milestones {
+  padding: 1px 10px;
+}
+
+.diary .milestones p {
+  font-size: 0.75rem;
+  color: rgb(2, 21, 162);
+  white-space: nowrap;
+  font-weight: 300;
+}
+
+
+.diary main {
+  height: 100%;
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.diary .div_content {
+  /* position: relative; */
+  width: 100%;
+  padding-bottom: 20px;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+
+
+.diary .notes_container {
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 50px;
+  padding: 20px;
+  padding-top: 10px;
+  padding-right: 10px;
+  height: fit-content;
+  max-height: 100%;
+
+  border: 1px dotted #8e2de2;
+  border-radius: 20px;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+  flex-grow: 3;
+  z-index: 1;
+}
+
+
+
+
+.diary .notes {
+  position: relative;
+  word-wrap: break-word;
+  margin: 10px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  border-bottom: 1px dotted #4606e7;
+  cursor: pointer;
+  width: 100%;
+  /* z-index: 10; */
+  display: flex;
+
+}
+
+
+.diary .radio_btn {
+  height: 42px;
+  display: flex;
+  gap: 10px;
+}
+
+.diary .delete_container {
+  margin: auto;
+  cursor: pointer;
+}
+
+.diary .delete_container img:hover {
+  background-color: rgb(229, 229, 229);
+  transition: all 0.4s ease-in-out;
+}
+
+.diary .delete_container img {
+  margin: auto;
+  padding: 3px;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+}
+
+
+.diary .radio_btn img {
+  margin: auto;
+  width: 18px;
+  height: 18px;
+}
+
+.diary .note_content_contain {
+  margin: auto;
+  margin-left: 0px;
+
+  width: 100%;
+  padding: 10px;
+  display: flex;
+}
+
+.diary .note_content {
+  color: black;
+  line-height: 22px;
+  font-size: 14px;
+  font-weight: 300;
+  margin-right: 10px;
+}
+
+.diary .flex_time_and_bin {
+  margin: auto;
+  margin-top: 0px;
+  width: 136px;
+  height: 100%;
+  display: flex;
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: fit-content;
+}
+
+.diary .time_ind {
+  white-space: nowrap;
+  text-align: right;
+  padding: 12px 0px;
+  opacity: 0.2;
+  color: #4606e7;
+  border-radius: 7px;
+}
+
+.diary .time_ind:hover {
+  color: red;
+  opacity: 1;
+  background-color: aqua;
+  padding: 12px 5px;
+}
+
+.diary .time_ind p {
+  padding-top: 3px;
+  font-size: 12px;
+}
+
+
+
+.diary .send_note_div {
+  border-radius: 3px;
+  margin: 10px;
+  margin-left: 50px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  height: 35px;
+  border: 1px dotted #4606e7;
+  border-right: 1px solid #4606e7;
+  border-radius: 10px;
+
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.diary .asking_support {
+  position: relative;
+  background-color: rgb(252, 238, 255);
+  width: 33px;
+  height: 33px;
+
+  border-radius: 10px 0 0 10px;
+  padding: 3px;
+  /* padding-left: 9px; */
+  min-width: 35px;
+}
+
+.diary .asking_support:hover {
+  background-color: rgb(252, 238, 255);
+}
+
+.diary .asking_support #ask_admins {
+  padding-top: 3px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.diary .add_note {
+  margin: auto;
+  padding: 0px 10px;
+  font-size: 12px;
+  white-space: nowrap;
+  min-width: 80px;
+  height: 100%;
+  color: white;
+  border-radius: 0 10px 10px 0;
+  background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+  border: none;
+  cursor: pointer;
+}
+
+.diary .add_note:hover {
+  box-shadow: none;
+}
+
+.diary input {
+  width: 100%;
+  color: rgb(47, 47, 47);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px 10px;
+  padding-left: 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.diary input::placeholder {
+  color: rgb(202, 202, 202);
+  font-size: 16px;
+}
+
+
+@media only screen and (max-width: 970px) {
+  .diary_container {
+    width: 300px;
+    left: 30px;
+  }
+
+  .my_relationships .diary {
+    margin-left: 3px;
+    width: 530px;
+  }
+}
+
+
+@media only screen and (max-width: 680px) {
+
+  /* .diary_container {
+    max-width: calc(100% - 67px);
+    left: 30px;
+    height: 100%;
+  } */
+
+  .diary {
+    max-width: 390px;
+  }
+
+  .diary header {
+    width: 320px;
+
+  }
+
+  .diary .title {
+    padding: 3px;
+    margin-right: 0px;
+    height: fit-content;
+    /* z-index: 10; */
+    overflow-x: hidden;
+  }
+
+  .diary .title img {
+    height: 36px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .diary_container {
+    position: fixed;
+    top: 47px;
+    left: 80px;
+    /* border-left: 1px solid red; */
+    width: 400px;
+    height: 100%;
+  }
+
+  .my_relationships .diary {
+    width: 100%;
+    margin-left: auto;
+  }
+
+
+
+  .diary .div_content {
+    max-height: 100%;
+    padding-bottom: 0px;
+    overflow: hidden;
+  }
+
+  .diary header,
+  .diary .send_note_div,
+  .diary .notes_container {
+    margin: 20px;
+    width: calc(100% - 40px);
+  }
+
+  .diary .send_note_div {
+    margin-top: 5px;
+  }
+
+  .diary .notes_container {
+    margin: 0px 20px;
+    height: 260px;
+    overflow: scroll;
+    padding: 5px;
+
+    /* background-color: aqua; */
+  }
+
+  .diary .radio_btn {
+    margin-left: 5px;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+  .diary_container {
+    max-width: 100%;
+    margin-left: 20px;
+
+    left: 0px;
+    padding: 2px;
+  }
+
+
+  .my_relationships .diary {
+    margin-left: 10px;
+    width: calc(100% - 25px);
+    max-width: calc(100% - 30px);
+  }
+}

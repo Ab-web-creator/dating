@@ -1,0 +1,648 @@
+/* the first one delete later  */
+.stories .html_symbols p {
+  font-size: 32px !important;
+  color: blueviolet;
+  margin-bottom: 40px;
+}
+
+.qisas_layout {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.MarginTop10px {
+  margin-top: 10px;
+}
+
+/* for home-qisas only  */
+
+
+/* .stories .course_chapters .flex_it {
+  gap: 20px;
+} */
+/* 
+.stories .course_chapters .minus_button {
+  margin: auto;
+  margin-left: 10px;
+  min-width: 30px;
+  width: 30px;
+  height: 20px;
+  height: 100%;
+
+  color: rgb(149, 149, 149);
+  background-color: rgb(239, 239, 239);
+
+  border-radius: 7px;
+  z-index: 1;
+} */
+/* 
+.stories .course_chapters .minus_button:hover {
+  background-color: white;
+} */
+/* 
+.stories .course_chapters .minus_button p {
+  vertical-align: middle;
+  font-weight: 900;
+  line-height: 10px;
+  padding: 2px;
+  padding-top: 3px;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 5px;
+  background-color: transparent;
+  text-align: center;
+} */
+
+
+/* -- other styles --  */
+
+.uzbek_quron_doublecolumn {
+  max-width: 50%;
+  text-align: justify;
+}
+
+.uzbek_quron_doublecolumn p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.5px;
+}
+
+.uzbek_quron_doublecolumn p .vitalic {
+  font-size: 12px !important;
+}
+
+.arabic_quran_doublecolumn {
+  max-width: 50%;
+  direction: rtl;
+}
+
+.arabic_quran_doublecolumn p {
+
+  font-family: 'ArabicType' !important;
+  font-size: 22px !important;
+  color: rgb(97, 97, 97);
+  padding: 0px;
+  text-align: justify;
+
+}
+
+/* Rare styles  */
+
+.div_with_borders {
+  margin: 15px 0px;
+  border: 1px solid rgb(10, 196, 0);
+  padding: 15px;
+}
+
+.div_with_borders p {
+  font-size: 16px;
+}
+
+.alayhissalam {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Aga_islamic";
+  color: rgb(97, 97, 97);
+  transform: rotate(5deg);
+}
+
+.azza_va_jall {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Aga_islamic";
+  color: rgb(97, 97, 97);
+  font-size: 1.2rem;
+}
+
+.bism p {
+  margin: 20px;
+  font-family: "Aga_islamic";
+  font-size: 52px;
+  text-align: center;
+  color: rgb(0, 111, 131);
+  color: rgb(50, 137, 0);
+  color: rgba(87, 114, 0, 0.897);
+}
+
+
+
+/* .drop-cap {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.4em;
+  line-height: 1em;
+  float: left;
+  margin-right: 0.1em;
+} */
+
+
+/* quick css styles  */
+
+sup {
+  vertical-align: super;
+  font-size: 8px;
+  font-family: 'TimesNewRoman-regular' !important;
+  line-height: 1;
+}
+
+.center {
+  text-align: center;
+}
+
+.flex_it {
+  display: flex;
+}
+
+.margin_auto {
+  margin: auto !important;
+}
+
+.flex_in_doublecolumn {
+  display: flex;
+  gap: 25px;
+}
+
+.space_between {
+  justify-content: space-between;
+}
+
+.who_wrote {
+  margin-top: 5px;
+  color: rgb(83, 83, 83) !important;
+}
+
+.spacer_height10px {
+  height: 10px;
+}
+
+.stories .vitalic {
+  color: rgb(63, 95, 138) !important;
+  font-weight: 400;
+  font-size: 1rem !important;
+}
+
+.stories .boldItalic {
+  color: rgb(0, 160, 16) !important;
+  font-weight: 400;
+  font-size: 1rem !important;
+  line-height: 23px;
+}
+
+.stories .speech-bubble .vitalic {
+  color: rgb(83, 83, 83) !important;
+  font-weight: 400;
+  font-size: 13px !important;
+}
+
+.stories .speech-bubble .boldItalic {
+  color: rgb(0, 119, 255) !important;
+  font-weight: 400;
+  font-size: 13px !important;
+}
+
+.stories .speech-bubble p .boldItalic {
+  color: rgb(0, 119, 255) !important;
+  font-weight: 400;
+  font-size: 13px !important;
+}
+
+.decor_line {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.decor_line p {
+  font-size: 8px !important;
+  text-align: center;
+  color: rgb(203, 203, 203);
+}
+
+/* permanent kind of stuff  */
+
+.stories .separate_into_two_columns {
+  margin-top: 1px;
+  height: calc(100vh - 47px);
+  flex-direction: row;
+  /* max-height: calc(100vh - 50px); */
+}
+
+.stories .sep_part1 {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+
+/* asosiy narsalar */
+
+.stories .chapter_heading2 {
+  margin: auto;
+  margin-top: 50px;
+  width: 450px;
+  line-height: 42px;
+}
+
+.stories .chapter_heading2 p {
+  font-family: 'TimesNewRoman-regular';
+  text-transform: uppercase;
+  font-size: 24px;
+  text-align: center;
+}
+
+.stories .chapter_heading {
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  width: 100%;
+  line-height: 42px;
+  background-color: rgb(254, 255, 224);
+  background: linear-gradient(to right, rgb(221, 255, 221), rgb(255, 247, 177));
+  padding: 15px;
+  border: 4px solid rgb(204, 192, 100);
+
+  display: flex;
+  gap: 25px;
+}
+
+.chapter_headingAuto {
+  margin-bottom: 60px !important;
+}
+
+.stories .chapter_heading .img_container {
+  margin-left: 0px;
+  min-width: 95px;
+  width: 95px;
+  height: 95px;
+  padding: 7px;
+  background-color: rgb(255, 253, 222);
+  border: 4px solid rgb(230, 230, 230);
+  border: 4px solid rgba(182, 164, 0, 0.736);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.stories .chapter_heading .img_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* opacity: 0.2; */
+}
+
+.stories .title_of_chapter {
+  margin: auto;
+  margin-left: 0px;
+  margin-right: auto;
+  z-index: 2;
+  /* width: 60%; */
+}
+
+.chapter_heading .title_of_chapter p {
+  font-family: 'TimesNewRoman-regular';
+  text-transform: uppercase;
+  font-size: 24px;
+  color: rgb(175, 157, 0);
+}
+
+.stories .chapter_heading .kamar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 530px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+
+.stories .chapter_heading .kamar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stories .paragraph_heading {
+  margin: 20px 0px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.stories .paragraph_heading p {
+  font-family: 'TimesNewRoman-regular';
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+  font-size: 10px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 18px;
+  color: rgb(88, 114, 0);
+}
+
+.stories .main_text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+
+.stories .main_text p:last-child {
+  margin-bottom: 0px;
+}
+
+.arabic_quran {
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 3px;
+  margin: 10px 0px;
+  padding: 10px 20px;
+  padding-bottom: 3px;
+  text-align: justify;
+  direction: rtl;
+}
+
+.arabic_quran p {
+  font-family: 'ArabicType' !important;
+  font-size: 22px !important;
+  color: rgb(95, 124, 0);
+  color: rgb(97, 97, 97);
+}
+
+.uzbek_quron {
+  border-radius: 3px;
+  padding-bottom: 10px;
+}
+
+.stories aside {
+  padding: 0px 20px;
+  padding-top: 20px;
+}
+
+.right_wing_stuff {
+  border-radius: 7px;
+  border: 1px solid rgb(201, 201, 201);
+  padding: 20px;
+}
+
+.right_wing_stuff h2 {
+  margin-bottom: 10px;
+  color: rgb(87, 0, 128);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.bigger_image {
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+  margin: 20px 0px;
+  /* overflow: hidden; */
+}
+
+.bigger_image img {
+  width: 100%;
+  border-radius: 7px;
+  height: auto;
+  object-fit: cover;
+}
+
+.stories .speech-bubble {
+  position: absolute;
+  padding: 15px;
+  width: 380px;
+  left: 580px;
+  /* background: rgba(253, 255, 201, 0.797); */
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 4px;
+  z-index: 1;
+}
+
+/* .speech-bubble:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 20px;
+  left: -30px;
+  width: 0px;
+  height: 0;
+  border: 30px solid transparent;
+  border-right-color: rgba(253, 255, 201, 0.797);
+  border-left: 0;
+  border-top: 0;
+  margin-top: -10px;
+  margin-left: 0px;
+} */
+
+.stories .speech-bubble p {
+  margin-bottom: 0px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Roboto" !important;
+  color: black;
+}
+
+.stories .sep_part1 .nav_arrows {
+  padding: 17px 0px;
+}
+
+.nav_arrows>div>div {
+  margin: auto;
+  padding: 10px 10px;
+  background-color: #7d7d7d;
+  cursor: pointer;
+
+  display: flex;
+}
+
+.nav_arrows>div>div:hover {
+  background-color: #000000;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav_arrows>div>div>div {
+  margin: auto;
+}
+
+.nav_arrows .central_div {
+  width: 100%;
+  margin: 0px 10px;
+}
+
+.nav_arrows .central_div p {
+  white-space: wrap !important;
+}
+
+.nav_arrows p,
+.nav_arrows span {
+  font-size: 12px;
+  color: white;
+
+  white-space: nowrap;
+}
+
+.nav_arrows .indicator {
+  padding: 0px 5px;
+  padding-bottom: 2px;
+}
+
+.nav_arrows .left_arrow_span {
+  /* background-color: red; */
+  padding-left: 10px;
+}
+
+.nav_arrows .right_arrow_span {
+  /* background-color: red; */
+  padding-right: 10px;
+}
+
+/* footer  */
+.stories footer {
+  margin: 10px 0px;
+  background-color: rgb(1, 1, 1);
+  padding: 5px;
+  text-align: center;
+  display: flex;
+}
+
+.stories footer>div {
+  margin: auto;
+}
+
+.stories footer p {
+  color: rgb(200, 200, 200);
+  padding: 5px;
+  text-align: center;
+  font-size: 10px;
+}
+
+@media only screen and (max-width: 1120px) {
+  .stories .speech-bubble {
+    left: 580px;
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .stories .speech-bubble {
+    left: unset;
+    right: 20px;
+    width: 280px;
+    background-color: rgb(244, 255, 244);
+    width: fit-content;
+    max-width: 90%;
+    border: 1px dotted rgb(246, 61, 61);
+
+    display: none;
+  }
+
+  .stories .speech-bubble p {
+
+    color: rgb(69, 69, 69);
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  .stories .speech-bubble .boldItalic {
+    color: rgb(0, 119, 255) !important;
+    font-weight: 400;
+    font-size: 16px !important;
+  }
+
+  .stories .speech-bubble p .boldItalic {
+    color: rgb(0, 119, 255) !important;
+    font-weight: 400;
+    font-size: 16px !important;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .stories {
+    min-width: calc(100% - 0px);
+    width: calc(100% - 0px);
+    height: calc(100% - 2px);
+  }
+
+  .stories .speech-bubble .boldItalic {
+    color: rgb(0, 119, 255) !important;
+    font-weight: 400;
+    font-size: 1.1rem !important;
+  }
+
+  .stories .separate_into_two_columns {
+    /* border: 1px solid rgb(237, 237, 237); */
+    min-width: calc(100% - 0px);
+    width: calc(100% - 0px);
+    height: calc(100% - 0px);
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .stories .chapter_heading {
+    border: 1px solid rgb(204, 192, 100);
+  }
+
+  .stories .chapter_heading .img_container {
+    min-width: 55px;
+    width: 55px;
+    height: 55px;
+    border: 1px solid rgba(182, 164, 0, 0.736);
+  }
+
+  .stories .chapter_heading2 {
+    width: 100%;
+  }
+
+  .stories .chapter_heading2 p,
+  .chapter_heading .title_of_chapter p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .nav_arrows p {
+    font-size: 10px;
+  }
+
+  .bottom_arrows_for_qisas {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .stories .chapter_heading {
+    padding: 5px;
+  }
+
+  .stories .chapter_heading .img_container {
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .chapter_heading .title_of_chapter p {
+    font-size: 12px;
+    line-height: 24px;
+  }
+}
+
+span.content-sidenote {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #cfcfcf;
+  color: black;
+  text-align: left;
+  font-weight: initial;
+  font-size: initial;
+}
+
+.book-content-view-container {
+  width: 300px;
+  border: 2px solid black;
+}
+
+.content-editor-container_live-preview .ql-align-center {
+  text-align: center;
+}
+
+.content-editor-container_live-preview .ql-align-right {
+  text-align: right;
+}

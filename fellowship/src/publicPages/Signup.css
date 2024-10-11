@@ -1,0 +1,487 @@
+.sign_up_korobka2 {
+  position: fixed;
+  background-image: url(../../public/assets/BG_pic_DT.avif);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  /* height: 800px !important; */
+  height: 100%;
+  /* z-index: -2; */
+}
+
+.sign_up {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.637);
+  display: flex;
+}
+
+.sign_up .sign_up_subcontainer {
+  position: relative;
+  margin: auto;
+  background: linear-gradient(114.95deg, rgba(235, 0, 255, 0.5) 0%, rgba(0, 71, 255, 0) 34.35%), linear-gradient(180deg, #004B5B 0%, #FFA7A7 100%), linear-gradient(244.35deg, #FFB26A 0%, #3676B1 50.58%, #00A3FF 100%), linear-gradient(244.35deg, #FFFFFF 0%, #004A74 49.48%, #FF0000 100%), linear-gradient(307.27deg, #1DAC92 0.37%, #2800C6 100%), radial-gradient(100% 140% at 100% 0%, #EAFF6B 0%, #006C7A 57.29%, #2200AA 100%);
+  background-blend-mode: hard-light, overlay, overlay, overlay, difference, difference, normal;
+
+  border-radius: 12px;
+  width: 700px;
+  padding-left: 0px;
+  z-index: 1;
+
+  display: flex;
+}
+
+.sign_up .annotation_SU {
+  background: linear-gradient(114.95deg, rgba(235, 0, 255, 0.5) 0%, rgba(0, 71, 255, 0) 34.35%), linear-gradient(180deg, #004B5B 0%, #FFA7A7 100%);
+  background-blend-mode: hard-light, difference, normal;
+
+  background: rgba(5, 1, 39, 0);
+  border-radius: 12px 0 0 12px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 30px;
+
+  display: flex;
+}
+
+.sign_up .link_to_annotation_appears {
+  display: none;
+  cursor: pointer;
+}
+
+.sign_up .annotaton_LF_subcontainer {
+  background-color: rgba(2, 72, 4, 0.853);
+  border-radius: 12px 0 0 12px;
+  padding: 30px;
+  color: rgb(183, 249, 165);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  display: flex;
+}
+
+.sign_up .annotaton_LF_Notes_container {
+  margin: auto;
+  border: 1px solid white;
+  border-radius: 12px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.sign_up .annotaton_LF_Notes_container article {
+  margin: auto;
+  padding: 20px;
+}
+
+.sign_up .annotaton_LF_Notes_container p {
+  font-size: 14px;
+}
+
+.sign_up .login_form_component {
+  margin: auto;
+  width: 100%;
+  padding: 50px;
+}
+
+.sign_up .sign_up_LF {
+  padding: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: white;
+  border-radius: 15px;
+  font-family: Silom;
+  font-size: 26px;
+}
+
+.sign_up .spaan_from_sign_up {
+  display: block;
+  text-align: center !important;
+  color: rgb(220, 2, 205) !important;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.sign_up .login-form-close {
+  position: absolute;
+  font-size: 28px;
+  background-color: rgba(227, 216, 1, 0.368);
+  padding: 3px !important;
+  top: 5px;
+  right: 5px;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.sign_up .login-form-close:hover {
+  z-index: 1000000;
+  color: #FF0000;
+}
+
+.sign_up .form-container {
+  overflow: scroll;
+}
+
+.sign_up form {
+  margin-top: 60px !important;
+  font-size: 24px;
+}
+
+
+
+.sign_up form input {
+  width: 100%;
+  padding: 8px 5px;
+  font-size: 14px;
+  color: #e6e6ff !important;
+  margin-bottom: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 2px;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.sign_up input[value]:not([value=""]) {
+  color: rgb(64, 0, 101) !important;
+  font-size: 14px !important;
+  background-color: rgb(255, 250, 250);
+}
+
+.sign_up .user-box {
+  position: relative;
+}
+
+.sign_up label {
+  position: absolute;
+  font-size: 14px !important;
+  border-radius: 50%;
+  top: -10px;
+  left: 0;
+  padding: 10px 0;
+  color: #fff !important;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.sign_up .user-box input:focus~label,
+.sign_up input[value]:not([value=""])~label {
+  top: -25px !important;
+  font-size: 12px !important;
+  color: cyan !important;
+  color: rgb(200, 255, 0) !important;
+}
+
+/* Because it is date type, we css it differently  */
+.sign_up .birthday input[type="date"] {
+  color: transparent !important;
+}
+
+.sign_up .birthday input[type="date"]:focus {
+  outline: none;
+  color: rgb(64, 0, 101) !important;
+}
+
+.sign_up .birthday input[value]:not([value=""]) {
+  color: rgb(64, 0, 101) !important;
+}
+
+.sign_up .submit-btn {
+  position: relative;
+  background-color: transparent;
+  display: inline-block;
+  padding: 18px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .7s;
+  /* margin-top: 20px; */
+  letter-spacing: 4px;
+  width: 160px;
+  z-index: 1;
+}
+
+.sign_up .submit-btn:hover {
+  box-shadow: none;
+  color: white;
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.sign_up .submit-btn span {
+  position: absolute;
+  display: block;
+}
+
+.sign_up .submit-btn span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4) !important;
+  animation: run-around-anim 1s linear infinite !important;
+}
+
+@keyframes run-around-anim {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.sign_up .submit-btn span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: run-around-anim2 1s linear infinite;
+  animation-delay: 0.25s
+}
+
+@keyframes run-around-anim2 {
+  0% {
+    top: -100%;
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.sign_up .submit-btn span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: run-around-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes run-around-anim3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.sign_up .submit-btn span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: run-around-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes run-around-anim4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+.sign_up .user_ism input::placeholder {
+  color: transparent !important;
+}
+
+.sign_up .user_ism input:focus::placeholder {
+  color: rgb(121, 121, 121) !important;
+}
+
+.confirmPassword input {
+  margin-bottom: 10px !important;
+}
+
+.sign_up .error-message {
+  color: red;
+  width: 100%;
+  height: 16px;
+  /* background-color: #03e9f4; */
+  margin-bottom: 20px !important;
+}
+
+.success-popup-contain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #035e00ef;
+  z-index: 10000000;
+
+  display: flex;
+}
+
+.success-popup {
+  position: relative;
+  width: 400px;
+  padding: 60px 40px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+.success-popup>* {
+  text-align: center;
+}
+
+.success-popup button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  min-width: 60px;
+  color: green;
+  background-color: white;
+}
+
+.success-popup .with_border {
+  margin: 20px 0px;
+  border: 1px solid green;
+  padding: 20px;
+  border-radius: 7px;
+}
+
+.annot_hidden_container {
+  display: none;
+}
+
+@media only screen and (max-width: 730px) {
+
+  .sign_up .annotation_SU {
+    display: none;
+  }
+
+  .annot_hidden_container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.76);
+    z-index: 2;
+    padding: 50px;
+    display: flex;
+  }
+
+  .sign_up .annotation_SU_dif {
+    position: relative;
+    margin: auto !important;
+    z-index: 2;
+
+    height: fit-content;
+  }
+
+  .annotation_SU_dif .annotaton_LF_subcontainer {
+    border-radius: 15px;
+    background-color: green;
+    padding: 25px;
+  }
+
+  .annotation_SU_dif .annotaton_LF_Notes_container {
+    border-radius: 15px;
+    border: 1px solid white;
+    background-color: green;
+    padding: 15px;
+  }
+
+  .sign_up .link_to_annotation {
+    display: none !important;
+  }
+
+  .sign_up .link_to_annotation_appears {
+    display: inline-block;
+    cursor: pointer !important;
+    color: #2200AA !important;
+  }
+
+
+  .sign_up .sign_up_subcontainer {
+    border-radius: 10px;
+    margin: 40px 100px;
+    padding: 50px;
+  }
+
+  .sign_up .login_form_component {
+    padding: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 540px) {
+
+  .sign_up .sign_up_subcontainer {
+    border-radius: 10px;
+    margin: 40px;
+    padding: 20px;
+  }
+
+  .sign_up .annotaton_LF_subcontainer {
+    padding: 0px;
+  }
+
+
+
+  .annotation_SU_dif .annotaton_LF_Notes_container {
+    border: 1px solid white;
+    margin: 20px;
+    padding: 10px;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 400px) {
+
+  .sign_up .sign_up_subcontainer {
+
+    margin: 10px 10px;
+    padding: 10px;
+  }
+
+  .annotation_SU_dif .annotaton_LF_Notes_container {
+    border: 1px solid white;
+    margin: 20px;
+    padding: 0px;
+  }
+
+
+  .annot_hidden_container {
+    padding: 20px 40px;
+  }
+
+}

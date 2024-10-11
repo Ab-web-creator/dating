@@ -1,0 +1,190 @@
+.reply_container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.774);
+  padding: 20px;
+  z-index: 1;
+  display: flex;
+}
+
+.reply_button {
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 12px;
+  padding: 10px 20px;
+  padding-top: 20px;
+  background-color: white;
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3) !important; */
+  width: 600px;
+  min-height: 20px;
+  height: fit-content;
+}
+
+
+.reply_button .onClose {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 100;
+  cursor: pointer;
+
+  display: flex;
+}
+
+.reply_button .onClose:hover {
+  background-color: rgb(240, 240, 240) !important;
+  transition: all 0.4s ease-in-out;
+}
+
+.reply_button .onClose>div {
+  margin: auto;
+  padding-bottom: 3px;
+}
+
+.reply_button .second_main {
+  max-height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.reply_button .flex_inside_reply {
+  display: flex;
+  gap: 7px;
+}
+
+.reply_button .user_details {
+  margin-top: 3px;
+  flex-grow: 4;
+}
+
+.reply_button .user_details p {
+  line-height: 1;
+}
+
+.reply_button .datum {
+  margin-left: 15px;
+  color: rgb(175, 175, 175);
+}
+
+
+
+.reply_button .content_div {
+  border-left: 2px solid rgb(223, 223, 223);
+  margin-top: 3px;
+  margin-left: 20px;
+  padding-top: 2px;
+  padding-right: 10px;
+  padding-left: 25px;
+  min-height: 20px;
+  overflow: hidden;
+  color: rgb(64, 64, 64);
+}
+
+.reply_button .flex_inside_reply2 {
+  margin-top: -15px;
+}
+
+
+.reply_button .flex_inside_reply textarea {
+  margin-top: 10px;
+
+  border: none;
+  width: 100% !important;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgb(95, 2, 135);
+}
+
+.reply_button .flex_inside_reply textarea:focus {
+  border: none;
+  outline: none;
+}
+
+.reply_button .flex_inside_reply textarea::placeholder {
+  font-size: 18px;
+}
+
+.reply_button .searchN {
+  font-size: 14px;
+  /* font-weight: 450; */
+  color: rgb(0, 129, 6);
+}
+
+.reply_button footer {
+  border-top: 1px solid rgb(239, 239, 239);
+  /* padding-top: 10px; */
+  display: flex;
+}
+
+.reply_button .post_reply {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: 0px;
+  width: fit-content;
+  border-radius: 20px;
+
+  color: white;
+  background-color: rgb(0, 212, 0);
+  padding: 7px 20px;
+  font-weight: 450;
+}
+
+.reply_button .post_reply:hover {
+  background-color: rgb(0, 103, 0);
+}
+
+.reply_button .error,
+.reply_button .goodNews {
+  padding: 10px;
+  color: rgb(46, 146, 0);
+  border-radius: 7px;
+  width: 100%;
+  display: flex;
+}
+
+.reply_button .error {
+
+  color: rgb(255, 3, 3);
+}
+
+.reply_button .error>div,
+.reply_button .goodNews>div {
+  padding: 7px 15px;
+  margin: left;
+}
+
+.reply_button .error p,
+.reply_button .goodNews p {
+  /* color: white; */
+  font-weight: 500;
+}
+
+.reply_button .error p {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .reply_button {
+    margin-top: 0px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3) !important; */
+    /* width: 600px; */
+    /* background-color: red; */
+    height: 100%;
+    overflow: scroll;
+  }
+
+
+}

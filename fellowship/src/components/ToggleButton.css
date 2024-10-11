@@ -1,0 +1,58 @@
+.toggle-button {
+  width: 40px;
+  height: 15px;
+  border: 1px solid rgb(122, 114, 0);
+  border-radius: 7px;
+
+  background-color: #d1ffbc;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+
+
+}
+
+.toggle-button:hover {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+  transition: all 0.4s ease-in-out;
+}
+
+.switch {
+  position: absolute;
+  /* top: -2px; */
+  width: 30px;
+  /* height: 25px; */
+  height: 100%;
+
+  background-color: #b50202;
+  /* border-right: 2px solid rgb(2, 165, 32); */
+  border-radius: 6px !important;
+  transition: 0.3s;
+}
+
+.switch p {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding-top: 1.7px;
+  font-size: 8px;
+}
+
+.toggle-button.off {
+  background-color: #ff0707;
+}
+
+.toggle-button.on .switch {
+  background-color: #00bf16;
+  border-radius: 6px 0 0 6px;
+  /* border-left: 2px solid rgb(126, 1, 1);
+  border-right: 0px solid rgb(2, 165, 32); */
+  left: 45%;
+  transform: translateX(-25%);
+}
+
+.toggle-button.off .switch {
+  /* background-color: #028a06; */
+  border-radius: 0 6px 6px 0;
+  border-left: none;
+  left: 0;
+}
