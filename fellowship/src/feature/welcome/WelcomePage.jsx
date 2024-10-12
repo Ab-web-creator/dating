@@ -24,71 +24,295 @@ const WelcomePage = () => {
       </div>
 
       <div className="separate_into_two_columns">
-        <div className='sep_part1'>
+        <div className='sep_part1 overflow-y-auto'>
             <div className='px-4 sm:px-5 py-6'>
               <p>
               Here you can search for profiles that match specific criteria. Leaving a field blank will disregard it in the search.
               </p>
             </div>
 
-            <form className='px-4 space-y-4 '>
-             <section className='grid grid-cols-10 gap-1 w-full'>
-                <label className='col-span-10 ux:col-span-7   sm:col-span-6'>Profile number: 
-                  <span className='sm:hidden'> if you know  </span>
+            <form className='px-4 space-y-4'>
+             <section className='grid grid-cols-12 gap-1'>
+                <label className='col-span-12 ux:col-span-5 sm:col-span-3'>Profile number: 
+                  <span className='ux:hidden'> only if you know  </span>
                   </label>
-                <input type="text" className='col-span-10 ux:col-span-3 xs:col-span-3 sm:col-span-2  border border-gray-400  px-3 rounded-md' id='searchHeightFrom'/>
-                <p className='pl-2 hidden sm:block sm:col-span-2'> if you know  </p>
+                <input type="text" placeholder='only if you know' 
+                  className='col-span-12 ux:col-span-7 sm:col-span-4 border border-gray-400  px-3 rounded-md' 
+                  id='searchHeightFrom'/>
+                <p className='hidden sm:block ml-3 sm:col-start-8 sm:col-span-5'>you can click now "enter"</p>
               </section>
 
-             <section className='grid grid-cols-10 gap-1 w-full'>
-                <label className='col-span-2 ux:col-span-4 sm:col-span-6'>
-                  Age
+              <section className='grid grid-cols-12 gap-1'>
+                 <label className='col-span-3'>
+                  City 
                 </label>
-                <div className='col-span-4 ux:col-span-3 sm:col-span-2 flex gap-2'>
+                  <input type="text" placeholder='his town or village' 
+                   className='col-span-9 border border-gray-400  px-3 rounded-md' 
+                   id='searchHeightFrom'/>
+              </section>
+
+              <section className='grid grid-cols-12 gap-1'>
+                 <label className='col-span-3'>
+                  Country 
+                </label>
+                  <input type="text" placeholder='' 
+                   className='col-span-9 border border-gray-400  px-3 rounded-md' 
+                   id='searchHeightFrom'/>
+              </section>
+              
+              <hr className='hidden sm:block'/>
+
+             <section className='grid grid-cols-12 gap-4'>
+              <div className='col-span-12 sm:col-span-4
+              w-full border-b pb-1 sm:border-0'>
+                  <div className='flex gap-1'>
+                    <label className=''>
+                      Age 
+                    </label>
+                    <p>range</p>
+                  </div>
+              </div>
+              <div className='col-span-5 sm:col-span-3 flex gap-2'>
+                <p>from</p>
+                <input type="text" className='w-full max-w-16 border border-gray-400  px-3 rounded-md' id='searchHeightFrom'/>
+              </div>
+              <div className='col-span-5 sm:col-span-3   flex gap-2'>
+                <p>to</p>
+                <input type="text" className='w-full max-w-16 border border-gray-400  px-3 rounded-md' id='searchHeightTo' />
+              </div>
+              <div className='col-span-2 flex gap-2'>
+                <p className='truncate'>y.o.</p>  
+              </div>
+            </section>
+
+            <hr className='hidden sm:block'/>
+
+            <section className='grid grid-cols-12 gap-4'>
+              <div className='col-span-12 sm:col-span-4
+              w-full border-b pb-1 sm:border-0'>
+                  <div className='flex gap-1'>
+                    <label className=''>
+                      Weight 
+                    </label>
+                    <p>in pounds</p>
+                  </div>
+              </div>
+              <div className='col-span-5 sm:col-span-3 flex gap-2'>
+                <p>from</p>
+                <input type="text" className='w-full max-w-16 border border-gray-400  px-3 rounded-md' id='searchHeightFrom'/>
+              </div>
+              <div className='col-span-5 sm:col-span-3   flex gap-2'>
+                <p>to</p>
+                <input type="text" className='w-full max-w-16 border border-gray-400  px-3 rounded-md' id='searchHeightTo' />
+              </div>
+              <div className='col-span-2 flex gap-2'>
+                <p className='truncate'>or</p>  
+              </div>
+            </section>
+
+            <section className='grid grid-cols-12 gap-4'>
+              <div className='col-span-12 sm:col-span-4
+              w-full'>
+                  <div className='flex gap-1'>
+                    <label className=''>
+                      Weight 
+                    </label>
+                    <p>in kg</p>
+                  </div>
+              </div>
+              <div className='col-span-5 sm:col-span-3 flex gap-2'>
+                <p>from</p>
+                <input type="text" className='w-full max-w-16 border border-gray-400  px-3 rounded-md' id='searchHeightFrom'/>
+              </div>
+              <div className='col-span-5 sm:col-span-3   flex gap-2'>
+                <p>to</p>
+                <input type="text" className='w-full max-w-16 border border-gray-400  px-3 rounded-md' id='searchHeightTo' />
+              </div>
+              <div className='col-span-2 flex gap-2'>
+                <p className='truncate'></p>  
+              </div>
+            </section>
+
+            <hr className='hidden sm:block'/>
+
+            <section className='grid grid-cols-12 gap-4'>
+              <div className='col-span-12 sm:col-span-4
+              w-full border-b pb-1 sm:border-0'>
+                  <div className='flex gap-1'>
+                    <label className=''>
+                      Height 
+                    </label>
+                    <p>in feet</p>
+                  </div>
+              </div>
+              <div className='col-span-5 sm:col-span-3 flex gap-2'>
+                <p>from</p>
+                <input type="text" className='w-full max-w-16 border border-gray-400  px-3 rounded-md' id='searchHeightFrom'/>
+              </div>
+              <div className='col-span-5 sm:col-span-3   flex gap-2'>
+                <p>to</p>
+                <input type="text" className='w-full max-w-16 border border-gray-400  px-3 rounded-md' id='searchHeightTo' />
+              </div>
+              <div className='col-span-2 flex gap-2'>
+                <p className='truncate'>or</p>  
+              </div>
+            </section>
+
+            <section className='grid grid-cols-12 gap-4'>
+            <div className='col-span-12 sm:col-span-4
+              w-full'>
+                  <div className='flex gap-1'>
+                    <label className=''>
+                      Height 
+                    </label>
+                    <p>in cm</p>
+                  </div>
+              </div>
+              <div className='col-span-5 sm:col-span-3 flex gap-2'>
+                <p>from</p>
+                <input type="text" className='w-full max-w-16 border border-gray-400  px-3 rounded-md' id='searchHeightFrom'/>
+              </div>
+              <div className='col-span-5 sm:col-span-3   flex gap-2'>
+                <p>to</p>
+                <input type="text" className='w-full max-w-16 border border-gray-400  px-3 rounded-md' id='searchHeightTo' />
+              </div>
+              <div className='col-span-2 flex gap-2'>
+                <p className='truncate'></p>  
+              </div>
+            </section>
+
+            <hr className='hidden sm:block'/>
+
+              <section className='grid grid-cols-12 gap-4'>
+              <div className='col-span-12 sm:col-span-4
+              w-full border-b pb-1 sm:border-0'>
+                    <div className='flex gap-1'>
+                      <label className=''>
+                        Partnered status 
+                      </label>
+                    </div>
+                </div>
+                <div className='col-span-12 sm:col-span-8 flex gap-6'>
+                <div className='flex gap-2'>
+                  <input type="radio" className='w-fit border border-gray-400  px-3 rounded-md' id='searchHeightFrom'/>
+                  <label htmlFor="">any</label>
+                </div>
+                <div className='flex gap-2'>
+                  <input type="radio" className='w-fit border border-gray-400  px-3 rounded-md' id='searchHeightFrom'/>
+                  <label htmlFor="">no</label>
+                </div>
+                <div className='flex gap-2'>
+                  <input type="radio" className='w-fit border border-gray-400  px-3 rounded-md' id='searchHeightFrom'/>
+                  <label htmlFor="">yes</label>
+                </div>
+                </div>
+              </section>
+
+              <section className='grid grid-cols-12 gap-4'>
+              <div className='col-span-12 sm:col-span-4
+              w-full border-b pb-1 sm:border-0'>
+                    <div className='flex gap-1'>
+                      <label className=''>
+                        Distance 
+                      </label>
+                      <p>within</p>
+                    </div>
+                </div>
+                <div className='col-span-6 sm:col-span-4 flex gap-2'>
                   <p>from</p>
-                  <input type="text" className='w-full border border-gray-400  px-3 rounded-md' id='searchHeightFrom'/>
+                  <input type="text" placeholder='postal code' className='w-full  border border-gray-400  px-3 rounded-md' id='searchHeightFrom'/>
                 </div>
-                <div className='col-span-4 ux:col-span-3 sm:col-span-2 flex gap-2'>
-                  <p className='pl-2'>to</p>
-                  <input type="text" className='w-full border border-gray-400  px-3 rounded-md' id='searchHeightTo' />
+                <div className='col-span-5 sm:col-span-4 flex gap-2'>
+                  <input type="text" className='w-full max-w-16 border border-gray-400  px-3 rounded-md' id='searchHeightTo' />
+                  <label className='truncate'>km</label>  
                 </div>
               </section>
 
-              <section className='sm:pt-3 space-y-4'>
-                <div className='grid grid-cols-10 gap-1 w-full'>
-                  <label className='border border-gray-200 bg-gray-100 px-4 mb-2 rounded-md ux:border-0 ux:p-0 ux:mb-0  ux:bg-white col-span-10 ux:col-span-2'>
-                    Height
-                  </label>
-                  <p className='col-span-2 sm:col-span-4'>
-                    feet
-                  </p>
-                  <div className='col-span-4 ux:col-span-3  sm:col-span-2 flex gap-2'>
-                    <p>from</p>
-                    <input type="text" className='w-full border border-gray-400  px-3 rounded-md' id='searchHeightFrom'/>
-                  </div>
-                  <div className='col-span-4 ux:col-span-3 sm:col-span-2 flex gap-2'>
-                  <p className='pl-2'>to</p>
-                  <input type="text" className='w-full border border-gray-400  px-3 rounded-md' id='searchHeightTo' />
-                  </div>
-                </div>
+              <section className='grid grid-cols-12 gap-4'>
+                <label className='col-span-12 sm:col-span-4
+                w-full border-b pb-1 sm:border-0'>
+                  Profile name / nick 
+                </label>
+                  <input type="text" placeholder='' className='w-full  border border-gray-400 col-span-12 sm:col-span-8 px-3 rounded-md' id='searchHeightFrom'/>
+              </section>
+              <section className='grid grid-cols-12 gap-4'>
+                <label className='col-span-12 sm:col-span-4
+                w-full border-b pb-1 sm:border-0'>
+                  Words in profile txt 
+                </label>
+                  <input type="text" placeholder='' className='w-full  border border-gray-400 col-span-12 sm:col-span-8 px-3 rounded-md' id='searchHeightFrom'/>
+              </section>
 
-                <div className='grid grid-cols-10 gap-1 w-full'>
-                <label className='col-span-10 ux:col-span-2'></label>
-                  <p className='col-span-2 sm:col-span-4'>
-                    cm</p>
-                  <div className='col-span-4 ux:col-span-3  sm:col-span-2 flex gap-2'>
-                    <p>from</p>
-                    <input type="text" className='w-full border border-gray-400  px-3 rounded-md' id='searchHeightFrom'/>
-                  </div>
-                  <div className='col-span-4 ux:col-span-3 sm:col-span-2 flex gap-2'>
-                  <p className='pl-2'>to</p>
-                  <input type="text" className='w-full border border-gray-400  px-3 rounded-md' id='searchHeightTo' />
-                  </div>
-                </div>
+              <hr className='hidden sm:block'/>
+
+              <section className='grid grid-cols-12 gap-4'>
+              <label className='col-span-10 sm:col-span-7'>
+                  Only profiles with profile text 
+                </label>
+                  <input type="checkbox" placeholder='' className='w-fit  border border-gray-400 col-span-1 rounded-md' id='searchHeightFrom'/>
               </section>
-              <section>
-                dllfsdffasdf
+
+              <section className='grid grid-cols-12 gap-4'>
+              <label className='col-span-10 sm:col-span-7'>
+                  Only profiles with image
+                </label>
+                  <input type="checkbox" placeholder='' className='w-fit  border border-gray-400 col-span-1 rounded-md' id='searchHeightFrom'/>
               </section>
+
+              <section className='grid grid-cols-12 gap-4'>
+              <label className='col-span-10 sm:col-span-7'>
+                  Only those who are online
+                </label>
+                  <input type="checkbox" placeholder='' className='w-fit  border border-gray-400 col-span-1 rounded-md' id='searchHeightFrom'/>
+              </section>
+
+              <section className='grid grid-cols-12 gap-4'>
+                <label className='col-span-10 sm:col-span-7'>
+                Only those who prefer (wo)men my age
+                </label>
+                  <input type="checkbox" placeholder='' className='w-fit  border border-gray-400 col-span-1 rounded-md' id='searchHeightFrom'/>
+              </section>
+
+              <section className='grid grid-cols-12 gap-4'>
+                <label className='col-span-10 sm:col-span-7'>
+                Include travelers
+                </label>
+                  <input type="checkbox" placeholder='' className='w-fit  border border-gray-400 col-span-1 rounded-md' id='searchHeightFrom'/>
+              </section>
+
+              <section className='grid grid-cols-12 gap-4'>
+                <label className='col-span-10 sm:col-span-7'>
+                Include future travelers
+                </label>
+                  <input type="checkbox" placeholder='' className='w-fit justify-end border border-gray-400 col-span-1 rounded-md' id='searchHeightFrom'/>
+              </section>
+
+              <section className='grid grid-cols-12 gap-4'>
+                <label className='col-span-10 sm:col-span-7'>
+                  Show only travelers
+                </label>
+                  <input type="checkbox" placeholder='' className='w-fit  border border-gray-400 col-span-1 rounded-md' id='searchHeightFrom'/>
+              </section>
+
+              <hr className='hidden sm:block'/>
+
+              <section className='grid grid-cols-12 gap-4'>
+                <label className='col-span-4 sm:col-span-7'>
+                  Sort by
+                </label>
+                  <div className='w-full sm:w-1/2 sm:min-w-fit  border border-gray-400 col-span-8  sm:col-span-5 px-2 rounded-md'>
+                  <select className='w-full outline-none'  id='searchHeightFrom'>
+                    <option value="aga">Default</option>
+                    <option value="aga">Latest login</option>
+                    <option value="aga">Newest profiles</option>
+                    <option value="aga">Age decreasing</option>
+                  </select>
+                  </div>
+              </section>
+              <div className='flex py-5 gap-2 w-full justify-end'>
+                <button className='w-full xs:w-fit bg-yellow-300 text-black hover:text-white hover:bg-yellow-600'>Clear all</button>
+                <button className='w-full xs:w-fit bg-blue-500 hover:bg-blue-700'>Search</button>
+              </div>
             </form>
 
         </div>

@@ -6,8 +6,8 @@ import messages1 from '../../../images/email1.png';
 import messages2 from '../../../images/email2.png';
 import notification1 from '../../../images/notification1.png';
 import notification2 from '../../../images/notification2.png';
-import myteachers1 from '../../../images/teachers1.png';
-import myteachers2 from '../../../images/teachers2.png';
+import searchProfiles1 from '../../../images/searchProfiles1.png';
+import searchProfiles2 from '../../../images/searchProfiles2.png';
 import mystudents1 from '../../../images/mystudents1.png';
 import mystudents2 from '../../../images/mystudents2.png';
 import servants1 from '../../../images/servants1.png';
@@ -29,8 +29,8 @@ const NavImages = {
   messages2,
   notification1,
   notification2,
-  myteachers1,
-  myteachers2,
+  searchProfiles1,
+  searchProfiles2,
   mystudents1,
   mystudents2,
   servants1,
@@ -53,16 +53,40 @@ const getNavLinks = (auth) => [
     textKey: 'Nav.BlogPage',
   },
   {
+    path: '/bookmarks',
+    image1: NavImages.bookmark1,
+    image2: NavImages.bookmark2,
+    textKey: 'Nav.Bookmarks',
+  },
+  {
     path: '/communities',
     image1: NavImages.community1,
     image2: NavImages.community2,
     textKey: 'Nav.Communities',
   },
   {
-    path: '/my-students',
-    image1: NavImages.myteachers1,
-    image2: NavImages.myteachers2,
-    textKey: 'Nav.Teaching',
+    path: '/search-page',
+    image1: NavImages.searchProfiles1,
+    image2: NavImages.searchProfiles2,
+    textKey: 'Nav.Search',
+  },
+  {
+    path: '/servants',
+    image1: NavImages.servants1,
+    image2: NavImages.servants2,
+    textKey: 'Nav.Servants',
+  },
+  {
+    path: `/profile-page/${auth?.userId}`,
+    image1: NavImages.myProfile1,
+    image2: NavImages.myProfile2,
+    textKey: 'Nav.Profile',
+  },
+  {
+    path: '/messages',
+    image1: NavImages.messages1,
+    image2: NavImages.messages2,
+    textKey: 'Nav.Messages',
   },
   {
     path: '/my-teachers',
@@ -76,36 +100,14 @@ const getNavLinks = (auth) => [
     image2: NavImages.resources2,
     textKey: 'Nav.Resources',
   },
-  {
-    path: '/messages',
-    image1: NavImages.messages1,
-    image2: NavImages.messages2,
-    textKey: 'Nav.Messages',
-  },
-  {
-    path: '/bookmarks',
-    image1: NavImages.bookmark1,
-    image2: NavImages.bookmark2,
-    textKey: 'Nav.Bookmarks',
-  },
+
   // {
   //   path: '/notifications',
   //   image1: NavImages.notification1,
   //   image2: NavImages.notification2,
   //   textKey: 'Nav.Notifications',
   // },
-  {
-    path: '/servants',
-    image1: NavImages.servants1,
-    image2: NavImages.servants2,
-    textKey: 'Nav.Servants',
-  },
-  {
-    path: `/profile-page/${auth?.userId}`,
-    image1: NavImages.myProfile1,
-    image2: NavImages.myProfile2,
-    textKey: 'Nav.Profile',
-  },
+
 ];
 
 export { NavImages, getNavLinks };

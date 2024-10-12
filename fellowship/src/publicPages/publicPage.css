@@ -97,7 +97,7 @@
 
 .public_page .homepage_big_texts p {
   color: white;
-  font-size: 50px;
+  font-size: 42px;
   text-transform: uppercase;
   font-family: 'Oswald-Light', sans-serif;
   font-weight: 300;
@@ -161,7 +161,7 @@
   margin-right: 0px;
   width: 40%;
   height: 300px;
-  background-image: url(../../public/assets/kitob.jpg);
+  background-image: url(../../public/assets/loveImage.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -244,7 +244,7 @@
   }
 
   .public_page .homepage_big_texts p {
-    font-size: 40px;
+    font-size: 33px;
   }
 
   .public_page .secondWord_HP {
@@ -261,7 +261,7 @@
 
 @media only screen and (max-width: 700px) {
   .public_page .homepage_big_texts p {
-    font-size: 35px;
+    font-size: 27px;
   }
 
   .public_page .kitab_lamp_HP {
@@ -294,7 +294,7 @@
   }
 
   .public_page .homepage_big_texts p {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   .public_page .no_greater_love p,
@@ -378,13 +378,13 @@
   }
 
   .public_page .homepage_big_texts p {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
 @media only screen and (max-width: 450px) {
   .public_page .homepage_big_texts p {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .public_page .secondWord_HP {
@@ -394,7 +394,7 @@
 
 @media only screen and (max-width: 410px) {
   .public_page .homepage_big_texts p {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .public_page .secondWord_HP {
@@ -423,11 +423,11 @@
   }
 
   .public_page .secondWord_HP {
-    margin-bottom: 35px;
+    margin-bottom: 27px;
   }
 
   .public_page .homepage_big_texts p {
-    font-size: 26px;
+    font-size: 22px;
   }
 
   .public_page .no_greater_love {

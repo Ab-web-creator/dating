@@ -80,8 +80,7 @@ const Navigation = ({ activeLink, setActiveLink }) => {
       <header className='application_logo' title={t('Nav.OurLogo')}>
         <img src={NavImages.smallLogo} alt={t('Nav.OurLogoAlt')} />
         <p>
-        {t('Nav.MainHeading')}
-        {/* WA<span>Y</span> OF LO<span>V</span>E */}
+         FI<span>N</span>D YOUR LO<span>V</span>E
           
         </p>
       </header>

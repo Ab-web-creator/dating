@@ -43,24 +43,20 @@ const PublicPage = () => {
                 <div className='homepage_big_texts'>
                   <div className='firstWord_HP'>
                     <p>
-                      {t('PublicPage.Word1White1')}
-                      <span>{t('PublicPage.Word1Yellow')}</span>
-                      {t('PublicPage.Word1White2')}
+                     Find y<span>o</span>ur
                     </p>
                   </div>
 
                   <div className='secondWord_HP'>
                     <p>
-                      {t('PublicPage.Word2White1')}
-                      <span>{t('PublicPage.Word2Yellow')}</span>
-                      {t('PublicPage.Word2White2')}
+                     S<span>o</span>ulmate
                     </p>
                   </div>
                 </div>
 
                 <div className='no_greater_love'>
                   <p>
-                  {t('PublicPage.MottoNoGreater')}
+                  "Life is short. Find love, cherish every moment, and make the most of your journey together."
                   </p>
                 </div>
               </article>
@@ -69,7 +65,7 @@ const PublicPage = () => {
               <article className='main_MB_HP'>
                 <div>
                   <p>
-                  {t('PublicPage.MottoNoGreater2')}
+                  "Life is short. Find love, cherish every moment, and make the most of your journey together."
                   </p>
                 </div>
               </article>
@@ -83,7 +79,7 @@ const PublicPage = () => {
           </div>
 
           <div className='ODP_sign_HP'>
-            <p> {t('PublicPage.ODPSign')}</p>
+            <p>FYS</p>
           </div>
         </article>
       </div>

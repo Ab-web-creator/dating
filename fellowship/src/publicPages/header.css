@@ -72,10 +72,10 @@
 
   .topBar_center_HP {
     display: block;
-    background-image: url(../../public/assets/bismilla.png);
+    /* background-image: url(../../public/assets/bismilla.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: contain; */
 
     width: fit-content;
     width: 114px;

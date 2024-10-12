@@ -14,9 +14,9 @@ const Header = () => {
           <div className='logo_bg_div'></div>
         </div>
         <div className="navLink_container_HP">
-          <li className="navLink_HP" to="#ishimiz_haqida">Online</li>
-          <li className="navLink_HP" to="#biz_kimmiz">Discipleship</li>
-          <li className="navLink_HP" to="#ishimiz_haqida">Platform</li>
+          <li className="navLink_HP" to="#ishimiz_haqida">Dating</li>
+          <li className="navLink_HP" to="#biz_kimmiz">Website</li>
+         
         </div>
         <div className='topBar_center_HP'> </div>
         <div className='flex gap-2 items-center relative'>

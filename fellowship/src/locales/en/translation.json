@@ -15,15 +15,15 @@
   },
   "Nav":{  
     "BlogPage": "Discussions",
-    "Communities": "Communities",
-    "Teaching": "Teaching",
-    "Learning": "Learning",
-    "Resources": "Resources",
+    "Communities": "Video chats",
+    "Search": "Search Profiles",
+    "Learning": "Travelers section",
+    "Resources": "Premium",
     "Messages": "Messages",
     "Bookmarks":"Bookmarks",
     "Notifications": "Notifications",
-    "Servants": "Servants",
-    "Profile": "Profile",
+    "Servants": "Last Profiles",
+    "Profile": "My Profile",
     "WantToLogOut": "Want to logout?",
     "LogOutYes": "YES",
     "LogOutNo": "NO",
@@ -31,7 +31,7 @@
     "OpenSideMenu": "open the side menu",
     "OurLogo": "our logo",
     "OurLogoAlt": "logo",
-    "MainHeading": "WAY OF LOVE"
+    "MainHeading": "FIND YOUR LOVE"
   },
     "Wel":{ 
     "MainHeading": "Welcome!",
