@@ -35,7 +35,7 @@ const Communities = () => {
 
   return (
 
-    <div className="minister-home">
+    <div className="page-root">
       <div className='topbar'>
         <div className='middle_part1'>
 

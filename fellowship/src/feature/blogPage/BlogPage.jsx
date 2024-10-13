@@ -83,7 +83,7 @@ const BlogPage = () => {
 
   return (
     <>
-      <div className='minister-home blog_page'>
+      <div className='page-root blog_page'>
         <div className='topbar'>
           <div className='middle_part1'>
             <div className='icon_and_h2'>

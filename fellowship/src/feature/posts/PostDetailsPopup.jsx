@@ -91,7 +91,7 @@ const PostDetailsPopup = ({ post, onClose }) => {
 
   return (
   <div className='fixed-container' >
-      <div className="minister-home post-details" >
+      <div className="page-root post-details" >
       <header className='topbar' style={{background: 'white',}}  onClick={onClose}>
         <div className='middle_part1'>
           <div className='arrow_and_post' onClick={onClose}>

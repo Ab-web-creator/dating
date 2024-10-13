@@ -55,7 +55,7 @@ const Bookmarks = () => {
   }
 
   return (
-    <div className='minister-home bookmarks'>
+    <div className='page-root bookmarks'>
       <div className='topbar'>
         <div className='middle_part1'>
           <div className='icon_and_h2'>

@@ -1,7 +1,5 @@
 import React from 'react'
 import UmightLike from '../../components/UmightLike'
-import './searchPage.css'
-
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from '../../components/LanguageSwitcher'
 
@@ -9,15 +7,13 @@ const SearchPage = () => {
   const { t } = useTranslation();
 
   return (
-    <div className='minister-home  welcome_page'>
+    <div className='page-root'>
       <div className='topbar'>
         <div className='middle_part1'>
-          <div className='icon_and_h2' >
             <h1>
               S<span>e</span>arch profil<span>e</span>s
             </h1>
             <LanguageSwitcher />
-          </div>
         </div>
         <div className="middle_part2">
         </div>

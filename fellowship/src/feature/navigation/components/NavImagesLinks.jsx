@@ -71,10 +71,10 @@ const getNavLinks = (auth) => [
     textKey: 'Nav.Search',
   },
   {
-    path: '/servants',
+    path: '/lastProfiles',
     image1: NavImages.servants1,
     image2: NavImages.servants2,
-    textKey: 'Nav.Servants',
+    textKey: 'Last Profiles',
   },
   {
     path: `/profile-page/${auth?.userId}`,
@@ -89,16 +89,16 @@ const getNavLinks = (auth) => [
     textKey: 'Nav.Messages',
   },
   {
-    path: '/my-teachers',
+    path: '/premium-page',
     image1: NavImages.mystudents1,
     image2: NavImages.mystudents2,
-    textKey: 'Nav.Learning',
+    textKey: 'Premium',
   },
   {
-    path: '/resources',
+    path: '/travelers',
     image1: NavImages.resources1,
     image2: NavImages.resources2,
-    textKey: 'Nav.Resources',
+    textKey: 'Travelers Section',
   },
 
   // {

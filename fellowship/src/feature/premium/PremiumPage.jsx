@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { differenceInYears } from 'date-fns';
-import './myStudents.css'
+import './premiumPage.css'
 
 import useAxiosPrivate from '../../hooks/useAxiosPrivate';
 import useAuth from '../../hooks/useAuth';
@@ -19,7 +19,7 @@ import DonateButton from '../../components/buttons/DonateButton';
  
 import TempNotesPopupLearn from './components/TempNotesPopupLearn';
 
-const MyTeachers = () => {
+const PremiumPage = () => {
   const { t } = useTranslation();
   const [isDiaryPopupOpen, setDiaryPopupOpen] = useState(false);
   const [selectedUserId, setSelectedUserId] = useState(null);
@@ -63,7 +63,7 @@ const MyTeachers = () => {
   const [isTempNotesPopupOpen, setTempNotesPopupOpen] = useState(false);
 
   return (
-    <div className='minister-home my_relationships resources'>
+    <div className='page-root my_relationships resources'>
       <div className='topbar'>
         <div className='middle_part1'>
           <div className='icon_and_h2'>
@@ -104,92 +104,8 @@ const MyTeachers = () => {
       </div>
 
       <div className="separate_into_two_columns">
-        <div className='one_column_only'>
-          <h1 style={{ color: 'gray', fontWeight: '500', marginLeft: '20px' }}>{t('MyTeachers.MyCoursesHeading')}</h1>
-
-          <div className="courses_container">
-            <div
-              onClick={() => navigate('/qisas-uzbek/home-qisas')}
-              className='courses'>
-              <div className='course_subcontain cursored'>
-                <div className='name_of_course'>
-                  <h2> Stories of Prophets</h2>
-                  <button className='start_course'>Open</button>
-                </div>
-
-                <div className="course_chapters ">
-                  <div className='round_div'>
-                    <p> &#128218; </p>
-                  </div>
-
-                  <div className='chapter_names' >
-                    <p> Qisas al-Anbiya, Uzbek</p>
-                    <p className='font_weight_300'>18% mastered</p>
-                  </div>
-                </div>
-
-                <div className="course_chapters">
-                  <div className='round_div'>
-                    <p> &#128218; </p>
-                  </div>
-                  <div className='chapter_names'>
-                    <p> Qisas al-Anbiya, Turkish</p>
-                  </div>
-                </div>
-
-                <div className="course_chapters">
-                  <div className='round_div'>
-                    <p> &#128218; </p>
-                  </div>
-
-                  <div className='chapter_names'>
-                    <p> English Stories</p>
-                  </div>
-                </div>
-                <div className="last_child"></div>
-              </div>
-            </div>
-
-            <div className='courses'>
-              <div className='course_subcontain'>
-                <div className='name_of_course'>
-                  <h2>Learning English</h2>
-                  <button className='start_course'>Start</button>
-                </div>
-
-                <div className="course_chapters">
-                  <div className='round_div'>
-                    <img src={heart} alt="" />
-                  </div>
-
-                  <div className='chapter_names'>
-                    <p>Grammar Analysis</p>
-                  </div>
-                </div>
-
-                <div className="course_chapters">
-                  <div className='round_div'>
-                    <img src={community} alt="" />
-                  </div>
-
-                  <div className='chapter_names'>
-                    <p>Greetings and Farewell</p>
-                  </div>
-                </div>
-
-                <div className="course_chapters">
-                  <div className='round_div'>
-                    <img src={unconnected} alt="" />
-                  </div>
-
-                  <div className='chapter_names'>
-                    <p>Daily Conversations</p>
-                  </div>
-                </div>
-                <div className="last_child"></div>
-              </div>
-            </div>
-          </div>
+      <div className='sep_part1 overflow-y-auto'>
+     
 
           {teachers.length === 0 ? (
             <>
@@ -249,4 +165,4 @@ const MyTeachers = () => {
   )
 }
 
-export default MyTeachers
+export default PremiumPage

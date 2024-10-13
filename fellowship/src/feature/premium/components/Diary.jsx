@@ -9,9 +9,6 @@ import useAuth from '../../../hooks/useAuth';
 import checked from '../../../images/checked.png';
 import checked_not from '../../../images/checked_not.png';
 import delete_btn from '../../../images/del_btn.png';
-import send_further from '../../../images/please.png';
-
-import AskSupport from '../../../components/AskSupport';
 import { useTranslation } from 'react-i18next';
  
 const Diary = ({ onClose, selectedUserId, users }) => {
@@ -103,11 +100,11 @@ const Diary = ({ onClose, selectedUserId, users }) => {
     navigate(`/profile-page/${myContact}`)
   }
 
+  console.log('selectedUserId', selectedUserId)
   return (
     <div className="diary_container" onClick={() => onClose()}>
 
       <div className="diary" onClick={(e) => { e.stopPropagation(); }}>
-
 
         <header className=''>
           {selectedUser && (
@@ -168,14 +165,6 @@ const Diary = ({ onClose, selectedUserId, users }) => {
           </div>
 
           <div className='send_note_div'>
-
-            <AskSupport
-              icon={<img id='ask_admins' src={send_further} alt="" />}
-              className='asking_support'
-              auth={auth}
-              selectedUser={selectedUser}
-            />
-
             <input
               type="text"
               value={newNote}

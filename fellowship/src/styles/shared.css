@@ -366,21 +366,18 @@
   gap: 0px;
 }
 
-
-
-.minister-home {
+.page-root {
   border: 1px solid rgb(238, 238, 238);
   border-top: none;
   overflow-x: hidden;
 }
 
-
-.minister-home::-webkit-scrollbar {
+.page-root::-webkit-scrollbar {
   width: 0px;
   height: 0px;
 }
 
-.minister-home::-webkit-scrollbar-thumb {
+.page-root::-webkit-scrollbar-thumb {
   background: #b0f6abcc;
   background: transparent;
   border-radius: 15px;
@@ -388,7 +385,7 @@
   /* Color of the thumb (draggable part) */
 }
 
-.minister-home::-webkit-scrollbar-track {
+.page-root::-webkit-scrollbar-track {
   background: #ffffff;
   /* Color of the track (the background) */
 }
@@ -408,10 +405,6 @@
   gap: 0px;
 }
 
-.separate_not_into_two_columns {
-  margin-top: 66px;
-}
-
 .sep_part1 {
   position: relative;
   min-width: 570px;
@@ -419,9 +412,7 @@
   max-width: 570px;
   flex: 1;
   margin-bottom: 2px;
-  /* z-index: 1; */
 }
-
 
 .separate_into_two_columns>aside {
   position: sticky;
@@ -429,7 +420,6 @@
   min-width: 440px;
   width: 440px;
   max-width: 440px;
-  /* height: calc(100vh - 50px); */
   overflow-y: scroll;
   border-left: 1px solid rgb(238, 238, 238);
 
@@ -473,7 +463,6 @@
 .right_column_posts h3,
 .right_column_posts h5 {
   font-weight: 450;
-  /* font-size: 14px !important; */
 }
 
 .flex_to_left {
@@ -481,20 +470,7 @@
   justify-content: left;
   gap: 20px;
 }
-
-.airoport {
-  color: rgb(0, 0, 0);
-  min-width: 100%;
-  width: 100%;
-  /* height: 100%; */
-  margin-bottom: 10px;
-  overflow-y: scroll;
-}
-
-.airoport::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
-}
+ 
 
 /* Customize the appearance of the scrollbar */
 .separate_into_two_columns::-webkit-scrollbar {
@@ -515,15 +491,7 @@
   /* Color of the track (the background) */
 }
 
-
-.airoport h2 {
-  color: rgba(31, 49, 31, 0.902);
-  padding: 20px;
-  padding-top: 5px;
-  padding-left: 0px;
-  font-size: 16px;
-  font-weight: 500;
-}
+ 
 
 
 .right_column_contain .chat_group_info,
@@ -606,35 +574,10 @@
   color: rgb(132, 132, 132);
 }
 
-
-@media only screen and (max-width: 1250px) {
-
-  /* .minister-home {
-    min-width: 1012px;
-    width: 1012px;
-    max-width: 1012px;
-  } */
-
-  .topbar .for_me {
-    left: 435px;
-  }
-
-  /* .temp-notes-popup.open {
-    top: 40px;
-    left: -365px;
-    width: 575px;
-  } */
-
-}
-
-
-
+ 
 @media only screen and (max-width: 1120px) {
-  .topbar .for_me {
-    left: 365px;
-  }
 
-  /* .minister-home {
+  /* .page-root {
     min-width: 872px;
     width: 872px;
     max-width: 872px;
@@ -651,10 +594,15 @@
     flex-direction: column;
   }
 
-  .home_qisas .separate_into_two_columns aside {
-    min-width: calc(100% - 40px);
-    width: calc(100% - 40px);
-    max-width: calc(100% - 40px);
+  .separate_into_two_columns {
+    min-width: fit-content;
+    width: fit-content;
+    max-width: 870px;
+  }
+
+  .right_column_contain {
+    max-width: 300px;
+    padding-left: 20px;
   }
 }
 
@@ -672,7 +620,7 @@
     left: -62px;
   }
 
-  .minister-home {
+  .page-root {
     min-width: 430px;
     width: 430px;
     max-width: 430px;
@@ -683,11 +631,7 @@
     max-height: calc(100dvh - 53px);
   }
 
-  .airoport {
-    min-width: 430px;
-  }
-
-  .minister-home {
+  .page-root {
     min-width: 430px;
     width: 430px;
     max-width: 430px;
@@ -765,7 +709,11 @@
     white-space: wrap !important;
   }
 
-
+  .separate_into_two_columns {
+    min-width: fit-content;
+    width: fit-content;
+    max-width: 500px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -774,14 +722,14 @@
     display: none;
   }
 
-  .minister-home,
+  .page-root,
   .sep_part1 {
     min-width: 100%;
     width: 100%;
     max-width: 100%;
   }
 
-  .minister-home {
+  .page-root {
     border: none;
   }
 
@@ -795,6 +743,11 @@
     max-width: 100%;
   }
 
+  .separate_into_two_columns {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 @media only screen and (max-width: 310px) {

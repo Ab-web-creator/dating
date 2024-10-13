@@ -36,7 +36,7 @@ import PostDetailsPopup from '../posts/PostDetailsPopup';
 import CreatePostButton from '../../components/buttons/CreatePostButton';
 import DevNotesButton from '../../components/buttons/DevNotesButton';
 import TempNotesPopup from './components/TempNotesPopup';
-import Diary from '../academy/components/Diary';
+import Diary from '../premium/components/Diary';
 
 
 const ProfilePage = () => {
@@ -245,10 +245,10 @@ const ProfilePage = () => {
   }
 
   const [isTempNotesPopupOpen, setTempNotesPopupOpen] = useState(false);
-
+  
   return (
     <>
-      <div className="minister-home my_profile_page">
+      <div className="page-root my_profile_page">
         <div className='topbar'> 
           <div className='middle_part1'>
             {auth.userId === params.id ? (
@@ -367,16 +367,14 @@ const ProfilePage = () => {
                         </div>
                       </div>
                       <div className="absolute top-16 right-0 truncate group">
-                        <button className="flex items-center">
+                        <button 
+                          className="flex items-center">
                           <span className='inline-block '>My notes</span>
                           <span className="ml-2 w-0 h-0 inline-block overflow-hidden group-hover:w-auto group-hover:h-auto  transition-all duration-300">
                             about him / her
-                          </span>
+                          </span>    
                         </button>
-                        
                       </div>
-
-
                     </section>
                   }
                 </div>
@@ -459,7 +457,6 @@ const ProfilePage = () => {
                 </section>
                 )}
                 
-
                 <div className="biography_div mb-2">
                   {auth.userId === params.id ? (
                     <p>{auth?.biography}</p>
@@ -468,11 +465,11 @@ const ProfilePage = () => {
                   )}
                 </div>
 
-                {user?.location ? (
-                  <p> 🌎 {user?.location}...  🗓️ {t('ProfilePage.Joined')} {formattedDate}</p>
-                ) : (
-                  <p className='gray'> 🌎 Narnia, New Geo...  🗓️ Joined:  dd-mm-yyyy </p>
+                
+                {auth.userId === params.id &&  user?.location && (
+                  <p> 🌎 {user?.location}... </p>
                 )}
+                <p> 🗓️ {t('ProfilePage.Joined')} {formattedDate} </p>
 
                 <p className='mt-2'>27 {t('ProfilePage.Following')} | 8 {t('ProfilePage.Followers')} | 5 {t('ProfilePage.Posts')}. 
                 {auth.userId === params.id ? (

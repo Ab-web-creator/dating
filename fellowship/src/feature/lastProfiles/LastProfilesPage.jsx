@@ -1,31 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import './servants.css'
+import './lastProfilesPage.css'
 import BoardMembers from './components/BoardMembers'
 import Search from '../../components/Search'
-
-import useAuth from '../../hooks/useAuth'
 import UmightLike from '../../components/UmightLike'
 import useAxiosPrivate from '../../hooks/useAxiosPrivate';
 import LazyBoardMembers from './components/LazyBoardMembers';
 import EventThumbNail from '../../components/EventThumbNail';
  
 import h2_icon from '../../images/servants1.png';
-import take_me_out from '../../images/unfollow.png';
-import add_me_in from '../../images/follow.png';
 import CreatePostButton from '../../components/buttons/CreatePostButton';
-import DevNotesButton from '../../components/buttons/DevNotesButton';
-import TempNotesPopupServants from './components/TempNotesPopupServants';
+ 
 import { useTranslation } from 'react-i18next';
 
-const Servants = () => {
+const LastProfilesPage = () => {
 
   const { t } = useTranslation();
-  const { auth, setAuth } = useAuth()
   const axiosPrivate = useAxiosPrivate()
-
-  const allowedRoles = [1111, 4444, 5555]
   const [boardMembers, setBoardMembers] = useState([])
-  const [boardMember, setBoardMember] = useState(allowedRoles.some(role => auth.role.includes(role)) && auth.boardMember)
 
   const [isLoading, setLoading] = useState(false)
 
@@ -44,53 +35,11 @@ const Servants = () => {
     fetchBoardMembers()
   }, [axiosPrivate])
 
-  useEffect(() => {
-    const updateBoardMember = async () => {
-      try {
-        const { data } = await axiosPrivate.put(`${process.env.REACT_APP_BACKEND_URL}/api/users/update-board-member/${auth.userId}`, { boardMember })
-
-        setAuth({
-          ...auth,
-          boardMember: boardMember
-        })
-
-        setBoardMembers(data)
-      } catch (error) {
-        setError(error)
-      }
-    }
-    updateBoardMember()
-  }, [boardMember])
-
-  const toggleMembership = async () => {
-    setBoardMember(!boardMember)
-  }
-
   const [error, setError] = useState('')
-
-  const isUserAllowed = allowedRoles.some(role => auth.role.includes(role));
-
-  const actionWrapper = (
-    isUserAllowed && (
-      <div className="topbar_btn_container">
-        {boardMember ? (
-          <button className='add_me_toBoard' title={t('Servants.RemoveMe')} onClick={toggleMembership}>
-            <img src={take_me_out} alt="" />
-          </button>
-        ) : (
-          <button className='add_me_toBoard' title={t('Servants.AddMe')} onClick={toggleMembership}>
-            <img src={add_me_in} alt="" />
-          </button>
-        )}
-      </div>
-    )
-  );
-
   const [search, setSearch] = useState('')
-  const [isTempNotesPopupOpen, setTempNotesPopupOpen] = useState(false);
-
+ 
   return (
-    <div className='minister-home servants_or_resources_board '>
+    <div className='page-root servants_or_resources_board '>
       <div className='topbar'>
         <div className='middle_part1'>
           <div className='icon_and_h2'>
@@ -104,14 +53,7 @@ const Servants = () => {
               </h1>
           </div>
 
-          <DevNotesButton isTempNotesPopupOpen={isTempNotesPopupOpen} setTempNotesPopupOpen={setTempNotesPopupOpen} />
-          <TempNotesPopupServants
-              isOpen={isTempNotesPopupOpen}
-              setTempNotesPopupOpen={setTempNotesPopupOpen}
-            />
-
           <div className='network_icons_topbar'>
-            {actionWrapper}
             <CreatePostButton />
           </div>
         </div>
@@ -178,4 +120,4 @@ const Servants = () => {
   )
 }
 
-export default Servants
+export default LastProfilesPage

@@ -7,21 +7,11 @@
   position: relative;
 }
 
-.notifications .airoport {
-  min-width: 400px;
-}
-
 .all_notifs_flexed {
   min-width: 100%;
-  /* padding-left: 10px; */
   display: flex;
   flex-direction: column;
-  /* gap: 10px; */
 }
-
-/* .recent_notif:nth-child(even) {
-  background-color: rgb(247, 247, 247);
-} */
 
 .recent_notif {
   padding: 20px;

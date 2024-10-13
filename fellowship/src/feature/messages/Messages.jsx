@@ -198,7 +198,7 @@ const Messages = () => {
 
   return (
 
-    <div className='minister-home messages'>
+    <div className='page-root messages'>
       <div className='topbar'>
         <div className='middle_part1'>
 

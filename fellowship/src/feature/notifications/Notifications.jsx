@@ -21,7 +21,7 @@ const Notifications = () => {
 
   return (
     <>
-      <div className='minister-home notifications'>
+      <div className='page-root notifications'>
         <div className='topbar'>
           <div className='middle_part1'>
             <div className='icon_and_h2'>
@@ -64,66 +64,7 @@ const Notifications = () => {
               </div>
             </div> */}
 
-            <div className='airoport'>
-              <div className="dev_notes_div">
-                <p className='dev_notes'> {t('Notification.UnderConstruction')} </p>
-                <br />
-                <p>
-                {t('Notification.TheseNotifications')}
-                  
-                </p>
-              </div>
-              <div className="spacer20px"></div>
-
-              <div className="all_notifs_flexed">
-                <div className='recent_notif'>
-                  <div className='smb_followed_or_liked'>
-                    <img src={heart_red} alt="" />
-                  </div>
-                  <div className='smb_followed_or_liked'>
-                    <img src={example_avatar2} alt="" />
-                    <p><span>Baynazar</span>  {t('Notification.LikedYourReply')}</p>
-                    <p className="gray">
-                    {t('Notification.ExampleRussianExport')}
-                      <br /><br />
-                      {t('Notification.ExampleThisYear')} </p>
-                  </div>
-                </div>
-
-                <div className='recent_notif'>
-                  <div className='smb_followed_or_liked'>
-                    <img src={followed} alt="" />
-                  </div>
-                  <div className='smb_followed_or_liked'>
-                    <img src={example_avatar2} alt="" />
-                    <p><span>{t('Notification.ExamplePersonNameAbdullaSelim')}</span> {t('Notification.FollowedYou')} </p>
-                  </div>
-                </div>
-
-                <div className='recent_notif'>
-                  <div className='smb_followed_or_liked'>
-                    <img src={some_user} alt="" />
-                  </div>
-                  <div className='smb_replied'>
-                    <p><span className='bold'>{t('Notification.PersonNameFransua')}</span>
-                      <span className='gray'> @fransua_kng | Aug 7</span></p>
-                    <p className='gray'> {t('Notification.ReplyingTo')}<span className='green'>@Abeke_Sa</span></p>
-                    <p>Yes, I agree with you!</p>
-                  </div>
-                </div>
-
-                <div className='recent_notif'>
-                  <div className='smb_followed_or_liked'>
-                    <img src={heart_red} alt="" />
-                  </div>
-                  <div className='smb_followed_or_liked'>
-                    <img src={example_avatar} alt="" />
-                    <p><span>Baynazar</span> {t('Notification.LikedYourPost')}</p>
-                    <p className="gray">Hi, yes you are right, our company is called Shym-tech.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+ 
           </main>
 
           <aside>

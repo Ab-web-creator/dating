@@ -3,7 +3,6 @@ const Diary = require('../models/diaryModel')
 
 const getDiary = asyncHandler(async (req, res) => {
   try {
-
     const { authorId, referencedId } = req.params
     console.log("authorId", authorId)
     console.log("referencedId", referencedId)
