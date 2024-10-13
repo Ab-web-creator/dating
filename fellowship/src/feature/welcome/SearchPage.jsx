@@ -1,11 +1,11 @@
 import React from 'react'
 import UmightLike from '../../components/UmightLike'
-import './welcomePage.css'
+import './searchPage.css'
 
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from '../../components/LanguageSwitcher'
 
-const WelcomePage = () => {
+const SearchPage = () => {
   const { t } = useTranslation();
 
   return (
@@ -386,4 +386,4 @@ const WelcomePage = () => {
   )
 }
 
-export default WelcomePage
+export default SearchPage

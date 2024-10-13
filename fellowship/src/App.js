@@ -11,7 +11,7 @@ import ProfileEdit from './feature/profilePage/ProfileEdit'
 
 
 import ProfilePage from './feature/profilePage/ProfilePage'
-import WelcomePage from './feature/welcome/WelcomePage'
+import SearchPage from './feature/welcome/SearchPage'
 import BlogPage from './feature/blogPage/BlogPage'
 import Communities from './feature/communities/Communities'
 import Servants from './feature/servants/Servants'
@@ -114,7 +114,7 @@ function App() {
 
               <Route element={<ConverterForQisas />} path='convert-qisas-texts' />
  
-              <Route element={<WelcomePage />} path='/search-page' />
+              <Route element={<SearchPage />} path='/search-page' />
               <Route element={<BlogPage />} path='/blogPage' />
               <Route element={<Communities />} path='/communities' />
               <Route element={<Servants />} path='/servants' />
