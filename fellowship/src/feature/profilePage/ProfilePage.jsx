@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useParams, useNavigate, useOutletContext } from 'react-router-dom';
 import { useQueryClient } from 'react-query'
 import { useInfiniteScroll } from '../../hooks/usePostsInfiniteScroll'
@@ -36,6 +36,7 @@ import PostDetailsPopup from '../posts/PostDetailsPopup';
 import CreatePostButton from '../../components/buttons/CreatePostButton';
 import DevNotesButton from '../../components/buttons/DevNotesButton';
 import TempNotesPopup from './components/TempNotesPopup';
+import Diary from '../academy/components/Diary';
 
 
 const ProfilePage = () => {
@@ -190,8 +191,8 @@ const ProfilePage = () => {
 
   const formatBirthDate = (inputDate) => {
     const date = new Date(inputDate);
-
-    // check if the date is valid before formatting
+  
+    // Check if the date is valid before formatting
     if (isValid(date)) {
       return format(date, 'd MMM yyyy');
     } else {
@@ -201,6 +202,27 @@ const ProfilePage = () => {
 
   const formattedBirthDate = formatBirthDate(user.birthDate);
 
+  const calculateAge = (birthDate) => {
+    const birth = new Date(birthDate);
+    
+    if (isValid(birth)) {
+      const today = new Date();
+      let age = today.getFullYear() - birth.getFullYear();
+      const monthDiff = today.getMonth() - birth.getMonth();
+  
+      // Adjust age if the birth month/day hasn't been reached yet in the current year
+      if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
+        age--;
+      }
+  
+      return age;
+    }
+    
+    return null; // Return null or any other indicator for invalid date
+  };
+
+  const age = calculateAge(user.birthDate);
+  
   const allowedRoles = [1111, 4444, 5555]
   const isUserAllowed = allowedRoles.some(role => auth.role.includes(role));
 
@@ -323,38 +345,39 @@ const ProfilePage = () => {
                       {t('ProfilePage.ProfileEditButton')}
                     </h4>
                     :
+                    <section >
+                      <div className='other_user_connections'>
+                        <MessageCreateProfile titleNomi={t('ProfilePage.SendMessage')} classNomi='send_email' paramsNick={user.nick} />
+                        <div className='interaction_btns'>
+                          {isUserAllowed && (
+                            <button
+                              title={isConnected ? t('ProfilePage.DisconnectFrom') : t('ProfilePage.ConnectTo')}
+                              onClick={handleClickConnected}
+                            >
+                              <img src={isConnected ? connected : unconnected} alt={t('ProfilePage.ConnectImgAlt')} />
+                            </button>
+                          )}
 
-                    <div className='other_user_connections'>
-                      <MessageCreateProfile titleNomi={t('ProfilePage.SendMessage')} classNomi='send_email' paramsNick={user.nick} />
-                      {/* <MessageCreateProfile titleNomi={<img src={newMessage} alt="" />} classNomi='send_email' paramsNick={user.nick} /> */}
-                      
-                      <div className='interaction_btns'>
-                    {isUserAllowed && (
-                      <button
-                        title={isConnected ? t('ProfilePage.DisconnectFrom') : t('ProfilePage.ConnectTo')}
-                        onClick={handleClickConnected}
-                      >
-                        <img src={isConnected ? connected : unconnected} alt={t('ProfilePage.ConnectImgAlt')} />
-                      </button>
-                    )}
+                          <AskSupport
+                            icon={<img id='ask_admins' src={askTheSupport} alt="" />}
+                            className='asking_support'
+                            auth={auth}
+                            selectedUser={params.id}
+                          />
+                        </div>
+                      </div>
+                      <div className="absolute top-16 right-0 truncate group">
+                        <button className="flex items-center">
+                          <span className='inline-block '>My notes</span>
+                          <span className="ml-2 w-0 h-0 inline-block overflow-hidden group-hover:w-auto group-hover:h-auto  transition-all duration-300">
+                            about him / her
+                          </span>
+                        </button>
+                        
+                      </div>
 
-                    <AskSupport
-                      icon={<img id='ask_admins' src={askTheSupport} alt="" />}
-                      className='asking_support'
-                      auth={auth}
-                      selectedUser={params.id}
-                    />
 
-                    {/* <button title={isFollowed ? 'unfollow this user' : 'follow this user'} onClick={handleClickFollowing}>
-                      <img src={isFollowed ? unfollow : follow} alt="follow" />
-                    </button> */}
-
-                    {/* <button title='block this user'>
-                      <img src={block} alt="" />
-                    </button> */}
-                  </div>
-                    </div>
-                  
+                    </section>
                   }
                 </div>
               </div>
@@ -385,6 +408,58 @@ const ProfilePage = () => {
                     </>
                   )}
                 </div>
+                {auth.userId !== params.id && (
+                <section className='mt-5'>
+                    <div className='flex gap-2'>
+                      <label className='w-[120px]'>
+                        Age:</label> 
+                      <p>{age}</p>
+                    </div>
+                    <div className='flex gap-2'>
+                      <label className='w-[120px]'>Height:</label> 
+                      <div>
+                        <p>5'10" ft</p>
+                        <p>178 cm</p>
+                      </div>
+                    </div>
+                    <div className='flex gap-2'>
+                      <label className='w-[120px]'>Weight:</label> 
+                      <div>
+                        <p>232 lb</p>
+                        <p>105 kg</p>
+                      </div>
+                    </div>
+                    <div className='flex gap-2'>
+                      <label className='w-[120px]'>Character:</label> 
+                      <div className='flex gap-4'>
+                        <p>submissive</p>
+                        <p>violent</p>
+                        <p>sangvinik</p>
+                      </div>
+                    </div>
+                    <div className='flex gap-2'>
+                      <label className='w-[120px]'>City:</label> 
+                      <p>Samarqand</p>
+                    </div>
+                    <div className='flex gap-2'>
+                      <label className='w-[120px]'>Country:</label> 
+                      <p>Uzbekistan</p>
+                    </div>
+                    <div className='flex gap-2'>
+                      <label className='w-[120px]'>Seeking:</label> 
+                      <div className='flex gap-4'>
+                        <p>a date</p>
+                        <p>a relationship</p>
+                        <p>friends</p>
+                      </div>
+                    </div>
+                    <div className=''>
+                      <label className='w-[120px]'>Prefer (wo)men aged from xx to xx</label> 
+                    </div>
+                </section>
+                )}
+                
+
                 <div className="biography_div mb-2">
                   {auth.userId === params.id ? (
                     <p>{auth?.biography}</p>
@@ -399,9 +474,15 @@ const ProfilePage = () => {
                   <p className='gray'> 🌎 Narnia, New Geo...  🗓️ Joined:  dd-mm-yyyy </p>
                 )}
 
-                <p className='mt-2'>27 {t('ProfilePage.Following')} | 8 {t('ProfilePage.Followers')} | 5 {t('ProfilePage.Posts')} | 2 {t('ProfilePage.Publications')}. {t('ProfilePage.DOB')}: {formattedBirthDate}. </p>
+                <p className='mt-2'>27 {t('ProfilePage.Following')} | 8 {t('ProfilePage.Followers')} | 5 {t('ProfilePage.Posts')}. 
+                {auth.userId === params.id ? (
+                    <p>{t('ProfilePage.DOB')}:  {formattedBirthDate}</p>
+                  ) : (
+                    <p></p>
+                )} </p>
                 <p>{user.familyStatus}, {user.childrenAmount} {t('ProfilePage.Children')}. </p>
               </div>
+
 
               <div className="posts_sorted">
                 <div onClick={() => handleSelectedSection('Posts')}

@@ -249,6 +249,50 @@ const SearchPage = () => {
               <div className='col-span-12 sm:col-span-4
                 w-full flex gap-1 border-b pb-1 sm:pb-0 sm:border-0'>
                 <p className=' truncate'>
+                  His/her character is ...
+                </p>
+              </div>
+
+             <div className='w-full col-span-12 flex gap-2 justify-between border p-2'>
+             <div className='w-full flex flex-col gap-2'>
+                <div className='flex  gap-1'>
+                  <input type="radio" />
+                  <label htmlFor="">any of the following</label>
+                </div>
+                <div className='flex  gap-1'>
+                  <input type="radio" />
+                  <label htmlFor="">all of the following</label>
+                </div>
+                <div className='flex  gap-1'>
+                  <input type="radio" />
+                  <label htmlFor="">exactly the following</label>
+                </div>
+              </div>
+
+              <div className='w-full flex flex-col gap-2'>
+                <div className='flex  gap-1'>
+                  <input type="checkbox" />
+                  <label htmlFor="">dominat</label>
+                </div>
+                <div className='flex  gap-1'>
+                  <input type="checkbox" />
+                  <label htmlFor="">submissive</label>
+                </div>
+                <div className='flex  gap-1'>
+                  <input type="checkbox" />
+                  <label htmlFor="">melancholic</label>
+                </div>
+              </div>
+             </div>
+            
+            </section>
+
+    
+
+            <section className='grid grid-cols-12 gap-4'>
+              <div className='col-span-12 sm:col-span-4
+                w-full flex gap-1 border-b pb-1 sm:pb-0 sm:border-0'>
+                <p className=' truncate'>
                   (S)he must seek 
                 </p>
               </div>
