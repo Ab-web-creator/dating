@@ -60,6 +60,26 @@ const WelcomePage = () => {
                    id='searchHeightFrom'/>
               </section>
               
+              <section className='grid grid-cols-12 gap-4'>
+                <div className='col-span-12 sm:col-span-3
+                  w-full border-b pb-1 sm:border-0 flex gap-1'>
+                  <label>
+                    Distance 
+                  </label>
+                  <label className='sm:hidden' htmlFor="">within from</label>
+                </div>
+
+                <div className='col-span-12 sm:col-span-9 flex gap-2'>
+                  <p className='hidden sm:block truncate '>within from</p>
+                  <input type="text" placeholder='postal code' 
+                    className='max-w-40 w-full  border border-gray-400  px-3 rounded-md' 
+                    id='searchHeightFrom'/>
+                  <input type="text" className='w-full max-w-16 border border-gray-400  px-3 rounded-md' id='searchHeightTo' />
+                  <label>km</label>  
+                </div>
+         
+              </section>
+
               <hr className='hidden sm:block'/>
 
              <section className='grid grid-cols-12 gap-4'>
@@ -84,6 +104,47 @@ const WelcomePage = () => {
                 <p className='truncate'>y.o.</p>  
               </div>
             </section>
+
+            <section className='grid grid-cols-12 gap-4'>
+              <div className='col-span-12 sm:col-span-4
+              w-full border-b pb-1 sm:border-0'>
+                    <div className='flex gap-1'>
+                      <label className=''>
+                        Partnered status 
+                      </label>
+                    </div>
+                </div>
+                <div className='col-span-12 sm:col-span-8 flex gap-6'>
+                <div className='flex gap-2'>
+                  <input type="radio" className='w-fit border border-gray-400  px-3 rounded-md' id='searchHeightFrom'/>
+                  <label htmlFor="">any</label>
+                </div>
+                <div className='flex gap-2'>
+                  <input type="radio" className='w-fit border border-gray-400  px-3 rounded-md' id='searchHeightFrom'/>
+                  <label htmlFor="">no</label>
+                </div>
+                <div className='flex gap-2'>
+                  <input type="radio" className='w-fit border border-gray-400  px-3 rounded-md' id='searchHeightFrom'/>
+                  <label htmlFor="">yes</label>
+                </div>
+                </div>
+              </section>
+
+              <section className='grid grid-cols-12 gap-4'>
+                <label className='col-span-12 sm:col-span-4
+                w-full border-b pb-1 sm:border-0'>
+                  Profile name / nick 
+                </label>
+                  <input type="text" placeholder='' className='w-full  border border-gray-400 col-span-12 sm:col-span-8 px-3 rounded-md' id='searchHeightFrom'/>
+              </section>
+              
+              <section className='grid grid-cols-12 gap-4'>
+                <label className='col-span-12 sm:col-span-4
+                w-full border-b pb-1 sm:border-0'>
+                  Words in profile txt 
+                </label>
+                  <input type="text" placeholder='' className='w-full  border border-gray-400 col-span-12 sm:col-span-8 px-3 rounded-md' id='searchHeightFrom'/>
+              </section>
 
             <hr className='hidden sm:block'/>
 
@@ -181,69 +242,52 @@ const WelcomePage = () => {
               </div>
             </section>
 
+
             <hr className='hidden sm:block'/>
 
-              <section className='grid grid-cols-12 gap-4'>
+            <section className='grid grid-cols-12 gap-4'>
               <div className='col-span-12 sm:col-span-4
-              w-full border-b pb-1 sm:border-0'>
-                    <div className='flex gap-1'>
-                      <label className=''>
-                        Partnered status 
-                      </label>
-                    </div>
-                </div>
-                <div className='col-span-12 sm:col-span-8 flex gap-6'>
-                <div className='flex gap-2'>
-                  <input type="radio" className='w-fit border border-gray-400  px-3 rounded-md' id='searchHeightFrom'/>
-                  <label htmlFor="">any</label>
-                </div>
-                <div className='flex gap-2'>
-                  <input type="radio" className='w-fit border border-gray-400  px-3 rounded-md' id='searchHeightFrom'/>
-                  <label htmlFor="">no</label>
-                </div>
-                <div className='flex gap-2'>
-                  <input type="radio" className='w-fit border border-gray-400  px-3 rounded-md' id='searchHeightFrom'/>
-                  <label htmlFor="">yes</label>
-                </div>
-                </div>
-              </section>
+                w-full flex gap-1 border-b pb-1 sm:pb-0 sm:border-0'>
+                <p className=' truncate'>
+                  (S)he must seek 
+                </p>
+              </div>
 
-              <section className='grid grid-cols-12 gap-4'>
-              <div className='col-span-12 sm:col-span-4
-              w-full border-b pb-1 sm:border-0'>
-                    <div className='flex gap-1'>
-                      <label className=''>
-                        Distance 
-                      </label>
-                      <p>within</p>
-                    </div>
+             <div className='w-full col-span-12 flex gap-2 justify-between border p-2'>
+             <div className='w-full flex flex-col gap-2'>
+                <div className='flex  gap-1'>
+                  <input type="radio" />
+                  <label htmlFor="">any of the following</label>
                 </div>
-                <div className='col-span-6 sm:col-span-4 flex gap-2'>
-                  <p>from</p>
-                  <input type="text" placeholder='postal code' className='w-full  border border-gray-400  px-3 rounded-md' id='searchHeightFrom'/>
+                <div className='flex  gap-1'>
+                  <input type="radio" />
+                  <label htmlFor="">all of the following</label>
                 </div>
-                <div className='col-span-5 sm:col-span-4 flex gap-2'>
-                  <input type="text" className='w-full max-w-16 border border-gray-400  px-3 rounded-md' id='searchHeightTo' />
-                  <label className='truncate'>km</label>  
+                <div className='flex  gap-1'>
+                  <input type="radio" />
+                  <label htmlFor="">exactly the following</label>
                 </div>
-              </section>
+              </div>
 
-              <section className='grid grid-cols-12 gap-4'>
-                <label className='col-span-12 sm:col-span-4
-                w-full border-b pb-1 sm:border-0'>
-                  Profile name / nick 
-                </label>
-                  <input type="text" placeholder='' className='w-full  border border-gray-400 col-span-12 sm:col-span-8 px-3 rounded-md' id='searchHeightFrom'/>
-              </section>
-              <section className='grid grid-cols-12 gap-4'>
-                <label className='col-span-12 sm:col-span-4
-                w-full border-b pb-1 sm:border-0'>
-                  Words in profile txt 
-                </label>
-                  <input type="text" placeholder='' className='w-full  border border-gray-400 col-span-12 sm:col-span-8 px-3 rounded-md' id='searchHeightFrom'/>
-              </section>
+              <div className='w-full flex flex-col gap-2'>
+                <div className='flex  gap-1'>
+                  <input type="checkbox" />
+                  <label htmlFor="">a date</label>
+                </div>
+                <div className='flex  gap-1'>
+                  <input type="checkbox" />
+                  <label htmlFor="">a relationship</label>
+                </div>
+                <div className='flex  gap-1'>
+                  <input type="checkbox" />
+                  <label htmlFor="">friends</label>
+                </div>
+              </div>
+             </div>
+            
+            </section>
 
-              <hr className='hidden sm:block'/>
+            <hr className='hidden sm:block'/>
 
               <section className='grid grid-cols-12 gap-4'>
               <label className='col-span-10 sm:col-span-7'>
