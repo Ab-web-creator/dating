@@ -48,7 +48,7 @@ const Videochats = () => {
           <div className="right_column_contain">
             <UmightLike
               h3="Want to attend?"
-              titleName="Sport event: Volleyball"
+              titleName="Limited to chubbies"
               btnWord="Join" />
           </div>
         </aside>

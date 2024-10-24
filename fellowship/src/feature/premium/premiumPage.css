@@ -1,3 +1,10 @@
+.premium li {
+  list-style-type: disc;
+}
+.premium a {
+  color: rgb(0, 166, 255);
+}
+
 .cursored {
   cursor: pointer !important;
   background-color: rgb(246, 255, 245);
@@ -26,7 +33,6 @@
 
 .gave_padding_btm {
   padding: 20px;
-
 }
 
 .gave_padding_btm h4 {

@@ -1,20 +1,28 @@
 import React from 'react'
-import manImage from '../images/zoom4.png';
+import manImage from '../images/kevin_dele.jpg';
+import { useNavigate } from 'react-router-dom';
+
 
 const AdvertiseProfiles = () => {
 
+  const navigate = useNavigate()
   
   return (
-          <div className='group p-6 border border-1 rounded-md space-y-5'>
+          <div className='group p-6 hover:bg-slate-100  border border-1 rounded-md space-y-5'
+          onClick={() => {
+            navigate(`/profile-page/665c42bbdd46049e2515e3fe`)
+          }}
+          >
               <div className='flex gap-4 max-w-full mb-4'>
+              <div className='profile_image w-full'>
                 <img
                   src={manImage}
                   alt='sthing'
-                  className='w-1/2'
                 />
+                </div>
                 <div className=''>
-                  <p className='font-bold text-sm'>Mike Pense</p>
-                  <p className='green text-sm'> @best_in_sport</p>
+                  <p className='font-bold text-sm'>Kevin Martijn</p>
+                  <p className='green text-sm'>@maCdonalds_1955</p>
                   <p className='text-sm'>Age: 58</p>
                   <p className='text-sm'>🌎: California, USA</p>
                   <p className='text-sm'>Age range: 44 - 90</p>
@@ -30,7 +38,7 @@ const AdvertiseProfiles = () => {
                 </p>
                 <p> . . . </p>
               </div>
-              <div className='group-hover:bg-green-200 transition-colors duration-300 border bg-gray-50 border-gray-600 rounded-lg px-4 py-2 w-fit'>
+              <div className='group-hover:bg-blue-200 transition-colors duration-300 border bg-blue-50 border-gray-600 rounded-lg px-4 py-2 w-fit'>
                 <p className='text-sm font-normal'>
                 View the profile
                 </p>

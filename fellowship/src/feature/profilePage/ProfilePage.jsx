@@ -422,11 +422,11 @@ const ProfilePage = () => {
                     </div>
                     <div className='flex gap-2'>
                       <label className='w-[120px]'>City:</label> 
-                      <p>Samarqand</p>
+                      <p>California</p>
                     </div>
                     <div className='flex gap-2'>
                       <label className='w-[120px]'>Country:</label> 
-                      <p>Uzbekistan</p>
+                      <p>United States of America</p>
                     </div>
                     <div className='flex gap-2'>
                       <label className='w-[120px]'>Seeking:</label> 
@@ -456,12 +456,12 @@ const ProfilePage = () => {
                 )}
                 <p> 🗓️ {t('ProfilePage.Joined')} {formattedDate} </p>
 
-                <p className='mt-2'>27 {t('ProfilePage.Following')} | 8 {t('ProfilePage.Followers')} | 5 {t('ProfilePage.Posts')}. 
+               
                 {auth.userId === params.id ? (
                     <p>{t('ProfilePage.DOB')}:  {formattedBirthDate}</p>
                   ) : (
                     <p></p>
-                )} </p>
+                )} 
                 <p>{user.familyStatus}, {user.childrenAmount} {t('ProfilePage.Children')}. </p>
               </div>
 

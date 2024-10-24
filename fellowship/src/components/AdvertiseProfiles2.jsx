@@ -1,17 +1,18 @@
 import React from 'react'
-import manImage from '../images/abeke.png';
+import manImage from '../images/david.JPG';
 
 const AdvertiseProfiles2 = () => {
 
   
   return (
-          <div className='group p-6 border border-1 rounded-md space-y-5'>
+          <div className='group hover:bg-slate-100 p-6 border border-1 rounded-md space-y-5'>
               <div className='flex gap-4 max-w-full mb-4'>
+                <div className='profile_image w-full'>
                 <img
                   src={manImage}
                   alt='sthing'
-                  className='w-1/2'
                 />
+                </div>
                 <div className=''>
                   <p className='font-bold text-sm'>David Schär</p>
                   <p className='green text-sm'>@david_shaer1967</p>
@@ -30,7 +31,7 @@ const AdvertiseProfiles2 = () => {
                 </p>
                 <p> . . . </p>
               </div>
-              <div className='group-hover:bg-green-200 transition-colors duration-300 border bg-gray-50 border-gray-600 rounded-lg px-4 py-2 w-fit'>
+              <div className='group-hover:bg-blue-200 transition-colors duration-300 border bg-blue-50 border-gray-600 rounded-lg px-4 py-2 w-fit'>
                 <p className='text-sm font-normal'>
                 View the profile
                 </p>

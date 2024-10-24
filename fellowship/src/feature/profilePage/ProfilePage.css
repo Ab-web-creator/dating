@@ -110,7 +110,7 @@
   bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
-  width: 18%;
+  width: 50px;
   /* Adjust this value to control the distance between the text and the underline */
   padding: 0px 10px;
   border-radius: 20px;
