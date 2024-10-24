@@ -34,9 +34,8 @@ import h2_icon from '../../images/myProfile1.png';
 // import { useInfiniteQuery } from 'react-query'
 import PostDetailsPopup from '../posts/PostDetailsPopup';
 import CreatePostButton from '../../components/buttons/CreatePostButton';
-import DevNotesButton from '../../components/buttons/DevNotesButton';
-import TempNotesPopup from './components/TempNotesPopup';
-import Diary from '../premium/components/Diary';
+
+import AdvertiseProfiles from '../../components/AdvertiseProfiles';
 
 
 const ProfilePage = () => {
@@ -254,8 +253,7 @@ const ProfilePage = () => {
             {auth.userId === params.id ? (
               <div className='icon_and_h2'
                 style={{ marginLeft: '10px' }}>
-                   <div
-                className="h2_icon_container">
+              <div className="h2_icon_container">
                 <img src={h2_icon} alt="" />
               </div>
                 <h1>{auth.nick}</h1>
@@ -263,24 +261,12 @@ const ProfilePage = () => {
             ) : (
               <>
                 {user?.nick ? (
-                  <div className='icon_and_h2' style={{ marginLeft: '10px' }}>
                     <h1>{user.nick}</h1>
-                  </div>
                 ) : (
-                  <div className='icon_and_h2' style={{ marginLeft: '10px' }}>
                     <h1>XYZ ABCDEF</h1>
-                  </div>
                 )}
               </>
             )}
-
-            <DevNotesButton isTempNotesPopupOpen={isTempNotesPopupOpen} setTempNotesPopupOpen={setTempNotesPopupOpen} />
-
-            <TempNotesPopup
-              isOpen={isTempNotesPopupOpen}
-              setTempNotesPopupOpen={setTempNotesPopupOpen}
-              isMyProfilePage={isMyProfilePage}
-            />
 
             {showReportPostPopup && (
               <ReportPostButton post={currentSelectedPost} onClose={handleCloseReportPostPopup} />
@@ -298,9 +284,8 @@ const ProfilePage = () => {
               <PostDetailsPopup post={currentSelectedPost} onClose={handleClosePostDetailsPopup} />
             )}
 
-            <div className='network_icons_topbar'>
              <CreatePostButton />
-            </div>
+             
           </div>
 
           <div className="middle_part2">
@@ -559,10 +544,7 @@ const ProfilePage = () => {
             <div className="right_column_contain">
               {auth.userId === params.id ?
                 <div className="right_column_ads">
-                  <UmightLike
-                    h3={`${auth.nick}${t('UMight.Publications')}`}
-                    titleName={t('UMight.NeedToKnow')}
-                    btnWord={t('UMight.Read')} />
+                 <AdvertiseProfiles />
                 </div>
                 :
                 <div className="right_column_ads">

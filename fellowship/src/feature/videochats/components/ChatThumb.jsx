@@ -21,7 +21,7 @@ import commty7 from '../../../images/commty7.png';
 import commty8 from '../../../images/commty8.jpg';
 import { useTranslation } from 'react-i18next';
 
-const ChatThumb = ({ onChatRoomDeleted }) => {
+const ChatThumb = () => {
 
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -57,44 +57,6 @@ const ChatThumb = ({ onChatRoomDeleted }) => {
     setPopupStates(newPopupStates);
   };
 
-
-  const imageMap = {
-    commty0,
-    commty1,
-    commty2,
-    commty3,
-    commty4,
-    commty5,
-    commty6,
-    commty7,
-    commty8,
-  };
-
-  const getImageBySelectedImage = (selectedImage) => {
-    // Assuming selectedImage is "commty8.0202ed9d6eb1d2001d73.jpg"
-    const selectedImageKey = selectedImage.split('.')[0];
-
-    // Assuming you have the imageMap in the same scope
-    const selectedImageSrc = imageMap[selectedImageKey];
-
-    // If the key is not found, you can provide a default image or handle it as needed
-    return selectedImageSrc; // Change defaultImageSrc to your fallback image
-  };
-
-  const deleteChatRoom = async chatRoomId => {
-
-    const shouldDelete = window.confirm(t('ChatThumb.SureToDelete'));
-
-    if (shouldDelete) {
-      try {
-        await axiosPrivate.delete(`${process.env.REACT_APP_BACKEND_URL}/api/communities/${chatRoomId}`);
-        onChatRoomDeleted();
-      } catch (error) {
-        console.log(error);
-      }
-    }
-  };
-
   return (
     <main className="chat_thumbnails">
       {chatRooms?.map((chat, index) => (
@@ -116,7 +78,6 @@ const ChatThumb = ({ onChatRoomDeleted }) => {
 
           <main className="chat_group_info" >
             <div className="upper_part" onClick={() => openChatWindow(chat._id, chat.name)}>
-              {/* <p className="additional_info"></p> */}
               <div>
                 <p className="common_interest">{t('ChatThumb.CommonInterest')} </p>
                 <h4 style={{ color: chat.selectedColor }}>
@@ -132,37 +93,19 @@ const ChatThumb = ({ onChatRoomDeleted }) => {
                   className="rasm_container"
                   onClick={() => toggleAnnotatie(index)}
                 >
-                  <img src={getImageBySelectedImage(chat.selectedImage)} alt="" />
-
+                  <img src={commty4} alt="" />
                 </button>
               )}
               {popupStates[index] && (
                 <div className="annotatie" onClick={() => toggleAnnotatie(index)}>
                   <h5>{t('ChatThumb.Description')}</h5>
-                  <p>{chat.description}</p>
+                  <p>Some description</p>
                 </div>
               )}
             </div>
-            <div className='curr_contain'>
-              {chat.createdByUserNick === auth.nick ? (
-                <div className='report_div'
-                  onClick={() => deleteChatRoom(chat._id)}
-                >
-                  <img src={erase} alt="" />
-                </div>
-              ) : (
-                <div className='report_div'>
-                  <img src={report} alt="" />
-                </div>
-              )}
-              <div style={{ margin: 'auto' }}>
-                <p className='currently'> {chat.createdByUserNick}</p>
-              </div>
-              <div className='share_div'>
-                <img src={share} alt="" />
-              </div>
+            <div className='curr_contain  flex items-center justify-center'>
+                <p className='m-auto text-sm'>Химия</p>
             </div>
-
           </main>
           <div className="last_piece"></div>
         </div>

@@ -6,8 +6,8 @@
 .my_relationships .list_container {
   margin-left: 20px;
 
-  background-color: rgb(238, 248, 255);
-  border-radius: 7px;
+  /* background-color: rgb(238, 248, 255); */
+  /* border-radius: 7px; */
   padding-bottom: 0px;
   width: 46%;
   min-height: 60px;
@@ -20,7 +20,7 @@
 
 .my_relationships .the_list_of_relations {
   padding-top: 20px;
-  padding-left: 20px;
+  padding-left: 10px;
   margin-bottom: 12px;
 }
 
@@ -58,9 +58,9 @@
   background-color: rgb(188, 215, 229);
 }
 
-.my_relationships .flex_it_now:last-child {
+/* .my_relationships .flex_it_now:last-child {
   border-radius: 0 0 7px 7px;
-}
+} */
 
 .my_relationships .flex_it_now>div {
   margin: auto 0px;

@@ -14,8 +14,8 @@ const UmightLike = ({ h3, titleName, btnWord }) => {
         <li className='first-child'>
           <div>
             <div><img src={example} alt="" /></div>
-            <div>
-              <h5> {titleName} </h5>
+            <div className='items-start'>
+              <h5 className='text-sm font-bold'> {titleName} </h5>
               <p>{t('UMight.Ad1Title1')}</p>
             </div>
           </div>
@@ -27,7 +27,7 @@ const UmightLike = ({ h3, titleName, btnWord }) => {
           <div>
             <div><img src={example2} alt="" /></div>
             <div>
-              <h5>{t('UMight.Ad2Head1')}</h5>
+              <h5 className='text-sm font-bold'>{t('UMight.Ad2Head1')}</h5>
               <p>{t('UMight.Ad2Title1')}</p>
             </div>
           </div>

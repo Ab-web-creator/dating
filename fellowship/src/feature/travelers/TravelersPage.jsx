@@ -18,7 +18,7 @@ const TravelersPage = () => {
     <div className='page-root  welcome_page'>
       <div className='topbar'>
         <div className='middle_part1'>
-          <div className='icon_and_h2' >
+          <div className='icon_and_h2 justify-between w-full' >
             <h1>
               T<span>r</span>avele<span>r</span>s
             </h1>
@@ -30,8 +30,8 @@ const TravelersPage = () => {
       </div>
 
       <div className="separate_into_two_columns">
-        <div className='sep_part1 overflow-y-auto'>
-             fasdfasdfasd
+        <div className='sep_part1 overflow-y-auto p-6'>
+            <p className='text-green-800 text-bold'> Oops!!! There are no travelers at the moment in your territorial range</p>
         </div>
 
         <aside>

@@ -14,7 +14,7 @@
     "SavePassword": "Save my password on this device"
   },
   "Nav":{  
-    "BlogPage": "Discussions",
+    "BlogPage": "Blog Page",
     "Communities": "Video chats",
     "Search": "Search Profiles",
     "Learning": "Premium",
@@ -96,10 +96,7 @@
     "AllPostsNonEssential2": "",
     "MyTeachersNonEssential1":"My ",
     "MyTeachersEssential":" teachers",
-    "MyTeachersNonEssential2":"",
-    "MyStudentsNonEssential1":"My ",
-    "MyStudentsEssential":" students",
-    "MyStudentsNonEssential2":""
+    "MyTeachersNonEssential2":""
   },
   "Com":{
     "MainHeading": "COMMUNITIES",

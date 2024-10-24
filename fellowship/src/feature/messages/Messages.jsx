@@ -233,7 +233,7 @@ const Messages = () => {
           </div>
 
         </div>
-        <div className="middle_part2">
+        <div className="middle_part2 space-x-2">
           <CreatePostButton />
           <Search setSearch={setSearch} />
         </div>

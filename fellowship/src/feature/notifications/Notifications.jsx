@@ -71,8 +71,8 @@ const Notifications = () => {
             <div className="right_column_contain">
               <div className="spacer10px"></div>
                 <UmightLike
-                  h3="Want to attend?"
-                  titleName="Sport event: Volleyball"
+                  h3="Only for Europe"
+                  titleName="Chilling event"
                   btnWord="Join" />
 
               <div className="right_column_posts">
@@ -82,8 +82,8 @@ const Notifications = () => {
               </div>
               <div className="spacer10px"></div>
                 <UmightLike
-                  h3="Want to attend?"
-                  titleName="Sport event: Volleyball"
+                  h3="Will you join us?"
+                  titleName="BBQ event"
                   btnWord="Join" />
             </div>
           </aside>

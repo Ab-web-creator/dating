@@ -17,7 +17,9 @@ import CreatePostButton from '../../components/buttons/CreatePostButton';
 import { useTranslation } from 'react-i18next';
 import DonateButton from '../../components/buttons/DonateButton';
  
-import TempNotesPopupLearn from './components/TempNotesPopupLearn';
+
+import AdvertiseProfiles from '../../components/AdvertiseProfiles'
+import AdvertiseProfiles2 from '../../components/AdvertiseProfiles2'
 
 const PremiumPage = () => {
   const { t } = useTranslation();
@@ -63,7 +65,7 @@ const PremiumPage = () => {
   const [isTempNotesPopupOpen, setTempNotesPopupOpen] = useState(false);
 
   return (
-    <div className='page-root my_relationships resources'>
+    <div className='page-root my_relationships'>
       <div className='topbar'>
         <div className='middle_part1'>
           <div className='icon_and_h2'>
@@ -71,31 +73,17 @@ const PremiumPage = () => {
               className="h2_icon_container">
               <img src={h2_icon} alt="" />
             </div>
-            <h1> <span className='hide_sm_screen'>
+            <h1> 
+            Pr<span>e</span>mium Ben<span>e</span>fits 
+              {/* <span className='hide_sm_screen'>
               {t('MyTeachers.MainHeadingNonEssential1')}</span>
               {t('MyTeachers.MainHeadingEssential')}
-              <span className='hide_sm_screen'>{t('MyTeachers.MainHeadingNonEssential2')}</span>   
+              <span className='hide_sm_screen'>{t('MyTeachers.MainHeadingNonEssential2')}</span>    */}
             </h1>
           </div>
-
-          <button
-            className='temp_notes'
-            title='toggle temporary dev notes'
-            onClick={() => setTempNotesPopupOpen(!isTempNotesPopupOpen)}
-          >
-            {t('MyTeachers.DevNotesButton')}
-          </button>
-          
-          {/* <DevNotesButton isTempNotesPopupOpen={isTempNotesPopupOpen} setTempNotesPopupOpen={setTempNotesPopupOpen} /> */}
-
-          <TempNotesPopupLearn 
-            isOpen={isTempNotesPopupOpen}
-            setTempNotesPopupOpen={setTempNotesPopupOpen}
-          />
-
+ 
           <div className='network_icons_topbar'>
             <DonateButton />
-            <CreatePostButton />
           </div>
         </div>
         <div className="middle_part2">
@@ -104,7 +92,7 @@ const PremiumPage = () => {
       </div>
 
       <div className="separate_into_two_columns">
-      <div className='sep_part1 overflow-y-auto'>
+      <main className='sep_part1 overflow-y-auto pt-4'>
      
 
           {teachers.length === 0 ? (
@@ -120,7 +108,7 @@ const PremiumPage = () => {
           ) : (
             <main className='list_container'>
               <div className='the_list_of_relations'>
-                <h4>{t('MyTeacher.TheListOfMyTeachers')}</h4>
+                <h4>My favourit profiles</h4>
               </div>
               <div className='which_relations'>
                 {teachers.map((element, index) => (
@@ -159,7 +147,13 @@ const PremiumPage = () => {
               users={teachers}
             />
           )}
-        </div>
+        </main>
+        <aside>
+        <div className="right_column_contain">
+              <AdvertiseProfiles />
+              <AdvertiseProfiles2 />
+            </div>
+        </aside>
       </div >
     </div >
   )

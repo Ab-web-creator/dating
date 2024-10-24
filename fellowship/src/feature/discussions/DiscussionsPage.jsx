@@ -2,12 +2,8 @@ import React, { useState, useEffect } from 'react'
 import useAuth from '../../hooks/useAuth'
 import { useInfiniteScroll } from '../../hooks/usePostsInfiniteScroll'
 import { useQueryClient } from 'react-query'
+import './discussionsPage.css'
 
-import './blogPage.css'
-
-import UmightLike from '../../components/UmightLike'
-import EventThumbNail from '../../components/EventThumbNail'
-import EventCreate from '../../components/EventCreate'
 import Search from '../../components/Search'
 
 import PostShablon from '../posts/components/PostShablon'
@@ -15,16 +11,14 @@ import ReportPostButton from '../posts/components/ReportPostButton';
 import ReplyPopup from '../posts/components/ReplyPopup'
 import RepostPopup from '../posts/components/RepostPopup';
 import LazyPosts from '../posts/components/LazyPosts'
-
-import blog1 from '../../images/blog1.png';
 import PostDetailsPopup from '../posts/PostDetailsPopup'
 import CreatePostButton from '../../components/buttons/CreatePostButton'
 
 import { useTranslation } from 'react-i18next';
-import DevNotesButton from '../../components/buttons/DevNotesButton';
-import TempNotesPopupBlog from './components/TempNotesPopupBlog';
+import AdvertiseProfiles from '../../components/AdvertiseProfiles'
+import AdvertiseProfiles2 from '../../components/AdvertiseProfiles2'
 
-const BlogPage = () => {
+const DiscussionsPage = () => {
 
   const { t } = useTranslation();
   const { auth } = useAuth()
@@ -64,8 +58,7 @@ const BlogPage = () => {
   }, [selectedSection])
 
   const [search, setSearch] = useState('')
-  const [isTempNotesPopupOpen, setTempNotesPopupOpen] = useState(false)
-
+  
   const [showReportPostPopup, setShowReportPostPopup] = useState(false)
   const handleCloseReportPostPopup = () => {
     setShowReportPostPopup(false)
@@ -85,40 +78,25 @@ const BlogPage = () => {
     <>
       <div className='page-root blog_page'>
         <div className='topbar'>
-          <div className='middle_part1'>
-            <div className='icon_and_h2'>
-              <div className="h2_icon_container">
-               <img src={blog1} alt="" />
-              </div>
-              <h1>{t('Blog.MainHeading')}</h1>
-              {/* <h1>BLO<span>G</span> PA<span>G</span>E</h1> */}
-            </div>
+          <div className='middle_part1'>          
+            <h1>
+              Blo<span>g</span> Pa<span>g</span>e
+              </h1>
 
             {showReportPostPopup && (
               <ReportPostButton post={currentSelectedPost} onClose={handleCloseReportPostPopup} />
             )}
-
             {showReplyPopup && (
               <ReplyPopup post={currentSelectedPost} onClose={handleCloseReplyPopup} />
             )}
-
             {showRepostPopup && (
               <RepostPopup post={currentSelectedPost} onClose={handleCloseRepostPopup} />
             )}
-
             {showPostDetailsPopup && (
               <PostDetailsPopup post={currentSelectedPost} onClose={handleClosePostDetailsPopup} />
-          )}
+            )}
 
-            <DevNotesButton isTempNotesPopupOpen={isTempNotesPopupOpen} setTempNotesPopupOpen={setTempNotesPopupOpen} />
-
-            <TempNotesPopupBlog 
-              isOpen={isTempNotesPopupOpen}
-              setTempNotesPopupOpen={setTempNotesPopupOpen}
-            />
-
-            <div className='network_icons_topbar'>
-              <EventCreate />
+            <div className='flex gap-1'>
              <CreatePostButton />
             </div>
           </div>
@@ -140,13 +118,10 @@ const BlogPage = () => {
                   <span className='hide_VERY_sm_screen'>{t('Blog.AllPostsNonEssential2')}</span>
                 </p>
               </div>
-              <div
-                onClick={() => handleSelectedSection('StudentsPosts')}
+              <div onClick={() => handleSelectedSection('StudentsPosts')}
                 className={sections.Students} >
                 <p> 
-                  <span className='hide_VERY_sm_screen'>{t('Blog.MyStudentsNonEssential1')}</span>
-                  {t('Blog.MyStudentsEssential')}
-                  <span className='hide_VERY_sm_screen'>{t('Blog.MyStudentsNonEssential2')}</span>
+                  Following
                 </p>
               </div>
             </div>
@@ -198,19 +173,14 @@ const BlogPage = () => {
           </main>
           <aside>
             <div className="right_column_contain">
-              <EventThumbNail />
-              <div className="right_column_ads">
-                <UmightLike
-                  h3="Want to attend?"
-                  titleName="Sport event: Volleyball"
-                  btnWord="Join" />
-              </div>
+              <AdvertiseProfiles />
+              <AdvertiseProfiles2 />
             </div>
           </aside>
-        </div >
-      </div >
+        </div>
+      </div>
     </>
   )
 }
 
-export default BlogPage
+export default DiscussionsPage

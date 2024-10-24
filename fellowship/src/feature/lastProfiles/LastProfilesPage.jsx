@@ -5,12 +5,12 @@ import Search from '../../components/Search'
 import UmightLike from '../../components/UmightLike'
 import useAxiosPrivate from '../../hooks/useAxiosPrivate';
 import LazyBoardMembers from './components/LazyBoardMembers';
-import EventThumbNail from '../../components/EventThumbNail';
- 
+
 import h2_icon from '../../images/servants1.png';
 import CreatePostButton from '../../components/buttons/CreatePostButton';
  
 import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from '../../components/LanguageSwitcher';
 
 const LastProfilesPage = () => {
 
@@ -48,13 +48,13 @@ const LastProfilesPage = () => {
               <img src={h2_icon} alt="" />
             </div>
             <h1>  
-            {t('Servants.MainHeading')}
+              L<span>a</span>st Profil<span>e</span>s
               {/* Choos<span>e</span> <span className='hide_sm_screen'> a minist<span>e</span>r</span> */}
               </h1>
           </div>
 
           <div className='network_icons_topbar'>
-            <CreatePostButton />
+            <LanguageSwitcher />
           </div>
         </div>
 
@@ -106,13 +106,10 @@ const LastProfilesPage = () => {
         </main>
         <aside>
           <div className="right_column_contain">
-            <EventThumbNail />
-            <div className="right_column_ads">
-              <UmightLike
-                h3="Want to attend?"
-                titleName="Sport event: Volleyball"
-                btnWord="Join" />
-            </div>
+            <UmightLike
+              h3="Want to attend meeting?"
+              titleName="Up to 50 year old"
+              btnWord="Join" />
           </div>
         </aside>
       </div>

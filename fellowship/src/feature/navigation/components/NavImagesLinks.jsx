@@ -47,7 +47,7 @@ const NavImages = {
 
 const getNavLinks = (auth) => [
   {
-    path: '/blogPage',
+    path: '/discussions',
     image1: NavImages.blog1,
     image2: NavImages.blog2,
     textKey: 'Nav.BlogPage',
@@ -59,7 +59,7 @@ const getNavLinks = (auth) => [
     textKey: 'Nav.Bookmarks',
   },
   {
-    path: '/communities',
+    path: '/videochats',
     image1: NavImages.community1,
     image2: NavImages.community2,
     textKey: 'Nav.Communities',

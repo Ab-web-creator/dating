@@ -126,8 +126,8 @@ const Diary = ({ onClose, selectedUserId, users }) => {
                     </p>
                   </div>
                   <div className='milestones'>
-                    <p>{t('Diary.Assignments')}</p>
-                    <p> {t('Diary.Accomplishments')}</p>
+                    <p> Take notes, mark highlights</p>
+                    <p> jot important aspects of who he is</p>
                   </div>
                 </div>
               </div>
