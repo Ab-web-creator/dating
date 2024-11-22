@@ -155,7 +155,7 @@ const PremiumPage = () => {
           ) : (
             <section className='list_container'>
               <div className='the_list_of_relations'>
-                <h4>My favourit profiles</h4>
+                <h4>My favorite profiles</h4>
               </div>
               <div className='which_relations'>
                 {teachers.map((element, index) => (

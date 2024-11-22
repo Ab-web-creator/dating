@@ -71,7 +71,7 @@ const ChatThumb = () => {
               )}
             </div>
             <div className='curr_contain  flex items-center justify-center'>
-                <p className='m-auto text-sm'>Химия</p>
+                <p className='m-auto text-sm'>Enjoy Life</p>
             </div>
           </main>
           <div className="last_piece"></div>

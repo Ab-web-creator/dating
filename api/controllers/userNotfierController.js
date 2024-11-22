@@ -74,8 +74,8 @@ const handleInvitation = asyncHandler(async (req, res) => {
         to: invitedUser.email,
         subject: 'Invitation to create an account',
         html: `<div style="max-width: 500px; margin: 0 auto;">
-        <h1 style="color: #777;">The Way of Love</h1>
-        <p> Dear candidate, 
+        <h1 style="color: #777;">Find Your Love</h1>
+        <p> Dear <User>, 
 
         You are cordially invited to join our project, assuming the pivotal role of ${role}. Your expertise and contributions are highly anticipated, and we are thrilled to welcome you aboard our team. </p>
         
@@ -87,7 +87,7 @@ const handleInvitation = asyncHandler(async (req, res) => {
         <p style="color: #777; padding: 0; margin: 0">
         Best regards,
         Project Manager: 
-        Abdusami Rahim </p>
+        David Schär </p>
 
         <a a href="${invitationURL}" style="display: inline-block; margin-top: 20px; margin-bottom: 20px; padding: 10px 20px; background-color: #007bff; color: #fff; text-decoration: none; border-radius: 5px;">Click here</a>
 

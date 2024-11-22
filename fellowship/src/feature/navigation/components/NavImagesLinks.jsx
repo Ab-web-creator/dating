@@ -8,16 +8,16 @@ import notification1 from '../../../images/notification1.png';
 import notification2 from '../../../images/notification2.png';
 import searchProfiles1 from '../../../images/searchProfiles1.png';
 import searchProfiles2 from '../../../images/searchProfiles2.png';
-import mystudents1 from '../../../images/mystudents1.png';
-import mystudents2 from '../../../images/mystudents2.png';
-import servants1 from '../../../images/servants1.png';
-import servants2 from '../../../images/servants2.png';
-import community1 from '../../../images/community1.png';
-import community2 from '../../../images/community2.png';
+import mystudents1 from '../../../images/premium1.png';
+import mystudents2 from '../../../images/premium2.png';
+import servants1 from '../../../images/community1.png';
+import servants2 from '../../../images/community2.png';
+import community1 from '../../../images/videochat1.png';
+import community2 from '../../../images/videochat2.png';
 import bookmark1 from '../../../images/bookmark1.png';
 import bookmark2 from '../../../images/bookmark2.png';
-import resources1 from '../../../images/resources1.png';
-import resources2 from '../../../images/resources2.png';
+import resources1 from '../../../images/traveler1.png';
+import resources2 from '../../../images/traveler2.png';
 import myProfile1 from '../../../images/myProfile1.png';
 import myProfile2 from '../../../images/myProfile2.png';
 
@@ -59,6 +59,12 @@ const getNavLinks = (auth) => [
     textKey: 'Nav.Bookmarks',
   },
   {
+    path: '/messages',
+    image1: NavImages.messages1,
+    image2: NavImages.messages2,
+    textKey: 'Nav.Messages',
+  },
+  {
     path: '/videochats',
     image1: NavImages.community1,
     image2: NavImages.community2,
@@ -69,6 +75,12 @@ const getNavLinks = (auth) => [
     image1: NavImages.searchProfiles1,
     image2: NavImages.searchProfiles2,
     textKey: 'Nav.Search',
+  },
+  {
+    path: '/travelers',
+    image1: NavImages.resources1,
+    image2: NavImages.resources2,
+    textKey: 'Travelers Section',
   },
   {
     path: '/lastProfiles',
@@ -82,24 +94,14 @@ const getNavLinks = (auth) => [
     image2: NavImages.myProfile2,
     textKey: 'Nav.Profile',
   },
-  {
-    path: '/messages',
-    image1: NavImages.messages1,
-    image2: NavImages.messages2,
-    textKey: 'Nav.Messages',
-  },
+
   {
     path: '/premium-page',
     image1: NavImages.mystudents1,
     image2: NavImages.mystudents2,
     textKey: 'Premium',
   },
-  {
-    path: '/travelers',
-    image1: NavImages.resources1,
-    image2: NavImages.resources2,
-    textKey: 'Travelers Section',
-  },
+
 
   // {
   //   path: '/notifications',
